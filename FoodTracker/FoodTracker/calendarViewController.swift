@@ -20,7 +20,7 @@ extension UIColor {
 
 class calendarViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
-    let dateManager = Date.DateManager()
+    let dateManager = DateManager()
     let daysPerWeek: Int = 7
     let cellMargin: CGFloat = 2.0
     var selectedDate = NSDate()
@@ -28,6 +28,10 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 
     @IBOutlet weak var calenderCollectionView: UICollectionView!
+    @IBOutlet weak var headerNextBtn: UIBarButtonItem!
+    @IBOutlet weak var headerPrevBtn: UIBarButtonItem!
+    @IBOutlet weak var navigationBar: UINavigationItem!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +40,9 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         calenderCollectionView.dataSource = self
         calenderCollectionView.backgroundColor = UIColor.white
         
-        //toolbarのスペースを設定
-//        fixedSpace.width = 200
+        // CollectionViewのレイアウトを生成.
+        let layout = UICollectionViewFlowLayout()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,7 +51,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     }
     
     //1
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 2
     }
     //2
@@ -98,5 +103,32 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         return cellMargin
     }
     
+    
+    func changeHeaderTitle() -> String {
+        let formatter: DateFormatter = DateFormatter()
+        //let formatter = DateFormatter() //
+        formatter.dateFormat = "M/yyyy"
+        //formatter.string(from: date as Date)
+        let selectMonth = formatter.string(from: selectedDate as Date)
+        return selectMonth
+    }
+
+    
+    @IBAction func tappedHeaderPrevBtn(_ sender: UIButton) {
+        selectedDate = dateManager.prevMonth(date: selectedDate as Date) as NSDate
+        calenderCollectionView.reloadData()
+        //(date: selectedDate)
+        navigationBar.title = changeHeaderTitle()
+    }
+    
+    @IBAction func tappedHeaderNextBtn(_ sender: UIButton) {
+        selectedDate = dateManager.nextMonth(date: selectedDate as Date) as NSDate
+        calenderCollectionView.reloadData()
+        //(date: selectedDate)
+        navigationBar.title = changeHeaderTitle()
+    }
+    
+    
+
     
 }

@@ -10,15 +10,15 @@ provides-dynamic-lookup:
 depends-top-level:
 - !private "CGPoint"
 - !private "NSTextAlignment"
-- !private "UIFont"
-- "NSCoder"
-- "UICollectionViewCell"
-- !private "CGSize"
-- "AssignmentPrecedence"
 - "CGRect"
+- "UICollectionViewCell"
+- "NSCoder"
+- "AssignmentPrecedence"
+- !private "CGSize"
 - !private "StringLiteralType"
 - "CalendarCell"
 - "UILabel"
+- !private "UIFont"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]

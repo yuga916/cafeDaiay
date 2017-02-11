@@ -9,6 +9,30 @@
 import UIKit
 
 extension Date {
+    // 🔴修正前 -> NSDate
+    func monthAgoDate() -> Date {
+        let addValue = -1
+        //NSCalendar.currentCalendar()
+        let calendar = Calendar.current
+        // let dateComponents = DateComponents()
+        var dateComponents = DateComponents()
+        dateComponents.month = addValue
+        //return calendar.dateByAddingComponents(dateComponents, toDate: self, options: NSCalendarOptions(rawValue: 0))!
+        return calendar.date(byAdding: dateComponents, to: self)!
+    }
+    // 🔴修正前 -> NSDate
+func monthLaterDate() -> Date {
+        let addValue: Int = 1
+        // 🔴修正前 = NSCalendar.currentCalendar()
+        let calendar = Calendar.current
+        // 🔴修正前 let dateComponents = DateComponents()
+        var dateComponents = DateComponents()
+        dateComponents.month = addValue
+        
+        // 🔴修正前 return calendar.dateByAddingComponents(dateComponents, toDate: self, options: NSCalendarOptions(rawValue: 0))!
+        return calendar.date(byAdding: dateComponents, to: self)!
+    }
+}
 
 class DateManager: NSObject {
     
@@ -54,6 +78,21 @@ class DateManager: NSObject {
         formatter.dateFormat = "d"
         return formatter.string(from: currentMonthOfDates[indexPath.row] as Date)
     }
-
+    
+    //前月の表示
+    // 🔴修正前 (date: NSDate) -> NSDate
+    func prevMonth(date: Date) -> Date {
+        currentMonthOfDates = []
+        selectedDate = date.monthAgoDate() as NSDate
+        return selectedDate as Date
     }
+    
+    //次月の表示
+    // 🔴修正前 (date: NSDate) -> NSDate
+    func nextMonth(date: Date) -> Date {
+        currentMonthOfDates = []
+        selectedDate = date.monthLaterDate() as NSDate
+        return selectedDate as Date
+    }
+    
 }

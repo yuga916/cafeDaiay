@@ -148,6 +148,23 @@ SWIFT_CLASS("_TtC11FoodTracker12CalendarCell")
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDate;
+@class NSIndexPath;
+
+SWIFT_CLASS("_TtC11FoodTracker11DateManager")
+@interface DateManager : NSObject
+@property (nonatomic, copy) NSArray<NSDate *> * _Nonnull currentMonthOfDates;
+@property (nonatomic, strong) NSDate * _Nonnull selectedDate;
+@property (nonatomic, readonly) NSInteger daysPerWeek;
+- (NSInteger)daysAcquisition;
+- (NSDate * _Nonnull)firstDateOfMonth;
+- (void)dateForCellAtIndexPathWithNumberOfItems:(NSInteger)numberOfItems;
+- (NSString * _Nonnull)conversionDateFormatWithIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSDate * _Nonnull)prevMonthWithDate:(NSDate * _Nonnull)date;
+- (NSDate * _Nonnull)nextMonthWithDate:(NSDate * _Nonnull)date;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIImage;
 
 SWIFT_CLASS("_TtC11FoodTracker4Meal")
@@ -243,11 +260,9 @@ SWIFT_CLASS("_TtC11FoodTracker13RatingControl")
 + (UIColor * _Nonnull)lightRed;
 @end
 
-@class DateManager;
-@class NSDate;
 @class UICollectionView;
 @class UICollectionViewLayout;
-@class NSIndexPath;
+@class UINavigationItem;
 
 SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @interface calendarViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
@@ -258,14 +273,20 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, strong) NSDate * _Null_unspecified today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderCollectionView;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerNextBtn;
+@property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerPrevBtn;
+@property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
-- (NSInteger)numberOfSectionsInCollectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
 - (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGSize)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (CGFloat)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
 - (CGFloat)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
+- (NSString * _Nonnull)changeHeaderTitle;
+- (IBAction)tappedHeaderPrevBtn:(UIButton * _Nonnull)sender;
+- (IBAction)tappedHeaderNextBtn:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

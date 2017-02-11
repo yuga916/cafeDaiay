@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker11AppDelegate", ""]
 provides-dynamic-lookup:
-- "applicationWillEnterForeground"
-- "window"
-- "applicationWillResignActive"
 - "applicationDidEnterBackground"
-- "applicationWillTerminate"
 - "application"
+- "applicationWillEnterForeground"
+- "applicationWillResignActive"
 - "applicationDidBecomeActive"
+- "window"
+- "applicationWillTerminate"
 depends-top-level:
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
-- "UIWindow"
-- "UIApplication"
-- "UIApplicationDelegate"
-- "Bool"
-- "UIResponder"
 - !private "BooleanLiteralType"
+- "Bool"
+- "UIWindow"
+- "UIApplicationLaunchOptionsKey"
+- "UIApplication"
+- "AppDelegate"
+- "UIResponder"
+- "UIApplicationDelegate"
 depends-member:
 - ["Ps9AnyObject", "application"]
 - ["Ps9AnyObject", "applicationDidBecomeActive"]
