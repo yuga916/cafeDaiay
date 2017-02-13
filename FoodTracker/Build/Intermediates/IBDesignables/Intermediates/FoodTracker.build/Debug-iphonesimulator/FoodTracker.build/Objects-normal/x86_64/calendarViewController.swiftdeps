@@ -9,63 +9,65 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "numberOfSections"
-- "navigationBar"
-- "lightRed"
-- "dateManager"
-- "daysPerWeek"
-- "headerNextBtn"
-- "didReceiveMemoryWarning"
-- "tappedHeaderNextBtn"
 - "tappedHeaderPrevBtn"
+- "changeHeaderTitle"
+- "headerPrevBtn"
+- "lightBlue"
+- "dateManager"
+- "calenderCollectionView"
+- "tappedHeaderNextBtn"
+- "didReceiveMemoryWarning"
+- "daysPerWeek"
+- "weekArray"
+- "lightRed"
+- "cellMargin"
+- "navigationBar"
 - "viewDidLoad"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
+- "headerNextBtn"
 - "selectedDate"
 - "today"
-- "headerPrevBtn"
-- "changeHeaderTitle"
-- "cellMargin"
-- "lightBlue"
-- "calenderCollectionView"
-- "weekArray"
 depends-top-level:
-- "UICollectionViewDelegateFlowLayout"
-- !private "/"
-- "UICollectionViewDelegate"
-- "CGFloat"
-- "UICollectionViewDataSource"
-- "UIBarButtonItem"
-- "CGSize"
-- !private "*"
-- "String"
-- !private "%"
-- "UIButton"
-- "UICollectionViewCell"
-- "DateManager"
-- "UICollectionViewLayout"
-- "CastingPrecedence"
-- "Int"
-- "UINavigationItem"
 - "calendarViewController"
-- "NSIndexPath"
-- "AssignmentPrecedence"
-- !private "DateFormatter"
-- "UIViewController"
-- !private "=="
-- "UICollectionView"
-- !private "-"
+- "DateManager"
+- "UICollectionViewCell"
+- "Int"
 - !private "CalendarCell"
-- "StringLiteralType"
-- "IndexPath"
+- "CGSize"
+- !private "print"
+- "UIBarButtonItem"
+- "UICollectionViewLayout"
+- "UIButton"
+- "UICollectionViewDelegateFlowLayout"
+- !private "*"
 - "Array"
-- !private "Date"
 - !private "UICollectionViewFlowLayout"
 - "NSDate"
+- "UICollectionViewDataSource"
 - "UIColor"
+- !private "%"
+- "UICollectionViewDelegate"
+- "CGFloat"
+- "NSIndexPath"
+- "UIViewController"
+- !private "/"
+- !private "DateFormatter"
+- "IndexPath"
+- !private "Date"
+- !private "-"
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "=="
+- "UINavigationItem"
+- "String"
+- "StringLiteralType"
+- "UICollectionView"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -103,6 +105,7 @@ depends-member:
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInCollectionView"]
 - !private ["Ps9AnyObject", "prevMonth"]
+- !private ["Ps9AnyObject", "print"]
 - !private ["Ps9AnyObject", "reloadData"]
 - ["Ps9AnyObject", "scrollViewDidEndDecelerating"]
 - ["Ps9AnyObject", "scrollViewDidEndDragging"]
@@ -228,6 +231,7 @@ depends-member:
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInCollectionView"]
 - !private ["Ps7CVarArg", "prevMonth"]
+- !private ["Ps7CVarArg", "print"]
 - !private ["Ps7CVarArg", "reloadData"]
 - ["Ps7CVarArg", "scrollViewDidEndDecelerating"]
 - ["Ps7CVarArg", "scrollViewDidEndDragging"]
@@ -259,6 +263,7 @@ depends-member:
 - ["Ps7CVarArg", ""]
 - ["C11FoodTracker12CalendarCell", "deinit"]
 - !private ["C11FoodTracker12CalendarCell", "textLabel"]
+- !private ["Vs9Character", "deinit"]
 - ["Ps10Collection", "Element"]
 - !private ["Ps10Collection", "Index"]
 - !private ["Ps10Collection", "IndexDistance"]
@@ -315,6 +320,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "prevMonth"]
+- !private ["Ps28CustomDebugStringConvertible", "print"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "row"]
 - ["Ps28CustomDebugStringConvertible", "scrollViewDidEndDecelerating"]
@@ -414,6 +420,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInCollectionView"]
 - !private ["Ps23CustomStringConvertible", "prevMonth"]
+- !private ["Ps23CustomStringConvertible", "print"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "row"]
 - ["Ps23CustomStringConvertible", "scrollViewDidEndDecelerating"]
@@ -466,6 +473,7 @@ depends-member:
 - !private ["Vs26DefaultRandomAccessIndices", "Iterator"]
 - !private ["Vs26DefaultRandomAccessIndices", "SubSequence"]
 - !private ["Vs26DefaultRandomAccessIndices", "_Element"]
+- !private ["Sd", "deinit"]
 - !private ["Ps9Equatable", "CGFloat"]
 - !private ["Ps9Equatable", "CGSize"]
 - !private ["Ps9Equatable", "DateFormatter"]
@@ -505,6 +513,7 @@ depends-member:
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9Equatable", "prevMonth"]
+- !private ["Ps9Equatable", "print"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "row"]
 - ["Ps9Equatable", "scrollViewDidEndDecelerating"]
@@ -555,6 +564,7 @@ depends-member:
 - ["Ps32ExpressibleByStringInterpolation", "init"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
 - !private ["CSo9Formatter", "dateFormat"]
 - !private ["CSo9Formatter", "init"]
@@ -598,6 +608,7 @@ depends-member:
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps8Hashable", "prevMonth"]
+- !private ["Ps8Hashable", "print"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "row"]
 - ["Ps8Hashable", "scrollViewDidEndDecelerating"]
@@ -657,6 +668,10 @@ depends-member:
 - !private ["Si", "Stride"]
 - !private ["Si", "_DisabledRangeIndex"]
 - ["Si", "deinit"]
+- !private ["Vs5Int16", "deinit"]
+- !private ["Vs5Int32", "deinit"]
+- !private ["Vs5Int64", "deinit"]
+- !private ["Vs4Int8", "deinit"]
 - !private ["Ps7Integer", "IntegerLiteralType"]
 - !private ["Ps7Integer", "Stride"]
 - !private ["Ps7Integer", "_DisabledRangeIndex"]
@@ -718,6 +733,7 @@ depends-member:
 - ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
+- !private ["PSo8NSCoding", "print"]
 - !private ["PSo8NSCoding", "reloadData"]
 - ["PSo8NSCoding", "scrollViewDidEndDecelerating"]
 - ["PSo8NSCoding", "scrollViewDidEndDragging"]
@@ -778,6 +794,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "navigationBar"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInCollectionView"]
+- !private ["PSo26NSExtensionRequestHandling", "print"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDecelerating"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndDragging"]
 - ["PSo26NSExtensionRequestHandling", "scrollViewDidEndScrollingAnimation"]
@@ -848,6 +865,7 @@ depends-member:
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInCollectionView"]
 - !private ["CSo8NSObject", "prevMonth"]
+- !private ["CSo8NSObject", "print"]
 - !private ["CSo8NSObject", "reloadData"]
 - ["CSo8NSObject", "scrollViewDidEndDecelerating"]
 - ["CSo8NSObject", "scrollViewDidEndDragging"]
@@ -910,6 +928,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInCollectionView"]
 - !private ["PSo16NSObjectProtocol", "prevMonth"]
+- !private ["PSo16NSObjectProtocol", "print"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDecelerating"]
 - ["PSo16NSObjectProtocol", "scrollViewDidEndDragging"]
@@ -1060,6 +1079,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "navigationBar"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo21UIAppearanceContainer", "print"]
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDecelerating"]
 - ["PSo21UIAppearanceContainer", "scrollViewDidEndDragging"]
@@ -1113,6 +1133,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "navigationBar"]
 - ["PSo26UICollectionViewDataSource", "numberOfSections"]
 - ["PSo26UICollectionViewDataSource", "numberOfSectionsInCollectionView"]
+- !private ["PSo26UICollectionViewDataSource", "print"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDecelerating"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndDragging"]
 - ["PSo26UICollectionViewDataSource", "scrollViewDidEndScrollingAnimation"]
@@ -1148,6 +1169,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "navigationBar"]
 - ["PSo24UICollectionViewDelegate", "numberOfSections"]
 - ["PSo24UICollectionViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo24UICollectionViewDelegate", "print"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo24UICollectionViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1183,6 +1205,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "navigationBar"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSections"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "numberOfSectionsInCollectionView"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "print"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDecelerating"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndDragging"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewDidEndScrollingAnimation"]
@@ -1232,6 +1255,7 @@ depends-member:
 - ["PSo18UIContentContainer", "navigationBar"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIContentContainer", "print"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDecelerating"]
 - ["PSo18UIContentContainer", "scrollViewDidEndDragging"]
 - ["PSo18UIContentContainer", "scrollViewDidEndScrollingAnimation"]
@@ -1300,6 +1324,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "navigationBar"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UIFocusEnvironment", "print"]
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UIFocusEnvironment", "scrollViewDidEndDragging"]
@@ -1376,6 +1401,7 @@ depends-member:
 - ["CSo11UIResponder", "navigationBar"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInCollectionView"]
+- !private ["CSo11UIResponder", "print"]
 - !private ["CSo11UIResponder", "reloadData"]
 - ["CSo11UIResponder", "scrollViewDidEndDecelerating"]
 - ["CSo11UIResponder", "scrollViewDidEndDragging"]
@@ -1427,6 +1453,7 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "navigationBar"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInCollectionView"]
+- !private ["PSo30UIResponderStandardEditActions", "print"]
 - !private ["PSo30UIResponderStandardEditActions", "reloadData"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDecelerating"]
 - ["PSo30UIResponderStandardEditActions", "scrollViewDidEndDragging"]
@@ -1476,6 +1503,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "navigationBar"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInCollectionView"]
+- !private ["PSo20UIScrollViewDelegate", "print"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDecelerating"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndDragging"]
 - ["PSo20UIScrollViewDelegate", "scrollViewDidEndScrollingAnimation"]
@@ -1515,6 +1543,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "navigationBar"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInCollectionView"]
+- !private ["PSo16UIStateRestoring", "print"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDecelerating"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndDragging"]
 - ["PSo16UIStateRestoring", "scrollViewDidEndScrollingAnimation"]
@@ -1563,6 +1592,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "navigationBar"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInCollectionView"]
+- !private ["PSo18UITraitEnvironment", "print"]
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDecelerating"]
 - ["PSo18UITraitEnvironment", "scrollViewDidEndDragging"]
@@ -1632,6 +1662,7 @@ depends-member:
 - ["CSo16UIViewController", "navigationBar"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInCollectionView"]
+- !private ["CSo16UIViewController", "print"]
 - ["CSo16UIViewController", "scrollViewDidEndDecelerating"]
 - ["CSo16UIViewController", "scrollViewDidEndDragging"]
 - ["CSo16UIViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1653,6 +1684,12 @@ depends-member:
 - ["CSo16UIViewController", "viewForZoomingInScrollView"]
 - ["CSo16UIViewController", "weekArray"]
 - ["CSo16UIViewController", ""]
+- !private ["Su", "deinit"]
+- !private ["Vs6UInt16", "deinit"]
+- !private ["Vs6UInt32", "deinit"]
+- !private ["Vs6UInt64", "deinit"]
+- !private ["Vs5UInt8", "deinit"]
+- !private ["Sc", "deinit"]
 - ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
@@ -1730,6 +1767,7 @@ depends-member:
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInCollectionView"]
 - !private ["Ps9_Hashable", "prevMonth"]
+- !private ["Ps9_Hashable", "print"]
 - !private ["Ps9_Hashable", "reloadData"]
 - !private ["Ps9_Hashable", "row"]
 - ["Ps9_Hashable", "scrollViewDidEndDecelerating"]
@@ -1826,6 +1864,7 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "navigationBar"]
 - ["C11FoodTracker22calendarViewController", "numberOfSections"]
 - ["C11FoodTracker22calendarViewController", "numberOfSectionsInCollectionView"]
+- !private ["C11FoodTracker22calendarViewController", "print"]
 - ["C11FoodTracker22calendarViewController", "scrollViewDidEndDecelerating"]
 - ["C11FoodTracker22calendarViewController", "scrollViewDidEndDragging"]
 - ["C11FoodTracker22calendarViewController", "scrollViewDidEndScrollingAnimation"]
@@ -1862,6 +1901,7 @@ depends-nominal:
 - "VSC6CGSize"
 - "Ps7CVarArg"
 - "C11FoodTracker12CalendarCell"
+- !private "Vs9Character"
 - "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -1873,6 +1913,7 @@ depends-nominal:
 - "C11FoodTracker11DateManager"
 - !private "Vs27DefaultBidirectionalIndices"
 - !private "Vs26DefaultRandomAccessIndices"
+- !private "Sd"
 - "Ps9Equatable"
 - "Ps25ExpressibleByArrayLiteral"
 - !private "Ps27ExpressibleByBooleanLiteral"
@@ -1882,6 +1923,7 @@ depends-nominal:
 - "Ps32ExpressibleByStringInterpolation"
 - "Ps26ExpressibleByStringLiteral"
 - "Ps33ExpressibleByUnicodeScalarLiteral"
+- !private "Sf"
 - !private "Ps13FloatingPoint"
 - !private "CSo9Formatter"
 - "Ps8Hashable"
@@ -1891,6 +1933,10 @@ depends-nominal:
 - "Ps13IndexableBase"
 - !private "Vs16IndexingIterator"
 - "Si"
+- !private "Vs5Int16"
+- !private "Vs5Int32"
+- !private "Vs5Int64"
+- !private "Vs4Int8"
 - !private "Ps7Integer"
 - !private "Ps17IntegerArithmetic"
 - !private "Ps16IteratorProtocol"
@@ -1952,6 +1998,12 @@ depends-nominal:
 - "PSo18UITraitEnvironment"
 - !private "CSo6UIView"
 - "CSo16UIViewController"
+- !private "Su"
+- !private "Vs6UInt16"
+- !private "Vs6UInt32"
+- !private "Vs6UInt64"
+- !private "Vs5UInt8"
+- !private "Sc"
 - "Ps14_ArrayProtocol"
 - !private "Ps15_CVarArgAligned"
 - !private "Ps22_CVarArgPassedAsDouble"
@@ -1986,4 +2038,4 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
-interface-hash: "a8230e5278b174711e3b4070689ea549"
+interface-hash: "9edf236d62deafd43ab2aa09aa338d84"

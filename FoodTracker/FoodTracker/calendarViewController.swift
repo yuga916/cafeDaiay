@@ -103,6 +103,16 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         return cellMargin
     }
     
+    //cellが選択された時のアクション
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Num: \(indexPath.row)")
+    }
+//    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+//        
+//        print("Num: \(indexPath.row)")
+//        
+//    }
+    
     
     func changeHeaderTitle() -> String {
         let formatter: DateFormatter = DateFormatter()
