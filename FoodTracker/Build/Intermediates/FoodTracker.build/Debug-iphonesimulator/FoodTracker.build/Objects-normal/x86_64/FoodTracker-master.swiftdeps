@@ -1,13 +1,15 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "bcad3403a3a0463ac49dd08b9d2709ce"
-build_time: [540271014, 894992000]
+build_time: [540438844, 554828000]
 inputs:
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/DateManager.swift": [540099296, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/Meal.swift": [533973888, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealViewController.swift": [534031599, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Diary+CoreDataClass.swift": [540438314, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/Meal.swift": [540384637, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealViewController.swift": [540438844, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/RatingControl.swift": [533933276, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/AppDelegate.swift": [531945878, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/AppDelegate.swift": [540387271, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealTableViewController.swift": [533971422, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealTableViewCell.swift": [533933276, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/calendarViewController.swift": [540271014, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/calendarViewController.swift": [540358945, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/CalendarCell.swift": [539875734, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Diary+CoreDataProperties.swift": [540438314, 0]

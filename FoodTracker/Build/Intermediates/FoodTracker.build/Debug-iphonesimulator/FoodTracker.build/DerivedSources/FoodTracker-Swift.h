@@ -119,22 +119,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreGraphics;
 @import ObjectiveC;
 @import Foundation;
+@import CoreData;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
+@class NSManagedObject;
 @class UIApplication;
+@class NSPersistentContainer;
 
 SWIFT_CLASS("_TtC11FoodTracker11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
+@property (nonatomic, strong) NSManagedObject * _Nonnull newRecord;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
 - (void)applicationWillEnterForeground:(UIApplication * _Nonnull)application;
 - (void)applicationDidBecomeActive:(UIApplication * _Nonnull)application;
 - (void)applicationWillTerminate:(UIApplication * _Nonnull)application;
+@property (nonatomic, strong) NSPersistentContainer * _Nonnull persistentContainer;
+- (void)saveContext;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -163,6 +169,22 @@ SWIFT_CLASS("_TtC11FoodTracker11DateManager")
 - (NSDate * _Nonnull)prevMonthWithDate:(NSDate * _Nonnull)date;
 - (NSDate * _Nonnull)nextMonthWithDate:(NSDate * _Nonnull)date;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS("_TtC11FoodTracker5Diary")
+@interface Diary : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface Diary (SWIFT_EXTENSION(FoodTracker))
+@property (nonatomic, strong) NSDate * _Nullable date;
+@property (nonatomic, copy) NSString * _Nullable foodName;
+@property (nonatomic, copy) NSString * _Nullable img;
+@property (nonatomic) int16_t studyTime;
 @end
 
 @class UIImage;
@@ -220,15 +242,18 @@ SWIFT_CLASS("_TtC11FoodTracker23MealTableViewController")
 @class UITextField;
 @class UIImagePickerController;
 @class UIBarButtonItem;
-@class UITapGestureRecognizer;
+@class UITextView;
 
 SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
 @interface MealViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameTextField;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
 @property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
+@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified studyTime;
+@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified myText;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, strong) Meal * _Nullable meal;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myTextField;
 - (void)viewDidLoad;
 - (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
@@ -237,7 +262,6 @@ SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)cancel:(UIBarButtonItem * _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

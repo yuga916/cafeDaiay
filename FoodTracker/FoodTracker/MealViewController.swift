@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import os.log
+import CoreData
 
 class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -15,6 +15,10 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var ratingControl: RatingControl!
+    @IBOutlet weak var studyTime: UITextField!
+    @IBOutlet weak var myText: UITextView!
+    
+    
     @IBOutlet weak var saveButton: UIBarButtonItem!
     
     /*
@@ -23,23 +27,14 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
      */
     var meal: Meal?
     
+    var myTextField = NSArray() as! [String]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    
         
-        // Handle the text field’s user input through delegate callbacks.
-        nameTextField.delegate = self
-        
-        // Set up views if editing an existing Meal.
-        if let meal = meal {
-            navigationItem.title = meal.name
-            nameTextField.text = meal.name
-            photoImageView.image = meal.photo
-            ratingControl.rating = meal.rating
-        }
-        
-        // Enable the Save button only if the text field has a valid Meal name.
-        updateSaveButtonState()
     }
+    
     
     //MARK: UITextFieldDelegate
     
@@ -55,8 +50,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        updateSaveButtonState()
-        navigationItem.title = textField.text
+        
     }
     
     //MARK: UIImagePickerControllerDelegate
@@ -100,45 +94,55 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         super.prepare(for: segue, sender: sender)
-        
-        // Configure the destination view controller only when the save button is pressed.
-        guard let button = sender as? UIBarButtonItem, button === saveButton else {
-            os_log("The save button was not pressed, cancelling", log: OSLog.default, type: .debug)
+    
             return
         }
-        
-        let name = nameTextField.text ?? ""
-        let photo = photoImageView.image
-        let rating = ratingControl.rating
-        
-        // Set the meal to be passed to MealTableViewController after the unwind segue.
-        meal = Meal(name: name, photo: photo, rating: rating)
+    
     }
     
     //MARK: Actions
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+    func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
         
-        // Hide the keyboard.
-        nameTextField.resignFirstResponder()
         
-        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
-        let imagePickerController = UIImagePickerController()
-        
-        // Only allow photos to be picked, not taken.
-        imagePickerController.sourceType = .photoLibrary
-        
-        // Make sure ViewController is notified when the user picks an image.
-        imagePickerController.delegate = self
-        present(imagePickerController, animated: true, completion: nil)
     }
-    
-    //MARK: Private Methods
-    
-    private func updateSaveButtonState() {
-        // Disable the Save button if the text field is empty.
-        let text = nameTextField.text ?? ""
-        saveButton.isEnabled = !text.isEmpty
-    }
-    
-}
 
+
+
+   //MARK: Private Methods
+//エラー箇所
+//private func updateSaveButtonState() {
+//    // Disable the Save button if the text field is empty.
+//    let text = self.nameTextField.text ?? ""
+//    self.saveButton.isEnabled = !text.isEmpty
+//}
+
+    func tapSave(_ sender: UIBarButtonItem) {
+        //　AppDelegateを使う用意をしておく
+        let appDelegate: AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        //エンティティを操作するためのオブジェクトを作成
+        //DB接続をするのと同じ
+        let viewContext = appDelegate.persistentContainer.viewContext
+        
+        //ToDoエンティティオブジェクトを作成
+        let ToDo = NSEntityDescription.entity(forEntityName: "Entity", in: viewContext)
+        
+        //ToDoエンティティにレコード（行)を挿入するためのオブジェクトを作成
+        let newRecord = NSManagedObject(entity: ToDo!, insertInto: viewContext)
+        
+        //値のセット
+        newRecord.setValue(UITextField.text, forKey: "coffeeName")
+        newRecord.setValue(Date(), forKey: "saveDate")
+        
+        //エラーが出たらブレークポイントをつけて一つ一つ確認
+        
+        
+        //例外処理
+        do{
+            //レコード（行）の即時保存
+            try viewContext.save()
+        } catch {
+        }
+        
+        
+    }

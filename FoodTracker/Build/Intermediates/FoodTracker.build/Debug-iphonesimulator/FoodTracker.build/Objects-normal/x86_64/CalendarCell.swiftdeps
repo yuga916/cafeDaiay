@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "textLabel"
 depends-top-level:
-- "CalendarCell"
-- !private "StringLiteralType"
-- "CGRect"
 - "AssignmentPrecedence"
-- !private "CGSize"
-- "UICollectionViewCell"
-- !private "UIFont"
-- "NSCoder"
 - !private "CGPoint"
+- "CalendarCell"
 - !private "NSTextAlignment"
+- !private "CGSize"
+- !private "UIFont"
+- "UICollectionViewCell"
 - "UILabel"
+- "NSCoder"
+- "CGRect"
+- !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]
@@ -489,5 +489,6 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
 interface-hash: "f9894de4d4fbfba59baa90c21ad86942"

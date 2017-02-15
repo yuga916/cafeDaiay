@@ -106,6 +106,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     //cellが選択された時のアクション
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Num: \(indexPath.row)")
+        print("Selected: \(selectedDate)")
     }
 //    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        
@@ -137,8 +138,4 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //(date: selectedDate)
         navigationBar.title = changeHeaderTitle()
     }
-    
-    
-
-    
 }
