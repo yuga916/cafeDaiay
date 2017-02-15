@@ -125,14 +125,12 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
 @class UIWindow;
-@class NSManagedObject;
 @class UIApplication;
 @class NSPersistentContainer;
 
 SWIFT_CLASS("_TtC11FoodTracker11AppDelegate")
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
-@property (nonatomic, strong) NSManagedObject * _Nonnull newRecord;
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions;
 - (void)applicationWillResignActive:(UIApplication * _Nonnull)application;
 - (void)applicationDidEnterBackground:(UIApplication * _Nonnull)application;
@@ -181,9 +179,10 @@ SWIFT_CLASS("_TtC11FoodTracker5Diary")
 
 
 @interface Diary (SWIFT_EXTENSION(FoodTracker))
+@property (nonatomic, copy) NSString * _Nullable coffeeName;
 @property (nonatomic, strong) NSDate * _Nullable date;
-@property (nonatomic, copy) NSString * _Nullable foodName;
 @property (nonatomic, copy) NSString * _Nullable img;
+@property (nonatomic) int16_t rating;
 @property (nonatomic) int16_t studyTime;
 @end
 
@@ -239,10 +238,11 @@ SWIFT_CLASS("_TtC11FoodTracker23MealTableViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UITextView;
 @class UITextField;
 @class UIImagePickerController;
 @class UIBarButtonItem;
-@class UITextView;
+@class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
 @interface MealViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate, UITextFieldDelegate>
@@ -250,18 +250,26 @@ SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
 @property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified studyTime;
-@property (nonatomic, weak) IBOutlet UITextView * _Null_unspecified myText;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified saveButton;
 @property (nonatomic, strong) Meal * _Nullable meal;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myTextField;
+@property (nonatomic, copy) NSString * _Nonnull strURL;
+@property (nonatomic, strong) UITextView * _Null_unspecified textView;
+@property (nonatomic) NSInteger num;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myTitle;
 - (void)viewDidLoad;
+- (void)doneButtonAction;
 - (void)textFieldDidBeginEditing:(UITextField * _Nonnull)textField;
 - (BOOL)textFieldShouldReturn:(UITextField * _Nonnull)textField;
+- (BOOL)textFieldShouldBeginEditing:(UITextField * _Nonnull)textField;
 - (void)textFieldDidEndEditing:(UITextField * _Nonnull)textField;
 - (void)imagePickerControllerDidCancel:(UIImagePickerController * _Nonnull)picker;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (IBAction)cancel:(UIBarButtonItem * _Nonnull)sender;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
+- (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer * _Nonnull)sender;
+- (void)tapSave:(UIBarButtonItem * _Nonnull)sender;
+- (void)read;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

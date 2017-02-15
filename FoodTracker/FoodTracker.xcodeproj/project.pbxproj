@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		820A288C1E53E9B200692080 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 820A288A1E53E9B200692080 /* Model.xcdatamodeld */; };
-		820A288F1E53EA2A00692080 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A288D1E53EA2A00692080 /* Diary+CoreDataClass.swift */; };
-		820A28901E53EA2A00692080 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A288E1E53EA2A00692080 /* Diary+CoreDataProperties.swift */; };
+		820A28931E54000C00692080 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A28911E54000C00692080 /* Diary+CoreDataClass.swift */; };
+		820A28941E54000C00692080 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A28921E54000C00692080 /* Diary+CoreDataProperties.swift */; };
 		826EB3631E4B2C9300568C8B /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3621E4B2C9300568C8B /* DateManager.swift */; };
 		826EB3651E4B2CC600568C8B /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3641E4B2CC600568C8B /* CalendarCell.swift */; };
 		826EB3671E4B2FFA00568C8B /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3661E4B2FFA00568C8B /* calendarViewController.swift */; };
@@ -37,8 +37,8 @@
 
 /* Begin PBXFileReference section */
 		820A288B1E53E9B200692080 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		820A288D1E53EA2A00692080 /* Diary+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataClass.swift"; sourceTree = "<group>"; };
-		820A288E1E53EA2A00692080 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		820A28911E54000C00692080 /* Diary+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataClass.swift"; sourceTree = "<group>"; };
+		820A28921E54000C00692080 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		826EB3621E4B2C9300568C8B /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		826EB3641E4B2CC600568C8B /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		826EB3661E4B2FFA00568C8B /* calendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
@@ -79,8 +79,8 @@
 		936B4B751DB54E8F0090E3EE = {
 			isa = PBXGroup;
 			children = (
-				820A288D1E53EA2A00692080 /* Diary+CoreDataClass.swift */,
-				820A288E1E53EA2A00692080 /* Diary+CoreDataProperties.swift */,
+				820A28911E54000C00692080 /* Diary+CoreDataClass.swift */,
+				820A28921E54000C00692080 /* Diary+CoreDataProperties.swift */,
 				936B4B801DB54E8F0090E3EE /* FoodTracker */,
 				936B4B951DB54E8F0090E3EE /* FoodTrackerTests */,
 				936B4B7F1DB54E8F0090E3EE /* Products */,
@@ -230,7 +230,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				826EB3631E4B2C9300568C8B /* DateManager.swift in Sources */,
-				820A288F1E53EA2A00692080 /* Diary+CoreDataClass.swift in Sources */,
 				939722391DD4ED9800ACC1D0 /* Meal.swift in Sources */,
 				936B4B841DB54E8F0090E3EE /* MealViewController.swift in Sources */,
 				93E91EF11DCA8F83003E4C01 /* RatingControl.swift in Sources */,
@@ -239,8 +238,9 @@
 				93B36E631DDB8D3A00334F4A /* MealTableViewCell.swift in Sources */,
 				826EB3671E4B2FFA00568C8B /* calendarViewController.swift in Sources */,
 				826EB3651E4B2CC600568C8B /* CalendarCell.swift in Sources */,
+				820A28941E54000C00692080 /* Diary+CoreDataProperties.swift in Sources */,
 				820A288C1E53E9B200692080 /* Model.xcdatamodeld in Sources */,
-				820A28901E53EA2A00692080 /* Diary+CoreDataProperties.swift in Sources */,
+				820A28931E54000C00692080 /* Diary+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

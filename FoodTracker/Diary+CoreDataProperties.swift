@@ -16,9 +16,10 @@ extension Diary {
         return NSFetchRequest<Diary>(entityName: "Diary");
     }
 
+    @NSManaged public var coffeeName: String?
     @NSManaged public var date: NSDate?
-    @NSManaged public var foodName: String?
     @NSManaged public var img: String?
+    @NSManaged public var rating: Int16
     @NSManaged public var studyTime: Int16
 
 }
