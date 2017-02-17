@@ -107,12 +107,31 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Num: \(indexPath.row)")
         print("Selected: \(selectedDate)")
+        print(dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath))
+        
+        let formatter: DateFormatter = DateFormatter()
+        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+        
+        formatter.dateFormat = "yyyy/MM"
+        //formatter.string(from: date as Date)
+        
+        let selectMonth = formatter.string(from: selectedDate as Date)
+        
+        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+        formatter.dateFormat = "yyyy/MM/dd"
+        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+//        var tmpDate = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) as! NSDate
+        //時差を治す。
+//        formatter.timeZone = TimeZone.current
+        selectedDate = formatter.date(from: selectedDateTmp) as! NSDate
+        print("Selected: \(selectedDate)")
     }
 //    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        
 //        print("Num: \(indexPath.row)")
 //        
 //    }
+    
     
     
     func changeHeaderTitle() -> String {

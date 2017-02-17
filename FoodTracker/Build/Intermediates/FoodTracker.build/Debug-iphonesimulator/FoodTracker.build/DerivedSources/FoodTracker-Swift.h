@@ -211,28 +211,32 @@ SWIFT_CLASS("_TtC11FoodTracker17MealTableViewCell")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified nameLabel;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified photoImageView;
 @property (nonatomic, weak) IBOutlet RatingControl * _Null_unspecified ratingControl;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified dateView;
 - (void)awakeFromNib;
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSDictionary;
 @class UITableView;
-@class UIStoryboardSegue;
 @class NSBundle;
 
 SWIFT_CLASS("_TtC11FoodTracker23MealTableViewController")
 @interface MealTableViewController : UITableViewController
-@property (nonatomic, copy) NSArray<Meal *> * _Nonnull meals;
+@property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
+@property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic, copy) NSString * _Null_unspecified selectedImageURL;
+@property (nonatomic, copy) NSString * _Null_unspecified selectedName;
+@property (nonatomic, copy) NSDate * _Null_unspecified selectedDate;
 - (void)viewDidLoad;
+- (void)read;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)tableView:(UITableView * _Nonnull)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
-- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
-- (IBAction)unwindToMealListWithSender:(UIStoryboardSegue * _Nonnull)sender;
 - (nonnull instancetype)initWithStyle:(UITableViewStyle)style OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -242,6 +246,7 @@ SWIFT_CLASS("_TtC11FoodTracker23MealTableViewController")
 @class UITextField;
 @class UIImagePickerController;
 @class UIBarButtonItem;
+@class UIStoryboardSegue;
 @class UITapGestureRecognizer;
 
 SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
@@ -320,6 +325,53 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 - (NSString * _Nonnull)changeHeaderTitle;
 - (IBAction)tappedHeaderPrevBtn:(UIButton * _Nonnull)sender;
 - (IBAction)tappedHeaderNextBtn:(UIButton * _Nonnull)sender;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11FoodTracker23imageCollectionViewCell")
+@interface imageCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified image;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11FoodTracker19imageViewController")
+@interface imageViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDataSource, UICollectionViewDelegate>
+@property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
+@property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic) NSInteger count;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified imageCollection;
+- (void)viewDidLoad;
+- (void)read;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
+- (void)didReceiveMemoryWarning;
+- (CGSize)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC11FoodTracker18listViewController")
+@interface listViewController : UIViewController <UIScrollViewDelegate, UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
+@property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
+@property (nonatomic, copy) NSString * _Null_unspecified selectedImageURL;
+@property (nonatomic, copy) NSString * _Null_unspecified selectedName;
+@property (nonatomic, copy) NSDate * _Null_unspecified selectedDate;
+- (void)viewDidLoad;
+- (void)read;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (BOOL)tableView:(UITableView * _Nonnull)tableView canEditRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

@@ -6,84 +6,84 @@ provides-nominal:
 provides-member:
 - ["C11FoodTracker18MealViewController", ""]
 provides-dynamic-lookup:
-- "ratingControl"
 - "read"
-- "selectImageFromPhotoLibrary"
-- "textFieldDidBeginEditing"
-- "doneButtonAction"
-- "strURL"
-- "meal"
-- "myTitle"
-- "photoImageView"
-- "imagePickerController"
-- "studyTime"
-- "prepare"
-- "cancel"
-- "textView"
-- "myTextField"
-- "imagePickerControllerDidCancel"
 - "textFieldShouldBeginEditing"
 - "nameTextField"
+- "meal"
+- "imagePickerController"
+- "selectImageFromPhotoLibrary"
+- "cancel"
+- "ratingControl"
+- "strURL"
 - "num"
-- "textFieldDidEndEditing"
 - "saveButton"
-- "textFieldShouldReturn"
+- "textFieldDidEndEditing"
+- "imagePickerControllerDidCancel"
 - "viewDidLoad"
+- "textFieldDidBeginEditing"
+- "studyTime"
+- "myTitle"
+- "textFieldShouldReturn"
+- "prepare"
+- "textView"
+- "photoImageView"
+- "myTextField"
 - "tapSave"
+- "doneButtonAction"
 depends-top-level:
-- "NSArray"
-- !private "PHAsset"
-- "UINavigationControllerDelegate"
-- !private "PHFetchResult"
-- "UITextFieldDelegate"
-- "UIImagePickerControllerDelegate"
-- !private "NSEntityDescription"
-- "StringLiteralType"
-- !private "CGRect"
-- !private "UIToolbar"
-- !private "BooleanLiteralType"
-- "String"
-- "MealViewController"
 - !private "UIApplication"
-- !private "Array"
-- !private "UINavigationController"
-- !private "URL"
+- "Int"
+- !private "BooleanLiteralType"
+- !private "NSManagedObject"
+- !private "CGRect"
+- "StringLiteralType"
+- !private "CGSize"
+- !private "print"
 - "UIViewController"
-- "Meal"
-- !private "NSFetchRequest"
+- "Bool"
+- "UIImageView"
+- "UIImagePickerControllerDelegate"
+- "UITextFieldDelegate"
+- !private "URL"
+- "UINavigationControllerDelegate"
+- !private "NSEntityDescription"
+- !private "??"
 - !private "Diary"
+- "Meal"
+- !private "NSNumber"
+- !private "NSFetchRequest"
+- !private "UIKeyboardType"
+- !private "PHImageManager"
+- "UITapGestureRecognizer"
+- !private "AnyObject"
+- !private "UIToolbar"
+- "MealViewController"
+- !private "Date"
+- !private "Void"
+- "RatingControl"
+- !private "Selector"
+- !private "UINavigationController"
+- !private "PHFetchResult"
+- "String"
+- "UITextView"
+- "UIImagePickerController"
 - "UIBarButtonItem"
 - "AssignmentPrecedence"
 - !private "=="
 - !private "~="
-- !private "UIKeyboardType"
-- "CastingPrecedence"
-- !private "NSNumber"
-- !private "Date"
-- "UITapGestureRecognizer"
-- !private "print"
-- !private "!="
-- !private "Selector"
-- "RatingControl"
-- !private "AnyObject"
-- !private "fatalError"
 - !private "!"
-- !private "UIImage"
+- "NSArray"
+- "CastingPrecedence"
+- !private "fatalError"
 - "UIStoryboardSegue"
-- !private "??"
-- !private "PHImageManager"
-- !private "UIImagePickerControllerOriginalImage"
-- "UITextField"
-- !private "Void"
-- "Bool"
-- "UIImageView"
-- "UIImagePickerController"
-- "UITextView"
-- !private "UIImagePickerControllerReferenceURL"
-- "Int"
-- !private "NSManagedObject"
-- !private "CGSize"
+- !private "PHAsset"
 - !private "AppDelegate"
+- !private "!="
+- !private "Array"
+- "UITextField"
+- !private "UIImagePickerControllerReferenceURL"
+- !private "UIImage"
+- !private "UIImagePickerControllerOriginalImage"
 depends-member:
 - !private ["Ps9AnyObject", "CGRect"]
 - !private ["Ps9AnyObject", "CGSize"]
@@ -106,6 +106,7 @@ depends-member:
 - !private ["Ps9AnyObject", "UIToolbar"]
 - !private ["Ps9AnyObject", "URL"]
 - ["Ps9AnyObject", "cancel"]
+- !private ["Ps9AnyObject", "cornerRadius"]
 - ["Ps9AnyObject", "deinit"]
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "description"]
@@ -127,6 +128,7 @@ depends-member:
 - !private ["Ps9AnyObject", "isEmpty"]
 - !private ["Ps9AnyObject", "isEnabled"]
 - !private ["Ps9AnyObject", "keyboardType"]
+- !private ["Ps9AnyObject", "layer"]
 - ["Ps9AnyObject", "meal"]
 - ["Ps9AnyObject", "myTextField"]
 - ["Ps9AnyObject", "myTitle"]
@@ -142,6 +144,7 @@ depends-member:
 - !private ["Ps9AnyObject", "present"]
 - !private ["Ps9AnyObject", "presentingViewController"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "rating"]
 - ["Ps9AnyObject", "ratingControl"]
 - ["Ps9AnyObject", "read"]
 - !private ["Ps9AnyObject", "requestImage"]
@@ -149,6 +152,7 @@ depends-member:
 - !private ["Ps9AnyObject", "save"]
 - ["Ps9AnyObject", "saveButton"]
 - ["Ps9AnyObject", "selectImageFromPhotoLibrary"]
+- ["Ps9AnyObject", "selectedRating"]
 - !private ["Ps9AnyObject", "setItems"]
 - !private ["Ps9AnyObject", "setValue"]
 - !private ["Ps9AnyObject", "shared"]
@@ -201,17 +205,22 @@ depends-member:
 - !private ["Ps17BitwiseOperations", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["Sb", "deinit"]
+- !private ["CSo7CALayer", "cornerRadius"]
+- ["CSo7CALayer", "deinit"]
 - !private ["PSo15CALayerDelegate", "endEditing"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["PSo15CALayerDelegate", "init"]
 - !private ["PSo15CALayerDelegate", "inputAccessoryView"]
 - !private ["PSo15CALayerDelegate", "keyboardType"]
+- !private ["PSo15CALayerDelegate", "layer"]
+- !private ["PSo15CALayerDelegate", "rating"]
 - !private ["PSo15CALayerDelegate", "resignFirstResponder"]
 - !private ["PSo15CALayerDelegate", "setItems"]
 - !private ["PSo15CALayerDelegate", "sizeToFit"]
 - !private ["PSo15CALayerDelegate", "tag"]
 - !private ["PSo15CALayerDelegate", "text"]
+- !private ["PSo13CAMediaTiming", "cornerRadius"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC6CGRect", "deinit"]
 - !private ["VSC6CGRect", "init"]
@@ -248,6 +257,7 @@ depends-member:
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "append"]
 - ["Ps7CVarArg", "cancel"]
+- !private ["Ps7CVarArg", "cornerRadius"]
 - !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dismiss"]
@@ -268,6 +278,7 @@ depends-member:
 - !private ["Ps7CVarArg", "isEmpty"]
 - !private ["Ps7CVarArg", "isEnabled"]
 - !private ["Ps7CVarArg", "keyboardType"]
+- !private ["Ps7CVarArg", "layer"]
 - ["Ps7CVarArg", "meal"]
 - ["Ps7CVarArg", "myTextField"]
 - ["Ps7CVarArg", "myTitle"]
@@ -283,6 +294,7 @@ depends-member:
 - !private ["Ps7CVarArg", "present"]
 - !private ["Ps7CVarArg", "presentingViewController"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "rating"]
 - ["Ps7CVarArg", "ratingControl"]
 - ["Ps7CVarArg", "read"]
 - !private ["Ps7CVarArg", "requestImage"]
@@ -290,6 +302,7 @@ depends-member:
 - !private ["Ps7CVarArg", "save"]
 - ["Ps7CVarArg", "saveButton"]
 - ["Ps7CVarArg", "selectImageFromPhotoLibrary"]
+- ["Ps7CVarArg", "selectedRating"]
 - !private ["Ps7CVarArg", "setItems"]
 - !private ["Ps7CVarArg", "setValue"]
 - !private ["Ps7CVarArg", "shared"]
@@ -359,6 +372,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "append"]
 - ["Ps28CustomDebugStringConvertible", "cancel"]
+- !private ["Ps28CustomDebugStringConvertible", "cornerRadius"]
 - !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dismiss"]
@@ -379,6 +393,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "isEmpty"]
 - !private ["Ps28CustomDebugStringConvertible", "isEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "keyboardType"]
+- !private ["Ps28CustomDebugStringConvertible", "layer"]
 - ["Ps28CustomDebugStringConvertible", "meal"]
 - ["Ps28CustomDebugStringConvertible", "myTextField"]
 - ["Ps28CustomDebugStringConvertible", "myTitle"]
@@ -394,6 +409,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "present"]
 - !private ["Ps28CustomDebugStringConvertible", "presentingViewController"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "rating"]
 - ["Ps28CustomDebugStringConvertible", "ratingControl"]
 - ["Ps28CustomDebugStringConvertible", "read"]
 - !private ["Ps28CustomDebugStringConvertible", "requestImage"]
@@ -401,6 +417,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "save"]
 - ["Ps28CustomDebugStringConvertible", "saveButton"]
 - ["Ps28CustomDebugStringConvertible", "selectImageFromPhotoLibrary"]
+- ["Ps28CustomDebugStringConvertible", "selectedRating"]
 - !private ["Ps28CustomDebugStringConvertible", "setItems"]
 - !private ["Ps28CustomDebugStringConvertible", "setValue"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
@@ -478,6 +495,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "append"]
 - ["Ps23CustomStringConvertible", "cancel"]
+- !private ["Ps23CustomStringConvertible", "cornerRadius"]
 - !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dismiss"]
@@ -498,6 +516,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "isEmpty"]
 - !private ["Ps23CustomStringConvertible", "isEnabled"]
 - !private ["Ps23CustomStringConvertible", "keyboardType"]
+- !private ["Ps23CustomStringConvertible", "layer"]
 - ["Ps23CustomStringConvertible", "meal"]
 - ["Ps23CustomStringConvertible", "myTextField"]
 - ["Ps23CustomStringConvertible", "myTitle"]
@@ -513,6 +532,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "present"]
 - !private ["Ps23CustomStringConvertible", "presentingViewController"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "rating"]
 - ["Ps23CustomStringConvertible", "ratingControl"]
 - ["Ps23CustomStringConvertible", "read"]
 - !private ["Ps23CustomStringConvertible", "requestImage"]
@@ -520,6 +540,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "save"]
 - ["Ps23CustomStringConvertible", "saveButton"]
 - ["Ps23CustomStringConvertible", "selectImageFromPhotoLibrary"]
+- ["Ps23CustomStringConvertible", "selectedRating"]
 - !private ["Ps23CustomStringConvertible", "setItems"]
 - !private ["Ps23CustomStringConvertible", "setValue"]
 - !private ["Ps23CustomStringConvertible", "shared"]
@@ -577,6 +598,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "aspectFit"]
 - ["Ps9Equatable", "cancel"]
+- !private ["Ps9Equatable", "cornerRadius"]
 - !private ["Ps9Equatable", "decimalPad"]
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dismiss"]
@@ -599,6 +621,7 @@ depends-member:
 - !private ["Ps9Equatable", "isEmpty"]
 - !private ["Ps9Equatable", "isEnabled"]
 - !private ["Ps9Equatable", "keyboardType"]
+- !private ["Ps9Equatable", "layer"]
 - ["Ps9Equatable", "meal"]
 - ["Ps9Equatable", "myTextField"]
 - ["Ps9Equatable", "myTitle"]
@@ -615,6 +638,7 @@ depends-member:
 - !private ["Ps9Equatable", "present"]
 - !private ["Ps9Equatable", "presentingViewController"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "rating"]
 - ["Ps9Equatable", "ratingControl"]
 - ["Ps9Equatable", "read"]
 - !private ["Ps9Equatable", "requestImage"]
@@ -622,6 +646,7 @@ depends-member:
 - !private ["Ps9Equatable", "save"]
 - ["Ps9Equatable", "saveButton"]
 - ["Ps9Equatable", "selectImageFromPhotoLibrary"]
+- ["Ps9Equatable", "selectedRating"]
 - !private ["Ps9Equatable", "setItems"]
 - !private ["Ps9Equatable", "setValue"]
 - !private ["Ps9Equatable", "shared"]
@@ -693,6 +718,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "aspectFit"]
 - ["Ps8Hashable", "cancel"]
+- !private ["Ps8Hashable", "cornerRadius"]
 - !private ["Ps8Hashable", "decimalPad"]
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dismiss"]
@@ -715,6 +741,7 @@ depends-member:
 - !private ["Ps8Hashable", "isEmpty"]
 - !private ["Ps8Hashable", "isEnabled"]
 - !private ["Ps8Hashable", "keyboardType"]
+- !private ["Ps8Hashable", "layer"]
 - ["Ps8Hashable", "meal"]
 - ["Ps8Hashable", "myTextField"]
 - ["Ps8Hashable", "myTitle"]
@@ -731,6 +758,7 @@ depends-member:
 - !private ["Ps8Hashable", "present"]
 - !private ["Ps8Hashable", "presentingViewController"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "rating"]
 - ["Ps8Hashable", "ratingControl"]
 - ["Ps8Hashable", "read"]
 - !private ["Ps8Hashable", "requestImage"]
@@ -738,6 +766,7 @@ depends-member:
 - !private ["Ps8Hashable", "save"]
 - ["Ps8Hashable", "saveButton"]
 - ["Ps8Hashable", "selectImageFromPhotoLibrary"]
+- ["Ps8Hashable", "selectedRating"]
 - !private ["Ps8Hashable", "setItems"]
 - !private ["Ps8Hashable", "setValue"]
 - !private ["Ps8Hashable", "shared"]
@@ -859,6 +888,7 @@ depends-member:
 - ["C11FoodTracker18MealViewController", "read"]
 - ["C11FoodTracker18MealViewController", "saveButton"]
 - ["C11FoodTracker18MealViewController", "selectImageFromPhotoLibrary"]
+- ["C11FoodTracker18MealViewController", "selectedRating"]
 - ["C11FoodTracker18MealViewController", "strURL"]
 - ["C11FoodTracker18MealViewController", "studyTime"]
 - ["C11FoodTracker18MealViewController", "tapSave"]
@@ -914,6 +944,7 @@ depends-member:
 - !private ["PSo8NSCoding", "UIToolbar"]
 - !private ["PSo8NSCoding", "URL"]
 - ["PSo8NSCoding", "cancel"]
+- !private ["PSo8NSCoding", "cornerRadius"]
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dismiss"]
 - ["PSo8NSCoding", "doneButtonAction"]
@@ -930,6 +961,7 @@ depends-member:
 - !private ["PSo8NSCoding", "isEmpty"]
 - !private ["PSo8NSCoding", "isEnabled"]
 - !private ["PSo8NSCoding", "keyboardType"]
+- !private ["PSo8NSCoding", "layer"]
 - ["PSo8NSCoding", "meal"]
 - ["PSo8NSCoding", "myTextField"]
 - ["PSo8NSCoding", "myTitle"]
@@ -944,12 +976,14 @@ depends-member:
 - !private ["PSo8NSCoding", "present"]
 - !private ["PSo8NSCoding", "presentingViewController"]
 - !private ["PSo8NSCoding", "print"]
+- !private ["PSo8NSCoding", "rating"]
 - ["PSo8NSCoding", "ratingControl"]
 - ["PSo8NSCoding", "read"]
 - !private ["PSo8NSCoding", "resignFirstResponder"]
 - !private ["PSo8NSCoding", "save"]
 - ["PSo8NSCoding", "saveButton"]
 - ["PSo8NSCoding", "selectImageFromPhotoLibrary"]
+- ["PSo8NSCoding", "selectedRating"]
 - !private ["PSo8NSCoding", "setItems"]
 - !private ["PSo8NSCoding", "sizeToFit"]
 - !private ["PSo8NSCoding", "sourceType"]
@@ -1023,6 +1057,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "read"]
 - ["PSo26NSExtensionRequestHandling", "saveButton"]
 - ["PSo26NSExtensionRequestHandling", "selectImageFromPhotoLibrary"]
+- ["PSo26NSExtensionRequestHandling", "selectedRating"]
 - !private ["PSo26NSExtensionRequestHandling", "sourceType"]
 - ["PSo26NSExtensionRequestHandling", "strURL"]
 - ["PSo26NSExtensionRequestHandling", "studyTime"]
@@ -1095,6 +1130,7 @@ depends-member:
 - !private ["CSo8NSObject", "URL"]
 - !private ["CSo8NSObject", "Void"]
 - ["CSo8NSObject", "cancel"]
+- !private ["CSo8NSObject", "cornerRadius"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dismiss"]
 - ["CSo8NSObject", "doneButtonAction"]
@@ -1114,6 +1150,7 @@ depends-member:
 - !private ["CSo8NSObject", "isEmpty"]
 - !private ["CSo8NSObject", "isEnabled"]
 - !private ["CSo8NSObject", "keyboardType"]
+- !private ["CSo8NSObject", "layer"]
 - ["CSo8NSObject", "meal"]
 - ["CSo8NSObject", "myTextField"]
 - ["CSo8NSObject", "myTitle"]
@@ -1129,6 +1166,7 @@ depends-member:
 - !private ["CSo8NSObject", "present"]
 - !private ["CSo8NSObject", "presentingViewController"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "rating"]
 - ["CSo8NSObject", "ratingControl"]
 - ["CSo8NSObject", "read"]
 - !private ["CSo8NSObject", "requestImage"]
@@ -1136,6 +1174,7 @@ depends-member:
 - !private ["CSo8NSObject", "save"]
 - ["CSo8NSObject", "saveButton"]
 - ["CSo8NSObject", "selectImageFromPhotoLibrary"]
+- ["CSo8NSObject", "selectedRating"]
 - !private ["CSo8NSObject", "setItems"]
 - !private ["CSo8NSObject", "setValue"]
 - !private ["CSo8NSObject", "shared"]
@@ -1179,6 +1218,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "UIToolbar"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - ["PSo16NSObjectProtocol", "cancel"]
+- !private ["PSo16NSObjectProtocol", "cornerRadius"]
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dismiss"]
 - ["PSo16NSObjectProtocol", "doneButtonAction"]
@@ -1198,6 +1238,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "isEmpty"]
 - !private ["PSo16NSObjectProtocol", "isEnabled"]
 - !private ["PSo16NSObjectProtocol", "keyboardType"]
+- !private ["PSo16NSObjectProtocol", "layer"]
 - ["PSo16NSObjectProtocol", "meal"]
 - ["PSo16NSObjectProtocol", "myTextField"]
 - ["PSo16NSObjectProtocol", "myTitle"]
@@ -1213,6 +1254,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "present"]
 - !private ["PSo16NSObjectProtocol", "presentingViewController"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "rating"]
 - ["PSo16NSObjectProtocol", "ratingControl"]
 - ["PSo16NSObjectProtocol", "read"]
 - !private ["PSo16NSObjectProtocol", "requestImage"]
@@ -1220,6 +1262,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "save"]
 - ["PSo16NSObjectProtocol", "saveButton"]
 - ["PSo16NSObjectProtocol", "selectImageFromPhotoLibrary"]
+- ["PSo16NSObjectProtocol", "selectedRating"]
 - !private ["PSo16NSObjectProtocol", "setItems"]
 - !private ["PSo16NSObjectProtocol", "setValue"]
 - !private ["PSo16NSObjectProtocol", "shared"]
@@ -1289,6 +1332,8 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "append"]
 - !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "init"]
+- !private ["C11FoodTracker13RatingControl", "layer"]
+- !private ["C11FoodTracker13RatingControl", "rating"]
 - !private ["Ps16RawRepresentable", "aspectFit"]
 - !private ["Ps16RawRepresentable", "decimalPad"]
 - !private ["Ps16RawRepresentable", "done"]
@@ -1333,6 +1378,8 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "inputAccessoryView"]
 - !private ["PSo29UIAccessibilityIdentification", "isEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "keyboardType"]
+- !private ["PSo29UIAccessibilityIdentification", "layer"]
+- !private ["PSo29UIAccessibilityIdentification", "rating"]
 - !private ["PSo29UIAccessibilityIdentification", "resignFirstResponder"]
 - !private ["PSo29UIAccessibilityIdentification", "setItems"]
 - !private ["PSo29UIAccessibilityIdentification", "sizeToFit"]
@@ -1345,6 +1392,8 @@ depends-member:
 - !private ["PSo12UIAppearance", "inputAccessoryView"]
 - !private ["PSo12UIAppearance", "isEnabled"]
 - !private ["PSo12UIAppearance", "keyboardType"]
+- !private ["PSo12UIAppearance", "layer"]
+- !private ["PSo12UIAppearance", "rating"]
 - !private ["PSo12UIAppearance", "resignFirstResponder"]
 - !private ["PSo12UIAppearance", "setItems"]
 - !private ["PSo12UIAppearance", "sizeToFit"]
@@ -1383,6 +1432,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "inputAccessoryView"]
 - !private ["PSo21UIAppearanceContainer", "keyboardType"]
+- !private ["PSo21UIAppearanceContainer", "layer"]
 - ["PSo21UIAppearanceContainer", "meal"]
 - ["PSo21UIAppearanceContainer", "myTextField"]
 - ["PSo21UIAppearanceContainer", "myTitle"]
@@ -1397,11 +1447,13 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "present"]
 - !private ["PSo21UIAppearanceContainer", "presentingViewController"]
 - !private ["PSo21UIAppearanceContainer", "print"]
+- !private ["PSo21UIAppearanceContainer", "rating"]
 - ["PSo21UIAppearanceContainer", "ratingControl"]
 - ["PSo21UIAppearanceContainer", "read"]
 - !private ["PSo21UIAppearanceContainer", "resignFirstResponder"]
 - ["PSo21UIAppearanceContainer", "saveButton"]
 - ["PSo21UIAppearanceContainer", "selectImageFromPhotoLibrary"]
+- ["PSo21UIAppearanceContainer", "selectedRating"]
 - !private ["PSo21UIAppearanceContainer", "setItems"]
 - !private ["PSo21UIAppearanceContainer", "sizeToFit"]
 - !private ["PSo21UIAppearanceContainer", "sourceType"]
@@ -1484,6 +1536,7 @@ depends-member:
 - ["PSo18UIContentContainer", "read"]
 - ["PSo18UIContentContainer", "saveButton"]
 - ["PSo18UIContentContainer", "selectImageFromPhotoLibrary"]
+- ["PSo18UIContentContainer", "selectedRating"]
 - !private ["PSo18UIContentContainer", "sourceType"]
 - ["PSo18UIContentContainer", "strURL"]
 - ["PSo18UIContentContainer", "studyTime"]
@@ -1516,6 +1569,8 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "inputAccessoryView"]
 - !private ["PSo17UICoordinateSpace", "keyboardType"]
+- !private ["PSo17UICoordinateSpace", "layer"]
+- !private ["PSo17UICoordinateSpace", "rating"]
 - !private ["PSo17UICoordinateSpace", "resignFirstResponder"]
 - !private ["PSo17UICoordinateSpace", "setItems"]
 - !private ["PSo17UICoordinateSpace", "sizeToFit"]
@@ -1527,6 +1582,8 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "inputAccessoryView"]
 - !private ["PSo13UIDynamicItem", "keyboardType"]
+- !private ["PSo13UIDynamicItem", "layer"]
+- !private ["PSo13UIDynamicItem", "rating"]
 - !private ["PSo13UIDynamicItem", "resignFirstResponder"]
 - !private ["PSo13UIDynamicItem", "setItems"]
 - !private ["PSo13UIDynamicItem", "sizeToFit"]
@@ -1565,6 +1622,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "inputAccessoryView"]
 - !private ["PSo18UIFocusEnvironment", "keyboardType"]
+- !private ["PSo18UIFocusEnvironment", "layer"]
 - ["PSo18UIFocusEnvironment", "meal"]
 - ["PSo18UIFocusEnvironment", "myTextField"]
 - ["PSo18UIFocusEnvironment", "myTitle"]
@@ -1579,11 +1637,13 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "present"]
 - !private ["PSo18UIFocusEnvironment", "presentingViewController"]
 - !private ["PSo18UIFocusEnvironment", "print"]
+- !private ["PSo18UIFocusEnvironment", "rating"]
 - ["PSo18UIFocusEnvironment", "ratingControl"]
 - ["PSo18UIFocusEnvironment", "read"]
 - !private ["PSo18UIFocusEnvironment", "resignFirstResponder"]
 - ["PSo18UIFocusEnvironment", "saveButton"]
 - ["PSo18UIFocusEnvironment", "selectImageFromPhotoLibrary"]
+- ["PSo18UIFocusEnvironment", "selectedRating"]
 - !private ["PSo18UIFocusEnvironment", "setItems"]
 - !private ["PSo18UIFocusEnvironment", "sizeToFit"]
 - !private ["PSo18UIFocusEnvironment", "sourceType"]
@@ -1610,6 +1670,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "init"]
 - !private ["PSo11UIFocusItem", "inputAccessoryView"]
 - !private ["PSo11UIFocusItem", "keyboardType"]
+- !private ["PSo11UIFocusItem", "layer"]
+- !private ["PSo11UIFocusItem", "rating"]
 - !private ["PSo11UIFocusItem", "resignFirstResponder"]
 - !private ["PSo11UIFocusItem", "setItems"]
 - !private ["PSo11UIFocusItem", "sizeToFit"]
@@ -1656,6 +1718,7 @@ depends-member:
 - !private ["PSo31UIImagePickerControllerDelegate", "present"]
 - !private ["PSo31UIImagePickerControllerDelegate", "presentingViewController"]
 - !private ["PSo31UIImagePickerControllerDelegate", "print"]
+- !private ["PSo31UIImagePickerControllerDelegate", "ratingControl"]
 - !private ["PSo31UIImagePickerControllerDelegate", "read"]
 - !private ["PSo31UIImagePickerControllerDelegate", "saveButton"]
 - !private ["PSo31UIImagePickerControllerDelegate", "strURL"]
@@ -1721,6 +1784,7 @@ depends-member:
 - !private ["PSo30UINavigationControllerDelegate", "present"]
 - !private ["PSo30UINavigationControllerDelegate", "presentingViewController"]
 - !private ["PSo30UINavigationControllerDelegate", "print"]
+- !private ["PSo30UINavigationControllerDelegate", "ratingControl"]
 - !private ["PSo30UINavigationControllerDelegate", "read"]
 - !private ["PSo30UINavigationControllerDelegate", "saveButton"]
 - !private ["PSo30UINavigationControllerDelegate", "strURL"]
@@ -1784,6 +1848,7 @@ depends-member:
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "inputAccessoryView"]
 - !private ["CSo11UIResponder", "keyboardType"]
+- !private ["CSo11UIResponder", "layer"]
 - ["CSo11UIResponder", "meal"]
 - ["CSo11UIResponder", "myTextField"]
 - ["CSo11UIResponder", "myTitle"]
@@ -1799,11 +1864,13 @@ depends-member:
 - !private ["CSo11UIResponder", "present"]
 - !private ["CSo11UIResponder", "presentingViewController"]
 - !private ["CSo11UIResponder", "print"]
+- !private ["CSo11UIResponder", "rating"]
 - ["CSo11UIResponder", "ratingControl"]
 - ["CSo11UIResponder", "read"]
 - !private ["CSo11UIResponder", "resignFirstResponder"]
 - ["CSo11UIResponder", "saveButton"]
 - ["CSo11UIResponder", "selectImageFromPhotoLibrary"]
+- ["CSo11UIResponder", "selectedRating"]
 - !private ["CSo11UIResponder", "setItems"]
 - !private ["CSo11UIResponder", "shared"]
 - !private ["CSo11UIResponder", "sizeToFit"]
@@ -1857,6 +1924,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "inputAccessoryView"]
 - !private ["PSo30UIResponderStandardEditActions", "keyboardType"]
+- !private ["PSo30UIResponderStandardEditActions", "layer"]
 - ["PSo30UIResponderStandardEditActions", "meal"]
 - ["PSo30UIResponderStandardEditActions", "myTextField"]
 - ["PSo30UIResponderStandardEditActions", "myTitle"]
@@ -1872,11 +1940,13 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "present"]
 - !private ["PSo30UIResponderStandardEditActions", "presentingViewController"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
+- !private ["PSo30UIResponderStandardEditActions", "rating"]
 - ["PSo30UIResponderStandardEditActions", "ratingControl"]
 - ["PSo30UIResponderStandardEditActions", "read"]
 - !private ["PSo30UIResponderStandardEditActions", "resignFirstResponder"]
 - ["PSo30UIResponderStandardEditActions", "saveButton"]
 - ["PSo30UIResponderStandardEditActions", "selectImageFromPhotoLibrary"]
+- ["PSo30UIResponderStandardEditActions", "selectedRating"]
 - !private ["PSo30UIResponderStandardEditActions", "setItems"]
 - !private ["PSo30UIResponderStandardEditActions", "shared"]
 - !private ["PSo30UIResponderStandardEditActions", "sizeToFit"]
@@ -1898,6 +1968,8 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "view"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", ""]
+- !private ["CSo11UIStackView", "layer"]
+- !private ["CSo11UIStackView", "rating"]
 - !private ["PSo16UIStateRestoring", "CGRect"]
 - !private ["PSo16UIStateRestoring", "CGSize"]
 - !private ["PSo16UIStateRestoring", "Date"]
@@ -1944,6 +2016,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "read"]
 - ["PSo16UIStateRestoring", "saveButton"]
 - ["PSo16UIStateRestoring", "selectImageFromPhotoLibrary"]
+- ["PSo16UIStateRestoring", "selectedRating"]
 - !private ["PSo16UIStateRestoring", "sourceType"]
 - ["PSo16UIStateRestoring", "strURL"]
 - ["PSo16UIStateRestoring", "studyTime"]
@@ -2002,6 +2075,7 @@ depends-member:
 - !private ["PSo19UITextFieldDelegate", "present"]
 - !private ["PSo19UITextFieldDelegate", "presentingViewController"]
 - !private ["PSo19UITextFieldDelegate", "print"]
+- !private ["PSo19UITextFieldDelegate", "ratingControl"]
 - !private ["PSo19UITextFieldDelegate", "read"]
 - !private ["PSo19UITextFieldDelegate", "saveButton"]
 - !private ["PSo19UITextFieldDelegate", "strURL"]
@@ -2063,6 +2137,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "inputAccessoryView"]
 - !private ["PSo18UITraitEnvironment", "keyboardType"]
+- !private ["PSo18UITraitEnvironment", "layer"]
 - ["PSo18UITraitEnvironment", "meal"]
 - ["PSo18UITraitEnvironment", "myTextField"]
 - ["PSo18UITraitEnvironment", "myTitle"]
@@ -2077,11 +2152,13 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "present"]
 - !private ["PSo18UITraitEnvironment", "presentingViewController"]
 - !private ["PSo18UITraitEnvironment", "print"]
+- !private ["PSo18UITraitEnvironment", "rating"]
 - ["PSo18UITraitEnvironment", "ratingControl"]
 - ["PSo18UITraitEnvironment", "read"]
 - !private ["PSo18UITraitEnvironment", "resignFirstResponder"]
 - ["PSo18UITraitEnvironment", "saveButton"]
 - ["PSo18UITraitEnvironment", "selectImageFromPhotoLibrary"]
+- ["PSo18UITraitEnvironment", "selectedRating"]
 - !private ["PSo18UITraitEnvironment", "setItems"]
 - !private ["PSo18UITraitEnvironment", "sizeToFit"]
 - !private ["PSo18UITraitEnvironment", "sourceType"]
@@ -2108,6 +2185,8 @@ depends-member:
 - !private ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "inputAccessoryView"]
 - !private ["CSo6UIView", "keyboardType"]
+- !private ["CSo6UIView", "layer"]
+- !private ["CSo6UIView", "rating"]
 - !private ["CSo6UIView", "resignFirstResponder"]
 - !private ["CSo6UIView", "setItems"]
 - !private ["CSo6UIView", "sizeToFit"]
@@ -2176,6 +2255,7 @@ depends-member:
 - ["CSo16UIViewController", "read"]
 - ["CSo16UIViewController", "saveButton"]
 - ["CSo16UIViewController", "selectImageFromPhotoLibrary"]
+- ["CSo16UIViewController", "selectedRating"]
 - !private ["CSo16UIViewController", "sourceType"]
 - ["CSo16UIViewController", "strURL"]
 - ["CSo16UIViewController", "studyTime"]
@@ -2213,6 +2293,8 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "init"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "inputAccessoryView"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "keyboardType"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "layer"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "rating"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "resignFirstResponder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "setItems"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "sizeToFit"]
@@ -2263,6 +2345,7 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "aspectFit"]
 - ["Ps9_Hashable", "cancel"]
+- !private ["Ps9_Hashable", "cornerRadius"]
 - !private ["Ps9_Hashable", "decimalPad"]
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dismiss"]
@@ -2285,6 +2368,7 @@ depends-member:
 - !private ["Ps9_Hashable", "isEmpty"]
 - !private ["Ps9_Hashable", "isEnabled"]
 - !private ["Ps9_Hashable", "keyboardType"]
+- !private ["Ps9_Hashable", "layer"]
 - ["Ps9_Hashable", "meal"]
 - ["Ps9_Hashable", "myTextField"]
 - ["Ps9_Hashable", "myTitle"]
@@ -2301,6 +2385,7 @@ depends-member:
 - !private ["Ps9_Hashable", "present"]
 - !private ["Ps9_Hashable", "presentingViewController"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "rating"]
 - ["Ps9_Hashable", "ratingControl"]
 - ["Ps9_Hashable", "read"]
 - !private ["Ps9_Hashable", "requestImage"]
@@ -2308,6 +2393,7 @@ depends-member:
 - !private ["Ps9_Hashable", "save"]
 - ["Ps9_Hashable", "saveButton"]
 - ["Ps9_Hashable", "selectImageFromPhotoLibrary"]
+- ["Ps9_Hashable", "selectedRating"]
 - !private ["Ps9_Hashable", "setItems"]
 - !private ["Ps9_Hashable", "setValue"]
 - !private ["Ps9_Hashable", "shared"]
@@ -2365,7 +2451,9 @@ depends-nominal:
 - !private "Ps22BidirectionalIndexable"
 - !private "Ps17BitwiseOperations"
 - "Sb"
+- "CSo7CALayer"
 - !private "PSo15CALayerDelegate"
+- !private "PSo13CAMediaTiming"
 - "V12CoreGraphics7CGFloat"
 - "VSC6CGRect"
 - "VSC6CGSize"
@@ -2443,6 +2531,7 @@ depends-nominal:
 - !private "Vs5Range"
 - !private "Ps26RangeReplaceableCollection"
 - !private "Ps25RangeReplaceableIndexable"
+- !private "C11FoodTracker13RatingControl"
 - !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "V10ObjectiveC8Selector"
@@ -2483,6 +2572,7 @@ depends-nominal:
 - "PSo30UINavigationControllerDelegate"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
+- !private "CSo11UIStackView"
 - "PSo16UIStateRestoring"
 - "CSo17UIStoryboardSegue"
 - "CSo11UITextField"
@@ -2520,8 +2610,8 @@ depends-nominal:
 - !private "Ps14_SignedInteger"
 - !private "Ps11_Strideable"
 depends-dynamic-lookup:
-- !private "description"
 - !private "value"
+- !private "description"
 depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
@@ -2540,4 +2630,4 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "884349fb09243e3d37a14f872756711a"
+interface-hash: "eb8319679b770c6118568ee839e89349"

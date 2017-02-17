@@ -32,6 +32,7 @@ func monthLaterDate() -> Date {
         // 🔴修正前 return calendar.dateByAddingComponents(dateComponents, toDate: self, options: NSCalendarOptions(rawValue: 0))!
         return calendar.date(byAdding: dateComponents, to: self)!
     }
+    
 }
 
 class DateManager: NSObject {

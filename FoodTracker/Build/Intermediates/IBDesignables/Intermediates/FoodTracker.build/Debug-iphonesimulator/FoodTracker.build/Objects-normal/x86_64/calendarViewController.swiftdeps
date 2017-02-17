@@ -9,65 +9,69 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
-- "changeHeaderTitle"
 - "daysPerWeek"
-- "dateManager"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 - "headerPrevBtn"
-- "tappedHeaderNextBtn"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "lightBlue"
-- "calenderCollectionView"
-- "lightRed"
-- "weekArray"
 - "cellMargin"
-- "navigationBar"
-- "numberOfSections"
-- "tappedHeaderPrevBtn"
-- "didReceiveMemoryWarning"
-- "headerNextBtn"
+- "viewDidLoad"
 - "today"
 - "selectedDate"
-- "viewDidLoad"
+- "navigationBar"
+- "lightRed"
+- "tappedHeaderPrevBtn"
+- "didReceiveMemoryWarning"
+- "numberOfSections"
+- "headerNextBtn"
+- "changeHeaderTitle"
+- "weekArray"
+- "calenderCollectionView"
+- "lightBlue"
+- "dateManager"
+- "tappedHeaderNextBtn"
 depends-top-level:
-- "CastingPrecedence"
-- !private "=="
-- "IndexPath"
-- "DateManager"
-- "Int"
-- !private "UICollectionViewFlowLayout"
-- !private "DateFormatter"
-- "StringLiteralType"
-- !private "CalendarCell"
-- "UIColor"
-- !private "print"
-- "UICollectionView"
-- "CGSize"
-- "UICollectionViewDelegateFlowLayout"
 - "UICollectionViewCell"
-- "UICollectionViewDataSource"
-- "String"
-- "NSDate"
-- !private "/"
+- "StringLiteralType"
 - "UICollectionViewDelegate"
-- !private "%"
-- "Array"
-- !private "Date"
-- !private "*"
+- "String"
 - "UICollectionViewLayout"
-- "UIButton"
-- "NSIndexPath"
+- "CGSize"
+- !private "%"
+- !private "Locale"
+- !private "*"
+- !private "DateFormatter"
+- "Int"
 - "UIViewController"
-- !private "-"
-- "CGFloat"
+- !private "/"
+- "NSIndexPath"
+- "UIButton"
+- !private "UnicodeScalarType"
 - "UIBarButtonItem"
-- "AssignmentPrecedence"
+- "Array"
+- "UICollectionViewDataSource"
+- "IndexPath"
+- !private "+"
+- "DateManager"
 - "calendarViewController"
+- "CGFloat"
+- "UICollectionViewDelegateFlowLayout"
+- !private "UICollectionViewFlowLayout"
 - "UINavigationItem"
+- "UIColor"
+- "AssignmentPrecedence"
+- !private "=="
+- "CastingPrecedence"
+- !private "CalendarCell"
+- "UICollectionView"
+- "NSDate"
+- !private "NSLocale"
+- !private "-"
+- !private "print"
+- !private "Date"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -75,6 +79,7 @@ depends-member:
 - !private ["Ps9AnyObject", "DateFormatter"]
 - ["Ps9AnyObject", "DateManager"]
 - ["Ps9AnyObject", "NSDate"]
+- !private ["Ps9AnyObject", "NSLocale"]
 - !private ["Ps9AnyObject", "UICollectionViewFlowLayout"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "backgroundColor"]
@@ -84,6 +89,7 @@ depends-member:
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "conversionDateFormat"]
 - !private ["Ps9AnyObject", "dataSource"]
+- !private ["Ps9AnyObject", "date"]
 - !private ["Ps9AnyObject", "dateFormat"]
 - ["Ps9AnyObject", "dateManager"]
 - !private ["Ps9AnyObject", "daysAcquisition"]
@@ -100,6 +106,7 @@ depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "lightBlue"]
 - ["Ps9AnyObject", "lightRed"]
+- !private ["Ps9AnyObject", "locale"]
 - ["Ps9AnyObject", "navigationBar"]
 - !private ["Ps9AnyObject", "nextMonth"]
 - ["Ps9AnyObject", "numberOfSections"]
@@ -197,6 +204,7 @@ depends-member:
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
 - ["Ps7CVarArg", "NSDate"]
+- !private ["Ps7CVarArg", "NSLocale"]
 - !private ["Ps7CVarArg", "Stride"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UICollectionViewFlowLayout"]
@@ -210,6 +218,7 @@ depends-member:
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "conversionDateFormat"]
 - !private ["Ps7CVarArg", "dataSource"]
+- !private ["Ps7CVarArg", "date"]
 - !private ["Ps7CVarArg", "dateFormat"]
 - ["Ps7CVarArg", "dateManager"]
 - !private ["Ps7CVarArg", "daysAcquisition"]
@@ -226,6 +235,7 @@ depends-member:
 - ["Ps7CVarArg", "init"]
 - ["Ps7CVarArg", "lightBlue"]
 - ["Ps7CVarArg", "lightRed"]
+- !private ["Ps7CVarArg", "locale"]
 - ["Ps7CVarArg", "navigationBar"]
 - !private ["Ps7CVarArg", "nextMonth"]
 - ["Ps7CVarArg", "numberOfSections"]
@@ -288,6 +298,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - ["Ps28CustomDebugStringConvertible", "NSDate"]
+- !private ["Ps28CustomDebugStringConvertible", "NSLocale"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UICollectionViewFlowLayout"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
@@ -299,6 +310,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "conversionDateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
+- !private ["Ps28CustomDebugStringConvertible", "date"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
 - ["Ps28CustomDebugStringConvertible", "dateManager"]
 - !private ["Ps28CustomDebugStringConvertible", "daysAcquisition"]
@@ -315,6 +327,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "init"]
 - ["Ps28CustomDebugStringConvertible", "lightBlue"]
 - ["Ps28CustomDebugStringConvertible", "lightRed"]
+- !private ["Ps28CustomDebugStringConvertible", "locale"]
 - ["Ps28CustomDebugStringConvertible", "navigationBar"]
 - !private ["Ps28CustomDebugStringConvertible", "nextMonth"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
@@ -385,6 +398,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "NSDate"]
+- !private ["Ps23CustomStringConvertible", "NSLocale"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UICollectionViewFlowLayout"]
@@ -399,6 +413,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "conversionDateFormat"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
+- !private ["Ps23CustomStringConvertible", "date"]
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
 - ["Ps23CustomStringConvertible", "dateManager"]
 - !private ["Ps23CustomStringConvertible", "daysAcquisition"]
@@ -415,6 +430,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "init"]
 - ["Ps23CustomStringConvertible", "lightBlue"]
 - ["Ps23CustomStringConvertible", "lightRed"]
+- !private ["Ps23CustomStringConvertible", "locale"]
 - ["Ps23CustomStringConvertible", "navigationBar"]
 - !private ["Ps23CustomStringConvertible", "nextMonth"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
@@ -453,9 +469,11 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "white"]
 - ["Ps23CustomStringConvertible", ""]
 - ["V10Foundation4Date", "deinit"]
+- !private ["CSo13DateFormatter", "date"]
 - !private ["CSo13DateFormatter", "dateFormat"]
 - ["CSo13DateFormatter", "deinit"]
 - !private ["CSo13DateFormatter", "init"]
+- !private ["CSo13DateFormatter", "locale"]
 - !private ["CSo13DateFormatter", "string"]
 - !private ["C11FoodTracker11DateManager", "conversionDateFormat"]
 - !private ["C11FoodTracker11DateManager", "daysAcquisition"]
@@ -480,6 +498,7 @@ depends-member:
 - ["Ps9Equatable", "DateManager"]
 - !private ["Ps9Equatable", "IntegerLiteralType"]
 - ["Ps9Equatable", "NSDate"]
+- !private ["Ps9Equatable", "NSLocale"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UICollectionViewFlowLayout"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -492,6 +511,7 @@ depends-member:
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "conversionDateFormat"]
 - !private ["Ps9Equatable", "dataSource"]
+- !private ["Ps9Equatable", "date"]
 - !private ["Ps9Equatable", "dateFormat"]
 - ["Ps9Equatable", "dateManager"]
 - !private ["Ps9Equatable", "daysAcquisition"]
@@ -508,6 +528,7 @@ depends-member:
 - ["Ps9Equatable", "init"]
 - ["Ps9Equatable", "lightBlue"]
 - ["Ps9Equatable", "lightRed"]
+- !private ["Ps9Equatable", "locale"]
 - ["Ps9Equatable", "navigationBar"]
 - !private ["Ps9Equatable", "nextMonth"]
 - ["Ps9Equatable", "numberOfSections"]
@@ -566,8 +587,10 @@ depends-member:
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
+- !private ["CSo9Formatter", "date"]
 - !private ["CSo9Formatter", "dateFormat"]
 - !private ["CSo9Formatter", "init"]
+- !private ["CSo9Formatter", "locale"]
 - !private ["CSo9Formatter", "string"]
 - !private ["Ps8Hashable", "CGFloat"]
 - !private ["Ps8Hashable", "CGSize"]
@@ -575,6 +598,7 @@ depends-member:
 - ["Ps8Hashable", "DateManager"]
 - !private ["Ps8Hashable", "IntegerLiteralType"]
 - ["Ps8Hashable", "NSDate"]
+- !private ["Ps8Hashable", "NSLocale"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UICollectionViewFlowLayout"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -587,6 +611,7 @@ depends-member:
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "conversionDateFormat"]
 - !private ["Ps8Hashable", "dataSource"]
+- !private ["Ps8Hashable", "date"]
 - !private ["Ps8Hashable", "dateFormat"]
 - ["Ps8Hashable", "dateManager"]
 - !private ["Ps8Hashable", "daysAcquisition"]
@@ -603,6 +628,7 @@ depends-member:
 - ["Ps8Hashable", "init"]
 - ["Ps8Hashable", "lightBlue"]
 - ["Ps8Hashable", "lightRed"]
+- !private ["Ps8Hashable", "locale"]
 - ["Ps8Hashable", "navigationBar"]
 - !private ["Ps8Hashable", "nextMonth"]
 - ["Ps8Hashable", "numberOfSections"]
@@ -707,6 +733,7 @@ depends-member:
 - !private ["PSo8NSCoding", "DateFormatter"]
 - ["PSo8NSCoding", "DateManager"]
 - ["PSo8NSCoding", "NSDate"]
+- !private ["PSo8NSCoding", "NSLocale"]
 - !private ["PSo8NSCoding", "UICollectionViewFlowLayout"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "backgroundColor"]
@@ -715,6 +742,7 @@ depends-member:
 - ["PSo8NSCoding", "changeHeaderTitle"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "dataSource"]
+- !private ["PSo8NSCoding", "date"]
 - !private ["PSo8NSCoding", "dateFormat"]
 - ["PSo8NSCoding", "dateManager"]
 - ["PSo8NSCoding", "daysPerWeek"]
@@ -730,6 +758,7 @@ depends-member:
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "lightBlue"]
 - !private ["PSo8NSCoding", "lightRed"]
+- !private ["PSo8NSCoding", "locale"]
 - ["PSo8NSCoding", "navigationBar"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInCollectionView"]
@@ -763,11 +792,13 @@ depends-member:
 - !private ["PSo8NSCoding", "white"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "UIColor"]
+- !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
 - !private ["PSo9NSCopying", "gray"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightBlue"]
 - !private ["PSo9NSCopying", "lightRed"]
+- !private ["PSo9NSCopying", "locale"]
 - !private ["PSo9NSCopying", "string"]
 - !private ["PSo9NSCopying", "white"]
 - ["CSo6NSDate", "deinit"]
@@ -777,6 +808,7 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "DateFormatter"]
 - ["PSo26NSExtensionRequestHandling", "DateManager"]
 - ["PSo26NSExtensionRequestHandling", "NSDate"]
+- !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
 - !private ["PSo26NSExtensionRequestHandling", "UICollectionViewFlowLayout"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
 - ["PSo26NSExtensionRequestHandling", "calenderCollectionView"]
@@ -817,6 +849,8 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "weekArray"]
 - ["PSo26NSExtensionRequestHandling", ""]
 - ["CSo11NSIndexPath", "deinit"]
+- ["CSo8NSLocale", "deinit"]
+- !private ["CSo8NSLocale", "init"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGSize"]
@@ -826,8 +860,10 @@ depends-member:
 - ["CSo8NSObject", "DateManager"]
 - ["CSo8NSObject", "IndexPath"]
 - ["CSo8NSObject", "Int"]
+- !private ["CSo8NSObject", "Locale"]
 - ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSIndexPath"]
+- !private ["CSo8NSObject", "NSLocale"]
 - ["CSo8NSObject", "String"]
 - ["CSo8NSObject", "UIBarButtonItem"]
 - ["CSo8NSObject", "UIButton"]
@@ -844,6 +880,7 @@ depends-member:
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "conversionDateFormat"]
 - !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "date"]
 - !private ["CSo8NSObject", "dateFormat"]
 - ["CSo8NSObject", "dateManager"]
 - !private ["CSo8NSObject", "daysAcquisition"]
@@ -860,6 +897,7 @@ depends-member:
 - ["CSo8NSObject", "init"]
 - ["CSo8NSObject", "lightBlue"]
 - ["CSo8NSObject", "lightRed"]
+- !private ["CSo8NSObject", "locale"]
 - ["CSo8NSObject", "navigationBar"]
 - !private ["CSo8NSObject", "nextMonth"]
 - ["CSo8NSObject", "numberOfSections"]
@@ -898,6 +936,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "DateFormatter"]
 - ["PSo16NSObjectProtocol", "DateManager"]
 - ["PSo16NSObjectProtocol", "NSDate"]
+- !private ["PSo16NSObjectProtocol", "NSLocale"]
 - !private ["PSo16NSObjectProtocol", "UICollectionViewFlowLayout"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
@@ -907,6 +946,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "conversionDateFormat"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
+- !private ["PSo16NSObjectProtocol", "date"]
 - !private ["PSo16NSObjectProtocol", "dateFormat"]
 - ["PSo16NSObjectProtocol", "dateManager"]
 - !private ["PSo16NSObjectProtocol", "daysAcquisition"]
@@ -923,6 +963,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "init"]
 - ["PSo16NSObjectProtocol", "lightBlue"]
 - ["PSo16NSObjectProtocol", "lightRed"]
+- !private ["PSo16NSObjectProtocol", "locale"]
 - ["PSo16NSObjectProtocol", "navigationBar"]
 - !private ["PSo16NSObjectProtocol", "nextMonth"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
@@ -1057,6 +1098,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "DateFormatter"]
 - ["PSo21UIAppearanceContainer", "DateManager"]
 - ["PSo21UIAppearanceContainer", "NSDate"]
+- !private ["PSo21UIAppearanceContainer", "NSLocale"]
 - !private ["PSo21UIAppearanceContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
@@ -1120,6 +1162,7 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "DateFormatter"]
 - ["PSo26UICollectionViewDataSource", "DateManager"]
 - ["PSo26UICollectionViewDataSource", "NSDate"]
+- !private ["PSo26UICollectionViewDataSource", "NSLocale"]
 - !private ["PSo26UICollectionViewDataSource", "UICollectionViewFlowLayout"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "calenderCollectionView"]
@@ -1156,6 +1199,7 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "DateFormatter"]
 - ["PSo24UICollectionViewDelegate", "DateManager"]
 - ["PSo24UICollectionViewDelegate", "NSDate"]
+- !private ["PSo24UICollectionViewDelegate", "NSLocale"]
 - !private ["PSo24UICollectionViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "calenderCollectionView"]
@@ -1192,6 +1236,7 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "DateFormatter"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "DateManager"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "NSDate"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "NSLocale"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionViewFlowLayout"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "calenderCollectionView"]
@@ -1238,6 +1283,7 @@ depends-member:
 - !private ["PSo18UIContentContainer", "DateFormatter"]
 - ["PSo18UIContentContainer", "DateManager"]
 - ["PSo18UIContentContainer", "NSDate"]
+- !private ["PSo18UIContentContainer", "NSLocale"]
 - !private ["PSo18UIContentContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIContentContainer", "UIColor"]
 - ["PSo18UIContentContainer", "calenderCollectionView"]
@@ -1302,6 +1348,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "DateFormatter"]
 - ["PSo18UIFocusEnvironment", "DateManager"]
 - ["PSo18UIFocusEnvironment", "NSDate"]
+- !private ["PSo18UIFocusEnvironment", "NSLocale"]
 - !private ["PSo18UIFocusEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
@@ -1370,8 +1417,10 @@ depends-member:
 - ["CSo11UIResponder", "DateManager"]
 - ["CSo11UIResponder", "IndexPath"]
 - ["CSo11UIResponder", "Int"]
+- !private ["CSo11UIResponder", "Locale"]
 - ["CSo11UIResponder", "NSDate"]
 - ["CSo11UIResponder", "NSIndexPath"]
+- !private ["CSo11UIResponder", "NSLocale"]
 - ["CSo11UIResponder", "String"]
 - ["CSo11UIResponder", "UIBarButtonItem"]
 - ["CSo11UIResponder", "UIButton"]
@@ -1431,6 +1480,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "DateFormatter"]
 - ["PSo30UIResponderStandardEditActions", "DateManager"]
 - ["PSo30UIResponderStandardEditActions", "NSDate"]
+- !private ["PSo30UIResponderStandardEditActions", "NSLocale"]
 - !private ["PSo30UIResponderStandardEditActions", "UICollectionViewFlowLayout"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
@@ -1490,6 +1540,7 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "DateFormatter"]
 - ["PSo20UIScrollViewDelegate", "DateManager"]
 - ["PSo20UIScrollViewDelegate", "NSDate"]
+- !private ["PSo20UIScrollViewDelegate", "NSLocale"]
 - !private ["PSo20UIScrollViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "calenderCollectionView"]
@@ -1526,6 +1577,7 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "DateFormatter"]
 - ["PSo16UIStateRestoring", "DateManager"]
 - ["PSo16UIStateRestoring", "NSDate"]
+- !private ["PSo16UIStateRestoring", "NSLocale"]
 - !private ["PSo16UIStateRestoring", "UICollectionViewFlowLayout"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
 - ["PSo16UIStateRestoring", "calenderCollectionView"]
@@ -1570,6 +1622,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "DateFormatter"]
 - ["PSo18UITraitEnvironment", "DateManager"]
 - ["PSo18UITraitEnvironment", "NSDate"]
+- !private ["PSo18UITraitEnvironment", "NSLocale"]
 - !private ["PSo18UITraitEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
@@ -1635,8 +1688,10 @@ depends-member:
 - ["CSo16UIViewController", "DateManager"]
 - ["CSo16UIViewController", "IndexPath"]
 - ["CSo16UIViewController", "Int"]
+- !private ["CSo16UIViewController", "Locale"]
 - ["CSo16UIViewController", "NSDate"]
 - ["CSo16UIViewController", "NSIndexPath"]
+- !private ["CSo16UIViewController", "NSLocale"]
 - ["CSo16UIViewController", "String"]
 - ["CSo16UIViewController", "UIBarButtonItem"]
 - ["CSo16UIViewController", "UIButton"]
@@ -1734,6 +1789,7 @@ depends-member:
 - ["Ps9_Hashable", "DateManager"]
 - !private ["Ps9_Hashable", "IntegerLiteralType"]
 - ["Ps9_Hashable", "NSDate"]
+- !private ["Ps9_Hashable", "NSLocale"]
 - !private ["Ps9_Hashable", "Stride"]
 - !private ["Ps9_Hashable", "UICollectionViewFlowLayout"]
 - !private ["Ps9_Hashable", "UIColor"]
@@ -1746,6 +1802,7 @@ depends-member:
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "conversionDateFormat"]
 - !private ["Ps9_Hashable", "dataSource"]
+- !private ["Ps9_Hashable", "date"]
 - !private ["Ps9_Hashable", "dateFormat"]
 - ["Ps9_Hashable", "dateManager"]
 - !private ["Ps9_Hashable", "daysAcquisition"]
@@ -1762,6 +1819,7 @@ depends-member:
 - ["Ps9_Hashable", "init"]
 - ["Ps9_Hashable", "lightBlue"]
 - ["Ps9_Hashable", "lightRed"]
+- !private ["Ps9_Hashable", "locale"]
 - ["Ps9_Hashable", "navigationBar"]
 - !private ["Ps9_Hashable", "nextMonth"]
 - ["Ps9_Hashable", "numberOfSections"]
@@ -1837,8 +1895,10 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "DateManager"]
 - ["C11FoodTracker22calendarViewController", "IndexPath"]
 - ["C11FoodTracker22calendarViewController", "Int"]
+- !private ["C11FoodTracker22calendarViewController", "Locale"]
 - ["C11FoodTracker22calendarViewController", "NSDate"]
 - ["C11FoodTracker22calendarViewController", "NSIndexPath"]
+- !private ["C11FoodTracker22calendarViewController", "NSLocale"]
 - ["C11FoodTracker22calendarViewController", "String"]
 - ["C11FoodTracker22calendarViewController", "UIBarButtonItem"]
 - ["C11FoodTracker22calendarViewController", "UIButton"]
@@ -1950,6 +2010,7 @@ depends-nominal:
 - "CSo6NSDate"
 - "PSo26NSExtensionRequestHandling"
 - "CSo11NSIndexPath"
+- "CSo8NSLocale"
 - "PSo16NSMutableCopying"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
@@ -2037,6 +2098,11 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
 interface-hash: "9edf236d62deafd43ab2aa09aa338d84"

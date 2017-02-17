@@ -10,6 +10,10 @@
 		820A288C1E53E9B200692080 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 820A288A1E53E9B200692080 /* Model.xcdatamodeld */; };
 		820A28931E54000C00692080 /* Diary+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A28911E54000C00692080 /* Diary+CoreDataClass.swift */; };
 		820A28941E54000C00692080 /* Diary+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820A28921E54000C00692080 /* Diary+CoreDataProperties.swift */; };
+		820B4C191E55C5E600C796DD /* sample_coffee.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 820B4C181E55C5E600C796DD /* sample_coffee.JPG */; };
+		820B4C1B1E55C6CF00C796DD /* imageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B4C1A1E55C6CF00C796DD /* imageCollectionViewCell.swift */; };
+		820B4C1D1E565B6100C796DD /* imageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B4C1C1E565B6100C796DD /* imageViewController.swift */; };
+		820B4C1F1E5686E000C796DD /* listViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820B4C1E1E5686E000C796DD /* listViewController.swift */; };
 		826EB3631E4B2C9300568C8B /* DateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3621E4B2C9300568C8B /* DateManager.swift */; };
 		826EB3651E4B2CC600568C8B /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3641E4B2CC600568C8B /* CalendarCell.swift */; };
 		826EB3671E4B2FFA00568C8B /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826EB3661E4B2FFA00568C8B /* calendarViewController.swift */; };
@@ -39,6 +43,10 @@
 		820A288B1E53E9B200692080 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		820A28911E54000C00692080 /* Diary+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataClass.swift"; sourceTree = "<group>"; };
 		820A28921E54000C00692080 /* Diary+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Diary+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		820B4C181E55C5E600C796DD /* sample_coffee.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sample_coffee.JPG; path = ../../../sampleCollectionView/sampleCollectionView/sample_coffee.JPG; sourceTree = "<group>"; };
+		820B4C1A1E55C6CF00C796DD /* imageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageCollectionViewCell.swift; sourceTree = "<group>"; };
+		820B4C1C1E565B6100C796DD /* imageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = imageViewController.swift; sourceTree = "<group>"; };
+		820B4C1E1E5686E000C796DD /* listViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = listViewController.swift; sourceTree = "<group>"; };
 		826EB3621E4B2C9300568C8B /* DateManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateManager.swift; sourceTree = "<group>"; };
 		826EB3641E4B2CC600568C8B /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
 		826EB3661E4B2FFA00568C8B /* calendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +121,10 @@
 				826EB3641E4B2CC600568C8B /* CalendarCell.swift */,
 				826EB3661E4B2FFA00568C8B /* calendarViewController.swift */,
 				820A288A1E53E9B200692080 /* Model.xcdatamodeld */,
+				820B4C181E55C5E600C796DD /* sample_coffee.JPG */,
+				820B4C1A1E55C6CF00C796DD /* imageCollectionViewCell.swift */,
+				820B4C1C1E565B6100C796DD /* imageViewController.swift */,
+				820B4C1E1E5686E000C796DD /* listViewController.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
@@ -210,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				936B4B8C1DB54E8F0090E3EE /* LaunchScreen.storyboard in Resources */,
+				820B4C191E55C5E600C796DD /* sample_coffee.JPG in Resources */,
 				936B4B891DB54E8F0090E3EE /* Assets.xcassets in Resources */,
 				936B4B871DB54E8F0090E3EE /* Main.storyboard in Resources */,
 			);
@@ -230,8 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				826EB3631E4B2C9300568C8B /* DateManager.swift in Sources */,
+				820B4C1F1E5686E000C796DD /* listViewController.swift in Sources */,
 				939722391DD4ED9800ACC1D0 /* Meal.swift in Sources */,
+				820B4C1D1E565B6100C796DD /* imageViewController.swift in Sources */,
 				936B4B841DB54E8F0090E3EE /* MealViewController.swift in Sources */,
+				820B4C1B1E55C6CF00C796DD /* imageCollectionViewCell.swift in Sources */,
 				93E91EF11DCA8F83003E4C01 /* RatingControl.swift in Sources */,
 				936B4B821DB54E8F0090E3EE /* AppDelegate.swift in Sources */,
 				93B36E651DDBE63500334F4A /* MealTableViewController.swift in Sources */,
