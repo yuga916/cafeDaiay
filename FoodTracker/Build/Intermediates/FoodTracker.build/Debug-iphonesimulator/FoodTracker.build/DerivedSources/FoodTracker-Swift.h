@@ -313,6 +313,8 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerNextBtn;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerPrevBtn;
 @property (nonatomic, weak) IBOutlet UINavigationItem * _Null_unspecified navigationBar;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified coffeeFont;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeFont;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;

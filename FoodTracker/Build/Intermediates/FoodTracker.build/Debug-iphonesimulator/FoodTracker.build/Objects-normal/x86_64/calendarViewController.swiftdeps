@@ -9,69 +9,73 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
-- "didReceiveMemoryWarning"
-- "today"
-- "numberOfSections"
-- "selectedDate"
-- "headerPrevBtn"
-- "tappedHeaderNextBtn"
-- "cellMargin"
-- "navigationBar"
-- "lightRed"
-- "tappedHeaderPrevBtn"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "daysPerWeek"
-- "headerNextBtn"
-- "changeHeaderTitle"
-- "weekArray"
-- "viewDidLoad"
-- "calenderCollectionView"
 - "lightBlue"
+- "coffeeFont"
+- "today"
+- "tappedHeaderNextBtn"
+- "daysPerWeek"
+- "viewDidLoad"
+- "numberOfSections"
+- "lightRed"
+- "cellMargin"
+- "headerPrevBtn"
+- "timeFont"
+- "weekArray"
+- "selectedDate"
+- "calenderCollectionView"
+- "tappedHeaderPrevBtn"
 - "dateManager"
+- "changeHeaderTitle"
+- "didReceiveMemoryWarning"
+- "navigationBar"
+- "headerNextBtn"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
 depends-top-level:
-- "UICollectionViewDataSource"
-- "CastingPrecedence"
-- !private "UnicodeScalarType"
-- "UICollectionViewLayout"
-- "AssignmentPrecedence"
 - !private "=="
-- !private "Locale"
-- !private "%"
-- "UICollectionView"
-- !private "NSLocale"
 - "UIColor"
-- "CGFloat"
-- "calendarViewController"
+- "String"
+- !private "+"
+- !private "*"
+- "StringLiteralType"
 - "UIViewController"
-- "NSDate"
+- !private "CalendarCell"
+- "CGSize"
+- "calendarViewController"
+- "NSIndexPath"
+- !private "DateFormatter"
 - "UICollectionViewDelegate"
+- "DateManager"
+- "Int"
+- "UICollectionViewDataSource"
+- "Array"
+- "UICollectionView"
+- "CGFloat"
+- !private "/"
+- !private "UICollectionViewFlowLayout"
+- !private "-"
+- "UICollectionViewDelegateFlowLayout"
+- "UICollectionViewCell"
+- !private "UnicodeScalarType"
+- !private "NSLocale"
+- !private "UIFont"
 - !private "print"
 - "UIBarButtonItem"
-- "UICollectionViewDelegateFlowLayout"
-- !private "-"
-- "UIButton"
-- "Array"
-- "CGSize"
 - "UINavigationItem"
-- !private "*"
-- "String"
-- !private "UICollectionViewFlowLayout"
-- !private "Date"
-- "StringLiteralType"
-- !private "/"
-- !private "+"
-- !private "CalendarCell"
-- "UICollectionViewCell"
-- "DateManager"
+- !private "%"
+- "UICollectionViewLayout"
+- !private "Locale"
 - "IndexPath"
-- "NSIndexPath"
-- "Int"
-- !private "DateFormatter"
+- "UIButton"
+- !private "Date"
+- "CastingPrecedence"
+- "UILabel"
+- "AssignmentPrecedence"
+- "NSDate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -80,12 +84,15 @@ depends-member:
 - ["Ps9AnyObject", "DateManager"]
 - ["Ps9AnyObject", "NSDate"]
 - !private ["Ps9AnyObject", "NSLocale"]
+- !private ["Ps9AnyObject", "String"]
 - !private ["Ps9AnyObject", "UICollectionViewFlowLayout"]
 - !private ["Ps9AnyObject", "UIColor"]
+- !private ["Ps9AnyObject", "UIFont"]
 - !private ["Ps9AnyObject", "backgroundColor"]
 - ["Ps9AnyObject", "calenderCollectionView"]
 - ["Ps9AnyObject", "cellMargin"]
 - ["Ps9AnyObject", "changeHeaderTitle"]
+- ["Ps9AnyObject", "coffeeFont"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "conversionDateFormat"]
 - !private ["Ps9AnyObject", "dataSource"]
@@ -97,6 +104,9 @@ depends-member:
 - !private ["Ps9AnyObject", "delegate"]
 - !private ["Ps9AnyObject", "dequeueReusableCell"]
 - ["Ps9AnyObject", "didReceiveMemoryWarning"]
+- !private ["Ps9AnyObject", "font"]
+- !private ["Ps9AnyObject", "fontAwesome"]
+- !private ["Ps9AnyObject", "fontAwesomeIcon"]
 - !private ["Ps9AnyObject", "frame"]
 - !private ["Ps9AnyObject", "gray"]
 - ["Ps9AnyObject", "headerNextBtn"]
@@ -133,6 +143,7 @@ depends-member:
 - !private ["Ps9AnyObject", "text"]
 - !private ["Ps9AnyObject", "textColor"]
 - !private ["Ps9AnyObject", "textLabel"]
+- ["Ps9AnyObject", "timeFont"]
 - !private ["Ps9AnyObject", "title"]
 - ["Ps9AnyObject", "today"]
 - ["Ps9AnyObject", "viewDidLoad"]
@@ -184,6 +195,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "dataSource"]
 - !private ["PSo15CALayerDelegate", "delegate"]
 - !private ["PSo15CALayerDelegate", "dequeueReusableCell"]
+- !private ["PSo15CALayerDelegate", "font"]
 - !private ["PSo15CALayerDelegate", "frame"]
 - !private ["PSo15CALayerDelegate", "reloadData"]
 - !private ["PSo15CALayerDelegate", "text"]
@@ -206,15 +218,18 @@ depends-member:
 - ["Ps7CVarArg", "NSDate"]
 - !private ["Ps7CVarArg", "NSLocale"]
 - !private ["Ps7CVarArg", "Stride"]
+- !private ["Ps7CVarArg", "String"]
 - !private ["Ps7CVarArg", "SubSequence"]
 - !private ["Ps7CVarArg", "UICollectionViewFlowLayout"]
 - !private ["Ps7CVarArg", "UIColor"]
+- !private ["Ps7CVarArg", "UIFont"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - ["Ps7CVarArg", "calenderCollectionView"]
 - ["Ps7CVarArg", "cellMargin"]
 - ["Ps7CVarArg", "changeHeaderTitle"]
+- ["Ps7CVarArg", "coffeeFont"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "conversionDateFormat"]
 - !private ["Ps7CVarArg", "dataSource"]
@@ -226,6 +241,9 @@ depends-member:
 - !private ["Ps7CVarArg", "delegate"]
 - !private ["Ps7CVarArg", "dequeueReusableCell"]
 - ["Ps7CVarArg", "didReceiveMemoryWarning"]
+- !private ["Ps7CVarArg", "font"]
+- !private ["Ps7CVarArg", "fontAwesome"]
+- !private ["Ps7CVarArg", "fontAwesomeIcon"]
 - !private ["Ps7CVarArg", "frame"]
 - !private ["Ps7CVarArg", "gray"]
 - ["Ps7CVarArg", "headerNextBtn"]
@@ -263,6 +281,7 @@ depends-member:
 - !private ["Ps7CVarArg", "text"]
 - !private ["Ps7CVarArg", "textColor"]
 - !private ["Ps7CVarArg", "textLabel"]
+- ["Ps7CVarArg", "timeFont"]
 - !private ["Ps7CVarArg", "title"]
 - ["Ps7CVarArg", "today"]
 - ["Ps7CVarArg", "viewDidLoad"]
@@ -287,6 +306,7 @@ depends-member:
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - !private ["Ps10Comparable", "Stride"]
 - !private ["Ps10Comparable", "_DisabledRangeIndex"]
+- !private ["Ps10Comparable", "fontAwesomeIcon"]
 - ["Ps10Comparable", "init"]
 - !private ["Ps10Comparable", "row"]
 - !private ["Ps10Comparable", "section"]
@@ -299,14 +319,17 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
 - ["Ps28CustomDebugStringConvertible", "NSDate"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocale"]
+- !private ["Ps28CustomDebugStringConvertible", "String"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UICollectionViewFlowLayout"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
+- !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "calenderCollectionView"]
 - ["Ps28CustomDebugStringConvertible", "cellMargin"]
 - ["Ps28CustomDebugStringConvertible", "changeHeaderTitle"]
+- ["Ps28CustomDebugStringConvertible", "coffeeFont"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "conversionDateFormat"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
@@ -318,6 +341,9 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "delegate"]
 - !private ["Ps28CustomDebugStringConvertible", "dequeueReusableCell"]
 - ["Ps28CustomDebugStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps28CustomDebugStringConvertible", "font"]
+- !private ["Ps28CustomDebugStringConvertible", "fontAwesome"]
+- !private ["Ps28CustomDebugStringConvertible", "fontAwesomeIcon"]
 - !private ["Ps28CustomDebugStringConvertible", "frame"]
 - !private ["Ps28CustomDebugStringConvertible", "gray"]
 - ["Ps28CustomDebugStringConvertible", "headerNextBtn"]
@@ -358,6 +384,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "text"]
 - !private ["Ps28CustomDebugStringConvertible", "textColor"]
 - !private ["Ps28CustomDebugStringConvertible", "textLabel"]
+- ["Ps28CustomDebugStringConvertible", "timeFont"]
 - !private ["Ps28CustomDebugStringConvertible", "title"]
 - ["Ps28CustomDebugStringConvertible", "today"]
 - ["Ps28CustomDebugStringConvertible", "viewDidLoad"]
@@ -371,6 +398,7 @@ depends-member:
 - !private ["Ps29CustomPlaygroundQuickLookable", "Stride"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_DisabledRangeIndex"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
+- !private ["Ps29CustomPlaygroundQuickLookable", "fontAwesomeIcon"]
 - ["Ps29CustomPlaygroundQuickLookable", "init"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "size"]
 - !private ["Ps29CustomPlaygroundQuickLookable", "width"]
@@ -383,6 +411,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "fontAwesomeIcon"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "row"]
 - !private ["Ps17CustomReflectable", "section"]
@@ -400,9 +429,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "NSDate"]
 - !private ["Ps23CustomStringConvertible", "NSLocale"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
+- !private ["Ps23CustomStringConvertible", "String"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UICollectionViewFlowLayout"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
+- !private ["Ps23CustomStringConvertible", "UIFont"]
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
@@ -410,6 +441,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "calenderCollectionView"]
 - ["Ps23CustomStringConvertible", "cellMargin"]
 - ["Ps23CustomStringConvertible", "changeHeaderTitle"]
+- ["Ps23CustomStringConvertible", "coffeeFont"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "conversionDateFormat"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
@@ -421,6 +453,9 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "delegate"]
 - !private ["Ps23CustomStringConvertible", "dequeueReusableCell"]
 - ["Ps23CustomStringConvertible", "didReceiveMemoryWarning"]
+- !private ["Ps23CustomStringConvertible", "font"]
+- !private ["Ps23CustomStringConvertible", "fontAwesome"]
+- !private ["Ps23CustomStringConvertible", "fontAwesomeIcon"]
 - !private ["Ps23CustomStringConvertible", "frame"]
 - !private ["Ps23CustomStringConvertible", "gray"]
 - ["Ps23CustomStringConvertible", "headerNextBtn"]
@@ -460,6 +495,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "text"]
 - !private ["Ps23CustomStringConvertible", "textColor"]
 - !private ["Ps23CustomStringConvertible", "textLabel"]
+- ["Ps23CustomStringConvertible", "timeFont"]
 - !private ["Ps23CustomStringConvertible", "title"]
 - ["Ps23CustomStringConvertible", "today"]
 - ["Ps23CustomStringConvertible", "viewDidLoad"]
@@ -500,14 +536,19 @@ depends-member:
 - ["Ps9Equatable", "NSDate"]
 - !private ["Ps9Equatable", "NSLocale"]
 - !private ["Ps9Equatable", "Stride"]
+- !private ["Ps9Equatable", "String"]
 - !private ["Ps9Equatable", "UICollectionViewFlowLayout"]
 - !private ["Ps9Equatable", "UIColor"]
+- !private ["Ps9Equatable", "UIFont"]
 - !private ["Ps9Equatable", "_DisabledRangeIndex"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "backgroundColor"]
 - ["Ps9Equatable", "calenderCollectionView"]
 - ["Ps9Equatable", "cellMargin"]
 - ["Ps9Equatable", "changeHeaderTitle"]
+- !private ["Ps9Equatable", "clockO"]
+- !private ["Ps9Equatable", "coffee"]
+- ["Ps9Equatable", "coffeeFont"]
 - ["Ps9Equatable", "collectionView"]
 - !private ["Ps9Equatable", "conversionDateFormat"]
 - !private ["Ps9Equatable", "dataSource"]
@@ -519,6 +560,9 @@ depends-member:
 - !private ["Ps9Equatable", "delegate"]
 - !private ["Ps9Equatable", "dequeueReusableCell"]
 - ["Ps9Equatable", "didReceiveMemoryWarning"]
+- !private ["Ps9Equatable", "font"]
+- !private ["Ps9Equatable", "fontAwesome"]
+- !private ["Ps9Equatable", "fontAwesomeIcon"]
 - !private ["Ps9Equatable", "frame"]
 - !private ["Ps9Equatable", "gray"]
 - ["Ps9Equatable", "headerNextBtn"]
@@ -558,6 +602,7 @@ depends-member:
 - !private ["Ps9Equatable", "text"]
 - !private ["Ps9Equatable", "textColor"]
 - !private ["Ps9Equatable", "textLabel"]
+- ["Ps9Equatable", "timeFont"]
 - !private ["Ps9Equatable", "title"]
 - ["Ps9Equatable", "today"]
 - ["Ps9Equatable", "viewDidLoad"]
@@ -576,17 +621,24 @@ depends-member:
 - !private ["Ps25ExpressibleByArrayLiteral", "section"]
 - !private ["Ps25ExpressibleByArrayLiteral", "subscript"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "fontAwesomeIcon"]
 - ["Ps43ExpressibleByExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps25ExpressibleByFloatLiteral", "init"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "Stride"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "_DisabledRangeIndex"]
 - !private ["Ps27ExpressibleByIntegerLiteral", "init"]
+- !private ["Ps32ExpressibleByStringInterpolation", "fontAwesomeIcon"]
 - ["Ps32ExpressibleByStringInterpolation", "init"]
+- !private ["Ps26ExpressibleByStringLiteral", "fontAwesomeIcon"]
 - ["Ps26ExpressibleByStringLiteral", "init"]
+- !private ["Ps33ExpressibleByUnicodeScalarLiteral", "fontAwesomeIcon"]
 - ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
 - !private ["Sf", "deinit"]
 - !private ["Ps13FloatingPoint", "init"]
+- !private ["O17FontAwesome_swift11FontAwesome", "clockO"]
+- !private ["O17FontAwesome_swift11FontAwesome", "coffee"]
+- ["O17FontAwesome_swift11FontAwesome", "deinit"]
 - !private ["CSo9Formatter", "date"]
 - !private ["CSo9Formatter", "dateFormat"]
 - !private ["CSo9Formatter", "init"]
@@ -600,14 +652,19 @@ depends-member:
 - ["Ps8Hashable", "NSDate"]
 - !private ["Ps8Hashable", "NSLocale"]
 - !private ["Ps8Hashable", "Stride"]
+- !private ["Ps8Hashable", "String"]
 - !private ["Ps8Hashable", "UICollectionViewFlowLayout"]
 - !private ["Ps8Hashable", "UIColor"]
+- !private ["Ps8Hashable", "UIFont"]
 - !private ["Ps8Hashable", "_DisabledRangeIndex"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "backgroundColor"]
 - ["Ps8Hashable", "calenderCollectionView"]
 - ["Ps8Hashable", "cellMargin"]
 - ["Ps8Hashable", "changeHeaderTitle"]
+- !private ["Ps8Hashable", "clockO"]
+- !private ["Ps8Hashable", "coffee"]
+- ["Ps8Hashable", "coffeeFont"]
 - ["Ps8Hashable", "collectionView"]
 - !private ["Ps8Hashable", "conversionDateFormat"]
 - !private ["Ps8Hashable", "dataSource"]
@@ -619,6 +676,9 @@ depends-member:
 - !private ["Ps8Hashable", "delegate"]
 - !private ["Ps8Hashable", "dequeueReusableCell"]
 - ["Ps8Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps8Hashable", "font"]
+- !private ["Ps8Hashable", "fontAwesome"]
+- !private ["Ps8Hashable", "fontAwesomeIcon"]
 - !private ["Ps8Hashable", "frame"]
 - !private ["Ps8Hashable", "gray"]
 - ["Ps8Hashable", "headerNextBtn"]
@@ -657,6 +717,7 @@ depends-member:
 - !private ["Ps8Hashable", "text"]
 - !private ["Ps8Hashable", "textColor"]
 - !private ["Ps8Hashable", "textLabel"]
+- ["Ps8Hashable", "timeFont"]
 - !private ["Ps8Hashable", "title"]
 - ["Ps8Hashable", "today"]
 - ["Ps8Hashable", "viewDidLoad"]
@@ -706,10 +767,12 @@ depends-member:
 - !private ["Ps17IntegerArithmetic", "_DisabledRangeIndex"]
 - !private ["Ps16IteratorProtocol", "Element"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps25LosslessStringConvertible", "fontAwesomeIcon"]
 - ["Ps25LosslessStringConvertible", "init"]
 - !private ["Ps10MirrorPath", "IntegerLiteralType"]
 - !private ["Ps10MirrorPath", "Stride"]
 - !private ["Ps10MirrorPath", "_DisabledRangeIndex"]
+- !private ["Ps10MirrorPath", "fontAwesomeIcon"]
 - ["Ps10MirrorPath", "init"]
 - ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Index"]
@@ -734,12 +797,15 @@ depends-member:
 - ["PSo8NSCoding", "DateManager"]
 - ["PSo8NSCoding", "NSDate"]
 - !private ["PSo8NSCoding", "NSLocale"]
+- !private ["PSo8NSCoding", "String"]
 - !private ["PSo8NSCoding", "UICollectionViewFlowLayout"]
 - !private ["PSo8NSCoding", "UIColor"]
+- !private ["PSo8NSCoding", "UIFont"]
 - !private ["PSo8NSCoding", "backgroundColor"]
 - ["PSo8NSCoding", "calenderCollectionView"]
 - ["PSo8NSCoding", "cellMargin"]
 - ["PSo8NSCoding", "changeHeaderTitle"]
+- ["PSo8NSCoding", "coffeeFont"]
 - ["PSo8NSCoding", "collectionView"]
 - !private ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "date"]
@@ -749,6 +815,8 @@ depends-member:
 - !private ["PSo8NSCoding", "delegate"]
 - !private ["PSo8NSCoding", "dequeueReusableCell"]
 - ["PSo8NSCoding", "didReceiveMemoryWarning"]
+- !private ["PSo8NSCoding", "font"]
+- !private ["PSo8NSCoding", "fontAwesomeIcon"]
 - !private ["PSo8NSCoding", "frame"]
 - !private ["PSo8NSCoding", "gray"]
 - ["PSo8NSCoding", "headerNextBtn"]
@@ -783,6 +851,7 @@ depends-member:
 - !private ["PSo8NSCoding", "text"]
 - !private ["PSo8NSCoding", "textColor"]
 - !private ["PSo8NSCoding", "textLabel"]
+- ["PSo8NSCoding", "timeFont"]
 - !private ["PSo8NSCoding", "title"]
 - ["PSo8NSCoding", "today"]
 - ["PSo8NSCoding", "viewDidLoad"]
@@ -794,6 +863,8 @@ depends-member:
 - !private ["PSo9NSCopying", "UIColor"]
 - !private ["PSo9NSCopying", "date"]
 - !private ["PSo9NSCopying", "dateFormat"]
+- !private ["PSo9NSCopying", "fontAwesome"]
+- !private ["PSo9NSCopying", "fontAwesomeIcon"]
 - !private ["PSo9NSCopying", "gray"]
 - ["PSo9NSCopying", "init"]
 - !private ["PSo9NSCopying", "lightBlue"]
@@ -809,11 +880,14 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "DateManager"]
 - ["PSo26NSExtensionRequestHandling", "NSDate"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
+- !private ["PSo26NSExtensionRequestHandling", "String"]
 - !private ["PSo26NSExtensionRequestHandling", "UICollectionViewFlowLayout"]
 - !private ["PSo26NSExtensionRequestHandling", "UIColor"]
+- !private ["PSo26NSExtensionRequestHandling", "UIFont"]
 - ["PSo26NSExtensionRequestHandling", "calenderCollectionView"]
 - ["PSo26NSExtensionRequestHandling", "cellMargin"]
 - ["PSo26NSExtensionRequestHandling", "changeHeaderTitle"]
+- ["PSo26NSExtensionRequestHandling", "coffeeFont"]
 - ["PSo26NSExtensionRequestHandling", "collectionView"]
 - ["PSo26NSExtensionRequestHandling", "dateManager"]
 - ["PSo26NSExtensionRequestHandling", "daysPerWeek"]
@@ -842,6 +916,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "selectedDate"]
 - ["PSo26NSExtensionRequestHandling", "tappedHeaderNextBtn"]
 - ["PSo26NSExtensionRequestHandling", "tappedHeaderPrevBtn"]
+- ["PSo26NSExtensionRequestHandling", "timeFont"]
 - ["PSo26NSExtensionRequestHandling", "today"]
 - ["PSo26NSExtensionRequestHandling", "viewDidLoad"]
 - ["PSo26NSExtensionRequestHandling", "viewForZooming"]
@@ -851,6 +926,7 @@ depends-member:
 - ["CSo11NSIndexPath", "deinit"]
 - ["CSo8NSLocale", "deinit"]
 - !private ["CSo8NSLocale", "init"]
+- !private ["PSo16NSMutableCopying", "fontAwesomeIcon"]
 - ["PSo16NSMutableCopying", "init"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGSize"]
@@ -872,11 +948,14 @@ depends-member:
 - !private ["CSo8NSObject", "UICollectionViewFlowLayout"]
 - ["CSo8NSObject", "UICollectionViewLayout"]
 - ["CSo8NSObject", "UIColor"]
+- !private ["CSo8NSObject", "UIFont"]
+- ["CSo8NSObject", "UILabel"]
 - ["CSo8NSObject", "UINavigationItem"]
 - !private ["CSo8NSObject", "backgroundColor"]
 - ["CSo8NSObject", "calenderCollectionView"]
 - ["CSo8NSObject", "cellMargin"]
 - ["CSo8NSObject", "changeHeaderTitle"]
+- ["CSo8NSObject", "coffeeFont"]
 - ["CSo8NSObject", "collectionView"]
 - !private ["CSo8NSObject", "conversionDateFormat"]
 - !private ["CSo8NSObject", "dataSource"]
@@ -888,6 +967,9 @@ depends-member:
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "dequeueReusableCell"]
 - ["CSo8NSObject", "didReceiveMemoryWarning"]
+- !private ["CSo8NSObject", "font"]
+- !private ["CSo8NSObject", "fontAwesome"]
+- !private ["CSo8NSObject", "fontAwesomeIcon"]
 - !private ["CSo8NSObject", "frame"]
 - !private ["CSo8NSObject", "gray"]
 - ["CSo8NSObject", "headerNextBtn"]
@@ -924,6 +1006,7 @@ depends-member:
 - !private ["CSo8NSObject", "text"]
 - !private ["CSo8NSObject", "textColor"]
 - !private ["CSo8NSObject", "textLabel"]
+- ["CSo8NSObject", "timeFont"]
 - !private ["CSo8NSObject", "title"]
 - ["CSo8NSObject", "today"]
 - ["CSo8NSObject", "viewDidLoad"]
@@ -937,12 +1020,15 @@ depends-member:
 - ["PSo16NSObjectProtocol", "DateManager"]
 - ["PSo16NSObjectProtocol", "NSDate"]
 - !private ["PSo16NSObjectProtocol", "NSLocale"]
+- !private ["PSo16NSObjectProtocol", "String"]
 - !private ["PSo16NSObjectProtocol", "UICollectionViewFlowLayout"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
+- !private ["PSo16NSObjectProtocol", "UIFont"]
 - !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - ["PSo16NSObjectProtocol", "calenderCollectionView"]
 - ["PSo16NSObjectProtocol", "cellMargin"]
 - ["PSo16NSObjectProtocol", "changeHeaderTitle"]
+- ["PSo16NSObjectProtocol", "coffeeFont"]
 - ["PSo16NSObjectProtocol", "collectionView"]
 - !private ["PSo16NSObjectProtocol", "conversionDateFormat"]
 - !private ["PSo16NSObjectProtocol", "dataSource"]
@@ -954,6 +1040,9 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "delegate"]
 - !private ["PSo16NSObjectProtocol", "dequeueReusableCell"]
 - ["PSo16NSObjectProtocol", "didReceiveMemoryWarning"]
+- !private ["PSo16NSObjectProtocol", "font"]
+- !private ["PSo16NSObjectProtocol", "fontAwesome"]
+- !private ["PSo16NSObjectProtocol", "fontAwesomeIcon"]
 - !private ["PSo16NSObjectProtocol", "frame"]
 - !private ["PSo16NSObjectProtocol", "gray"]
 - ["PSo16NSObjectProtocol", "headerNextBtn"]
@@ -990,6 +1079,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "text"]
 - !private ["PSo16NSObjectProtocol", "textColor"]
 - !private ["PSo16NSObjectProtocol", "textLabel"]
+- ["PSo16NSObjectProtocol", "timeFont"]
 - !private ["PSo16NSObjectProtocol", "title"]
 - ["PSo16NSObjectProtocol", "today"]
 - ["PSo16NSObjectProtocol", "viewDidLoad"]
@@ -999,11 +1089,13 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "white"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "UIColor"]
+- !private ["PSo14NSSecureCoding", "fontAwesomeIcon"]
 - !private ["PSo14NSSecureCoding", "gray"]
 - ["PSo14NSSecureCoding", "init"]
 - !private ["PSo14NSSecureCoding", "lightBlue"]
 - !private ["PSo14NSSecureCoding", "lightRed"]
 - !private ["PSo14NSSecureCoding", "white"]
+- !private ["CSo8NSString", "fontAwesomeIcon"]
 - ["CSo8NSString", "init"]
 - ["Sq", "deinit"]
 - ["Ps22RandomAccessCollection", "Element"]
@@ -1044,6 +1136,8 @@ depends-member:
 - !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
+- !private ["Ps16RawRepresentable", "clockO"]
+- !private ["Ps16RawRepresentable", "coffee"]
 - !private ["P10Foundation20ReferenceConvertible", "row"]
 - !private ["P10Foundation20ReferenceConvertible", "section"]
 - ["Ps8Sequence", "Element"]
@@ -1072,13 +1166,17 @@ depends-member:
 - !private ["Ps10Strideable", "_DisabledRangeIndex"]
 - !private ["Ps10Strideable", "init"]
 - ["SS", "deinit"]
+- !private ["SS", "fontAwesomeIcon"]
 - ["SS", "init"]
+- !private ["Ps16TextOutputStream", "fontAwesomeIcon"]
 - ["Ps16TextOutputStream", "init"]
+- !private ["Ps20TextOutputStreamable", "fontAwesomeIcon"]
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "delegate"]
 - !private ["PSo29UIAccessibilityIdentification", "dequeueReusableCell"]
+- !private ["PSo29UIAccessibilityIdentification", "font"]
 - !private ["PSo29UIAccessibilityIdentification", "frame"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "text"]
@@ -1088,6 +1186,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "delegate"]
 - !private ["PSo12UIAppearance", "dequeueReusableCell"]
+- !private ["PSo12UIAppearance", "font"]
 - !private ["PSo12UIAppearance", "frame"]
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "text"]
@@ -1099,12 +1198,15 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "DateManager"]
 - ["PSo21UIAppearanceContainer", "NSDate"]
 - !private ["PSo21UIAppearanceContainer", "NSLocale"]
+- !private ["PSo21UIAppearanceContainer", "String"]
 - !private ["PSo21UIAppearanceContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
+- !private ["PSo21UIAppearanceContainer", "UIFont"]
 - !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - ["PSo21UIAppearanceContainer", "calenderCollectionView"]
 - ["PSo21UIAppearanceContainer", "cellMargin"]
 - ["PSo21UIAppearanceContainer", "changeHeaderTitle"]
+- ["PSo21UIAppearanceContainer", "coffeeFont"]
 - ["PSo21UIAppearanceContainer", "collectionView"]
 - !private ["PSo21UIAppearanceContainer", "dataSource"]
 - ["PSo21UIAppearanceContainer", "dateManager"]
@@ -1112,6 +1214,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "delegate"]
 - !private ["PSo21UIAppearanceContainer", "dequeueReusableCell"]
 - ["PSo21UIAppearanceContainer", "didReceiveMemoryWarning"]
+- !private ["PSo21UIAppearanceContainer", "font"]
 - !private ["PSo21UIAppearanceContainer", "frame"]
 - ["PSo21UIAppearanceContainer", "headerNextBtn"]
 - ["PSo21UIAppearanceContainer", "headerPrevBtn"]
@@ -1141,6 +1244,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "text"]
 - !private ["PSo21UIAppearanceContainer", "textColor"]
 - !private ["PSo21UIAppearanceContainer", "textLabel"]
+- ["PSo21UIAppearanceContainer", "timeFont"]
 - ["PSo21UIAppearanceContainer", "today"]
 - ["PSo21UIAppearanceContainer", "viewDidLoad"]
 - ["PSo21UIAppearanceContainer", "viewForZooming"]
@@ -1163,11 +1267,14 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "DateManager"]
 - ["PSo26UICollectionViewDataSource", "NSDate"]
 - !private ["PSo26UICollectionViewDataSource", "NSLocale"]
+- !private ["PSo26UICollectionViewDataSource", "String"]
 - !private ["PSo26UICollectionViewDataSource", "UICollectionViewFlowLayout"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
+- !private ["PSo26UICollectionViewDataSource", "UIFont"]
 - !private ["PSo26UICollectionViewDataSource", "calenderCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "cellMargin"]
 - !private ["PSo26UICollectionViewDataSource", "changeHeaderTitle"]
+- !private ["PSo26UICollectionViewDataSource", "coffeeFont"]
 - ["PSo26UICollectionViewDataSource", "collectionView"]
 - !private ["PSo26UICollectionViewDataSource", "dateManager"]
 - !private ["PSo26UICollectionViewDataSource", "daysPerWeek"]
@@ -1190,6 +1297,7 @@ depends-member:
 - ["PSo26UICollectionViewDataSource", "scrollViewWillBeginZooming"]
 - ["PSo26UICollectionViewDataSource", "scrollViewWillEndDragging"]
 - !private ["PSo26UICollectionViewDataSource", "selectedDate"]
+- !private ["PSo26UICollectionViewDataSource", "timeFont"]
 - ["PSo26UICollectionViewDataSource", "viewForZooming"]
 - ["PSo26UICollectionViewDataSource", "viewForZoomingInScrollView"]
 - !private ["PSo26UICollectionViewDataSource", "weekArray"]
@@ -1200,11 +1308,14 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "DateManager"]
 - ["PSo24UICollectionViewDelegate", "NSDate"]
 - !private ["PSo24UICollectionViewDelegate", "NSLocale"]
+- !private ["PSo24UICollectionViewDelegate", "String"]
 - !private ["PSo24UICollectionViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
+- !private ["PSo24UICollectionViewDelegate", "UIFont"]
 - !private ["PSo24UICollectionViewDelegate", "calenderCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "cellMargin"]
 - !private ["PSo24UICollectionViewDelegate", "changeHeaderTitle"]
+- !private ["PSo24UICollectionViewDelegate", "coffeeFont"]
 - ["PSo24UICollectionViewDelegate", "collectionView"]
 - !private ["PSo24UICollectionViewDelegate", "dateManager"]
 - !private ["PSo24UICollectionViewDelegate", "daysPerWeek"]
@@ -1227,6 +1338,7 @@ depends-member:
 - ["PSo24UICollectionViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo24UICollectionViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo24UICollectionViewDelegate", "selectedDate"]
+- !private ["PSo24UICollectionViewDelegate", "timeFont"]
 - ["PSo24UICollectionViewDelegate", "viewForZooming"]
 - ["PSo24UICollectionViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo24UICollectionViewDelegate", "weekArray"]
@@ -1237,11 +1349,14 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "DateManager"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "NSDate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSLocale"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "String"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionViewFlowLayout"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "UIFont"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "calenderCollectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellMargin"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "changeHeaderTitle"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "coffeeFont"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "collectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "dateManager"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "daysPerWeek"]
@@ -1264,6 +1379,7 @@ depends-member:
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillBeginZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "scrollViewWillEndDragging"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "selectedDate"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "timeFont"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZooming"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "viewForZoomingInScrollView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "weekArray"]
@@ -1284,11 +1400,14 @@ depends-member:
 - ["PSo18UIContentContainer", "DateManager"]
 - ["PSo18UIContentContainer", "NSDate"]
 - !private ["PSo18UIContentContainer", "NSLocale"]
+- !private ["PSo18UIContentContainer", "String"]
 - !private ["PSo18UIContentContainer", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIContentContainer", "UIColor"]
+- !private ["PSo18UIContentContainer", "UIFont"]
 - ["PSo18UIContentContainer", "calenderCollectionView"]
 - ["PSo18UIContentContainer", "cellMargin"]
 - ["PSo18UIContentContainer", "changeHeaderTitle"]
+- ["PSo18UIContentContainer", "coffeeFont"]
 - ["PSo18UIContentContainer", "collectionView"]
 - ["PSo18UIContentContainer", "dateManager"]
 - ["PSo18UIContentContainer", "daysPerWeek"]
@@ -1317,18 +1436,21 @@ depends-member:
 - ["PSo18UIContentContainer", "selectedDate"]
 - ["PSo18UIContentContainer", "tappedHeaderNextBtn"]
 - ["PSo18UIContentContainer", "tappedHeaderPrevBtn"]
+- ["PSo18UIContentContainer", "timeFont"]
 - ["PSo18UIContentContainer", "today"]
 - ["PSo18UIContentContainer", "viewDidLoad"]
 - ["PSo18UIContentContainer", "viewForZooming"]
 - ["PSo18UIContentContainer", "viewForZoomingInScrollView"]
 - ["PSo18UIContentContainer", "weekArray"]
 - ["PSo18UIContentContainer", ""]
+- !private ["PSo30UIContentSizeCategoryAdjusting", "font"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "text"]
 - !private ["PSo30UIContentSizeCategoryAdjusting", "textColor"]
 - !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "delegate"]
 - !private ["PSo17UICoordinateSpace", "dequeueReusableCell"]
+- !private ["PSo17UICoordinateSpace", "font"]
 - !private ["PSo17UICoordinateSpace", "frame"]
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "text"]
@@ -1338,6 +1460,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "delegate"]
 - !private ["PSo13UIDynamicItem", "dequeueReusableCell"]
+- !private ["PSo13UIDynamicItem", "font"]
 - !private ["PSo13UIDynamicItem", "frame"]
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "text"]
@@ -1349,12 +1472,15 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "DateManager"]
 - ["PSo18UIFocusEnvironment", "NSDate"]
 - !private ["PSo18UIFocusEnvironment", "NSLocale"]
+- !private ["PSo18UIFocusEnvironment", "String"]
 - !private ["PSo18UIFocusEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
+- !private ["PSo18UIFocusEnvironment", "UIFont"]
 - !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - ["PSo18UIFocusEnvironment", "calenderCollectionView"]
 - ["PSo18UIFocusEnvironment", "cellMargin"]
 - ["PSo18UIFocusEnvironment", "changeHeaderTitle"]
+- ["PSo18UIFocusEnvironment", "coffeeFont"]
 - ["PSo18UIFocusEnvironment", "collectionView"]
 - !private ["PSo18UIFocusEnvironment", "dataSource"]
 - ["PSo18UIFocusEnvironment", "dateManager"]
@@ -1362,6 +1488,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "delegate"]
 - !private ["PSo18UIFocusEnvironment", "dequeueReusableCell"]
 - ["PSo18UIFocusEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UIFocusEnvironment", "font"]
 - !private ["PSo18UIFocusEnvironment", "frame"]
 - ["PSo18UIFocusEnvironment", "headerNextBtn"]
 - ["PSo18UIFocusEnvironment", "headerPrevBtn"]
@@ -1391,6 +1518,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "text"]
 - !private ["PSo18UIFocusEnvironment", "textColor"]
 - !private ["PSo18UIFocusEnvironment", "textLabel"]
+- ["PSo18UIFocusEnvironment", "timeFont"]
 - ["PSo18UIFocusEnvironment", "today"]
 - ["PSo18UIFocusEnvironment", "viewDidLoad"]
 - ["PSo18UIFocusEnvironment", "viewForZooming"]
@@ -1401,11 +1529,15 @@ depends-member:
 - !private ["PSo11UIFocusItem", "dataSource"]
 - !private ["PSo11UIFocusItem", "delegate"]
 - !private ["PSo11UIFocusItem", "dequeueReusableCell"]
+- !private ["PSo11UIFocusItem", "font"]
 - !private ["PSo11UIFocusItem", "frame"]
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo11UIFocusItem", "textColor"]
 - !private ["PSo11UIFocusItem", "textLabel"]
+- ["CSo6UIFont", "deinit"]
+- !private ["CSo6UIFont", "fontAwesome"]
+- !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textColor"]
 - !private ["CSo16UINavigationItem", "title"]
@@ -1429,11 +1561,14 @@ depends-member:
 - !private ["CSo11UIResponder", "UICollectionViewFlowLayout"]
 - ["CSo11UIResponder", "UICollectionViewLayout"]
 - !private ["CSo11UIResponder", "UIColor"]
+- !private ["CSo11UIResponder", "UIFont"]
+- ["CSo11UIResponder", "UILabel"]
 - ["CSo11UIResponder", "UINavigationItem"]
 - !private ["CSo11UIResponder", "backgroundColor"]
 - ["CSo11UIResponder", "calenderCollectionView"]
 - ["CSo11UIResponder", "cellMargin"]
 - ["CSo11UIResponder", "changeHeaderTitle"]
+- ["CSo11UIResponder", "coffeeFont"]
 - ["CSo11UIResponder", "collectionView"]
 - !private ["CSo11UIResponder", "dataSource"]
 - ["CSo11UIResponder", "dateManager"]
@@ -1441,6 +1576,7 @@ depends-member:
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "dequeueReusableCell"]
 - ["CSo11UIResponder", "didReceiveMemoryWarning"]
+- !private ["CSo11UIResponder", "font"]
 - !private ["CSo11UIResponder", "frame"]
 - ["CSo11UIResponder", "headerNextBtn"]
 - ["CSo11UIResponder", "headerPrevBtn"]
@@ -1470,6 +1606,7 @@ depends-member:
 - !private ["CSo11UIResponder", "text"]
 - !private ["CSo11UIResponder", "textColor"]
 - !private ["CSo11UIResponder", "textLabel"]
+- ["CSo11UIResponder", "timeFont"]
 - ["CSo11UIResponder", "today"]
 - ["CSo11UIResponder", "viewDidLoad"]
 - ["CSo11UIResponder", "viewForZooming"]
@@ -1481,12 +1618,15 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "DateManager"]
 - ["PSo30UIResponderStandardEditActions", "NSDate"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLocale"]
+- !private ["PSo30UIResponderStandardEditActions", "String"]
 - !private ["PSo30UIResponderStandardEditActions", "UICollectionViewFlowLayout"]
 - !private ["PSo30UIResponderStandardEditActions", "UIColor"]
+- !private ["PSo30UIResponderStandardEditActions", "UIFont"]
 - !private ["PSo30UIResponderStandardEditActions", "backgroundColor"]
 - ["PSo30UIResponderStandardEditActions", "calenderCollectionView"]
 - ["PSo30UIResponderStandardEditActions", "cellMargin"]
 - ["PSo30UIResponderStandardEditActions", "changeHeaderTitle"]
+- ["PSo30UIResponderStandardEditActions", "coffeeFont"]
 - ["PSo30UIResponderStandardEditActions", "collectionView"]
 - !private ["PSo30UIResponderStandardEditActions", "dataSource"]
 - ["PSo30UIResponderStandardEditActions", "dateManager"]
@@ -1494,6 +1634,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "delegate"]
 - !private ["PSo30UIResponderStandardEditActions", "dequeueReusableCell"]
 - ["PSo30UIResponderStandardEditActions", "didReceiveMemoryWarning"]
+- !private ["PSo30UIResponderStandardEditActions", "font"]
 - !private ["PSo30UIResponderStandardEditActions", "frame"]
 - ["PSo30UIResponderStandardEditActions", "headerNextBtn"]
 - ["PSo30UIResponderStandardEditActions", "headerPrevBtn"]
@@ -1523,6 +1664,7 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "text"]
 - !private ["PSo30UIResponderStandardEditActions", "textColor"]
 - !private ["PSo30UIResponderStandardEditActions", "textLabel"]
+- ["PSo30UIResponderStandardEditActions", "timeFont"]
 - ["PSo30UIResponderStandardEditActions", "today"]
 - ["PSo30UIResponderStandardEditActions", "viewDidLoad"]
 - ["PSo30UIResponderStandardEditActions", "viewForZooming"]
@@ -1541,11 +1683,14 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "DateManager"]
 - ["PSo20UIScrollViewDelegate", "NSDate"]
 - !private ["PSo20UIScrollViewDelegate", "NSLocale"]
+- !private ["PSo20UIScrollViewDelegate", "String"]
 - !private ["PSo20UIScrollViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
+- !private ["PSo20UIScrollViewDelegate", "UIFont"]
 - !private ["PSo20UIScrollViewDelegate", "calenderCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "cellMargin"]
 - !private ["PSo20UIScrollViewDelegate", "changeHeaderTitle"]
+- !private ["PSo20UIScrollViewDelegate", "coffeeFont"]
 - ["PSo20UIScrollViewDelegate", "collectionView"]
 - !private ["PSo20UIScrollViewDelegate", "dateManager"]
 - !private ["PSo20UIScrollViewDelegate", "daysPerWeek"]
@@ -1568,6 +1713,7 @@ depends-member:
 - ["PSo20UIScrollViewDelegate", "scrollViewWillBeginZooming"]
 - ["PSo20UIScrollViewDelegate", "scrollViewWillEndDragging"]
 - !private ["PSo20UIScrollViewDelegate", "selectedDate"]
+- !private ["PSo20UIScrollViewDelegate", "timeFont"]
 - ["PSo20UIScrollViewDelegate", "viewForZooming"]
 - ["PSo20UIScrollViewDelegate", "viewForZoomingInScrollView"]
 - !private ["PSo20UIScrollViewDelegate", "weekArray"]
@@ -1578,11 +1724,14 @@ depends-member:
 - ["PSo16UIStateRestoring", "DateManager"]
 - ["PSo16UIStateRestoring", "NSDate"]
 - !private ["PSo16UIStateRestoring", "NSLocale"]
+- !private ["PSo16UIStateRestoring", "String"]
 - !private ["PSo16UIStateRestoring", "UICollectionViewFlowLayout"]
 - !private ["PSo16UIStateRestoring", "UIColor"]
+- !private ["PSo16UIStateRestoring", "UIFont"]
 - ["PSo16UIStateRestoring", "calenderCollectionView"]
 - ["PSo16UIStateRestoring", "cellMargin"]
 - ["PSo16UIStateRestoring", "changeHeaderTitle"]
+- ["PSo16UIStateRestoring", "coffeeFont"]
 - ["PSo16UIStateRestoring", "collectionView"]
 - ["PSo16UIStateRestoring", "dateManager"]
 - ["PSo16UIStateRestoring", "daysPerWeek"]
@@ -1611,6 +1760,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "selectedDate"]
 - ["PSo16UIStateRestoring", "tappedHeaderNextBtn"]
 - ["PSo16UIStateRestoring", "tappedHeaderPrevBtn"]
+- ["PSo16UIStateRestoring", "timeFont"]
 - ["PSo16UIStateRestoring", "today"]
 - ["PSo16UIStateRestoring", "viewDidLoad"]
 - ["PSo16UIStateRestoring", "viewForZooming"]
@@ -1623,12 +1773,15 @@ depends-member:
 - ["PSo18UITraitEnvironment", "DateManager"]
 - ["PSo18UITraitEnvironment", "NSDate"]
 - !private ["PSo18UITraitEnvironment", "NSLocale"]
+- !private ["PSo18UITraitEnvironment", "String"]
 - !private ["PSo18UITraitEnvironment", "UICollectionViewFlowLayout"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
+- !private ["PSo18UITraitEnvironment", "UIFont"]
 - !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - ["PSo18UITraitEnvironment", "calenderCollectionView"]
 - ["PSo18UITraitEnvironment", "cellMargin"]
 - ["PSo18UITraitEnvironment", "changeHeaderTitle"]
+- ["PSo18UITraitEnvironment", "coffeeFont"]
 - ["PSo18UITraitEnvironment", "collectionView"]
 - !private ["PSo18UITraitEnvironment", "dataSource"]
 - ["PSo18UITraitEnvironment", "dateManager"]
@@ -1636,6 +1789,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "delegate"]
 - !private ["PSo18UITraitEnvironment", "dequeueReusableCell"]
 - ["PSo18UITraitEnvironment", "didReceiveMemoryWarning"]
+- !private ["PSo18UITraitEnvironment", "font"]
 - !private ["PSo18UITraitEnvironment", "frame"]
 - ["PSo18UITraitEnvironment", "headerNextBtn"]
 - ["PSo18UITraitEnvironment", "headerPrevBtn"]
@@ -1665,6 +1819,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "text"]
 - !private ["PSo18UITraitEnvironment", "textColor"]
 - !private ["PSo18UITraitEnvironment", "textLabel"]
+- ["PSo18UITraitEnvironment", "timeFont"]
 - ["PSo18UITraitEnvironment", "today"]
 - ["PSo18UITraitEnvironment", "viewDidLoad"]
 - ["PSo18UITraitEnvironment", "viewForZooming"]
@@ -1675,6 +1830,7 @@ depends-member:
 - !private ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "dequeueReusableCell"]
+- !private ["CSo6UIView", "font"]
 - !private ["CSo6UIView", "frame"]
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "text"]
@@ -1700,10 +1856,13 @@ depends-member:
 - !private ["CSo16UIViewController", "UICollectionViewFlowLayout"]
 - ["CSo16UIViewController", "UICollectionViewLayout"]
 - !private ["CSo16UIViewController", "UIColor"]
+- !private ["CSo16UIViewController", "UIFont"]
+- ["CSo16UIViewController", "UILabel"]
 - ["CSo16UIViewController", "UINavigationItem"]
 - ["CSo16UIViewController", "calenderCollectionView"]
 - ["CSo16UIViewController", "cellMargin"]
 - ["CSo16UIViewController", "changeHeaderTitle"]
+- ["CSo16UIViewController", "coffeeFont"]
 - ["CSo16UIViewController", "collectionView"]
 - ["CSo16UIViewController", "dateManager"]
 - ["CSo16UIViewController", "daysPerWeek"]
@@ -1733,6 +1892,7 @@ depends-member:
 - ["CSo16UIViewController", "selectedDate"]
 - ["CSo16UIViewController", "tappedHeaderNextBtn"]
 - ["CSo16UIViewController", "tappedHeaderPrevBtn"]
+- ["CSo16UIViewController", "timeFont"]
 - ["CSo16UIViewController", "today"]
 - ["CSo16UIViewController", "viewDidLoad"]
 - ["CSo16UIViewController", "viewForZooming"]
@@ -1757,6 +1917,7 @@ depends-member:
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dataSource"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "delegate"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "dequeueReusableCell"]
+- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "font"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "frame"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "reloadData"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "text"]
@@ -1769,12 +1930,16 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
+- !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "fontAwesomeIcon"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "IntegerLiteralType"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "Stride"]
 - !private ["Ps35_ExpressibleByBuiltinIntegerLiteral", "_DisabledRangeIndex"]
+- !private ["Ps34_ExpressibleByBuiltinStringLiteral", "fontAwesomeIcon"]
 - ["Ps34_ExpressibleByBuiltinStringLiteral", "init"]
+- !private ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "fontAwesomeIcon"]
 - ["Ps39_ExpressibleByBuiltinUTF16StringLiteral", "init"]
+- !private ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "fontAwesomeIcon"]
 - ["Ps41_ExpressibleByBuiltinUnicodeScalarLiteral", "init"]
 - !private ["Ps26_ExpressibleByColorLiteral", "UIColor"]
 - !private ["Ps26_ExpressibleByColorLiteral", "gray"]
@@ -1782,6 +1947,7 @@ depends-member:
 - !private ["Ps26_ExpressibleByColorLiteral", "lightBlue"]
 - !private ["Ps26_ExpressibleByColorLiteral", "lightRed"]
 - !private ["Ps26_ExpressibleByColorLiteral", "white"]
+- !private ["Ps35_HasCustomAnyHashableRepresentation", "fontAwesomeIcon"]
 - ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "CGFloat"]
 - !private ["Ps9_Hashable", "CGSize"]
@@ -1791,14 +1957,19 @@ depends-member:
 - ["Ps9_Hashable", "NSDate"]
 - !private ["Ps9_Hashable", "NSLocale"]
 - !private ["Ps9_Hashable", "Stride"]
+- !private ["Ps9_Hashable", "String"]
 - !private ["Ps9_Hashable", "UICollectionViewFlowLayout"]
 - !private ["Ps9_Hashable", "UIColor"]
+- !private ["Ps9_Hashable", "UIFont"]
 - !private ["Ps9_Hashable", "_DisabledRangeIndex"]
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "backgroundColor"]
 - ["Ps9_Hashable", "calenderCollectionView"]
 - ["Ps9_Hashable", "cellMargin"]
 - ["Ps9_Hashable", "changeHeaderTitle"]
+- !private ["Ps9_Hashable", "clockO"]
+- !private ["Ps9_Hashable", "coffee"]
+- ["Ps9_Hashable", "coffeeFont"]
 - ["Ps9_Hashable", "collectionView"]
 - !private ["Ps9_Hashable", "conversionDateFormat"]
 - !private ["Ps9_Hashable", "dataSource"]
@@ -1810,6 +1981,9 @@ depends-member:
 - !private ["Ps9_Hashable", "delegate"]
 - !private ["Ps9_Hashable", "dequeueReusableCell"]
 - ["Ps9_Hashable", "didReceiveMemoryWarning"]
+- !private ["Ps9_Hashable", "font"]
+- !private ["Ps9_Hashable", "fontAwesome"]
+- !private ["Ps9_Hashable", "fontAwesomeIcon"]
 - !private ["Ps9_Hashable", "frame"]
 - !private ["Ps9_Hashable", "gray"]
 - ["Ps9_Hashable", "headerNextBtn"]
@@ -1848,6 +2022,7 @@ depends-member:
 - !private ["Ps9_Hashable", "text"]
 - !private ["Ps9_Hashable", "textColor"]
 - !private ["Ps9_Hashable", "textLabel"]
+- ["Ps9_Hashable", "timeFont"]
 - !private ["Ps9_Hashable", "title"]
 - ["Ps9_Hashable", "today"]
 - ["Ps9_Hashable", "viewDidLoad"]
@@ -1874,6 +2049,7 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "fontAwesomeIcon"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
 - !private ["Ps21_ObjectiveCBridgeable", "section"]
@@ -1907,10 +2083,13 @@ depends-member:
 - !private ["C11FoodTracker22calendarViewController", "UICollectionViewFlowLayout"]
 - ["C11FoodTracker22calendarViewController", "UICollectionViewLayout"]
 - !private ["C11FoodTracker22calendarViewController", "UIColor"]
+- !private ["C11FoodTracker22calendarViewController", "UIFont"]
+- ["C11FoodTracker22calendarViewController", "UILabel"]
 - ["C11FoodTracker22calendarViewController", "UINavigationItem"]
 - ["C11FoodTracker22calendarViewController", "calenderCollectionView"]
 - ["C11FoodTracker22calendarViewController", "cellMargin"]
 - ["C11FoodTracker22calendarViewController", "changeHeaderTitle"]
+- ["C11FoodTracker22calendarViewController", "coffeeFont"]
 - ["C11FoodTracker22calendarViewController", "collectionView"]
 - ["C11FoodTracker22calendarViewController", "dateManager"]
 - ["C11FoodTracker22calendarViewController", "daysPerWeek"]
@@ -1940,6 +2119,7 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "selectedDate"]
 - ["C11FoodTracker22calendarViewController", "tappedHeaderNextBtn"]
 - ["C11FoodTracker22calendarViewController", "tappedHeaderPrevBtn"]
+- ["C11FoodTracker22calendarViewController", "timeFont"]
 - ["C11FoodTracker22calendarViewController", "today"]
 - ["C11FoodTracker22calendarViewController", "viewDidLoad"]
 - ["C11FoodTracker22calendarViewController", "viewForZooming"]
@@ -1985,6 +2165,7 @@ depends-nominal:
 - "Ps33ExpressibleByUnicodeScalarLiteral"
 - !private "Sf"
 - !private "Ps13FloatingPoint"
+- "O17FontAwesome_swift11FontAwesome"
 - !private "CSo9Formatter"
 - "Ps8Hashable"
 - "SQ"
@@ -2022,6 +2203,7 @@ depends-nominal:
 - !private "Vs17RandomAccessSlice"
 - "Ps26RangeReplaceableCollection"
 - "Ps25RangeReplaceableIndexable"
+- !private "Ps16RawRepresentable"
 - !private "P10Foundation20ReferenceConvertible"
 - "Ps8Sequence"
 - !private "Ps13SignedInteger"
@@ -2049,6 +2231,7 @@ depends-nominal:
 - !private "PSo13UIDynamicItem"
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
+- "CSo6UIFont"
 - !private "CSo7UILabel"
 - !private "CSo16UINavigationItem"
 - "CSo11UIResponder"
@@ -2098,11 +2281,15 @@ depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
-- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Photos.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/AVFoundation.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreMedia.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreAudio.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "9edf236d62deafd43ab2aa09aa338d84"
+- "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/os.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/FontAwesome_swift.swiftmodule/x86_64.swiftmodule"
+- "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome_swift-Swift.h"
+- "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Headers/FontAwesome.swift-umbrella.h"
+- "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Products/Debug-iphonesimulator/FontAwesome.swift/FontAwesome_swift.framework/Modules/module.modulemap"
+interface-hash: "4c0da1eec66c09bcaf905c497638764d"

@@ -6,13 +6,13 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		JsDow4FSFu/Ldd5pKuouHrTDmCs=
+		hDZv7xTEnyZYPMtXPliHPzL76bU=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8g4OrckB5KAH0rwi1v90NwZ2PNc=
+			aeNcNb2Kn/uwPzlX691XxpOou+E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -30,7 +30,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DYjbyY67AVn6u39jtSaLdelej9A=
+			IMAHftDynhhBdoOJGlFFNff7WWo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -39,7 +39,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eYFa2ngRBvDVaz0Y5vXvmoy8yOA=
+			uq/BB/lRKXd04xh6Fax5yX6zWbo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -48,7 +48,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e/u3ueFwuPYt0et+N3o5qvfpUIs=
+			KoxHsBWObHbO7sKDjuofXO3qo4E=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -57,7 +57,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ULM3O5rER2NKTp6Vwijgut6/Fp0=
+			qlEd0DeqLaKMn/f0CES+QEQ2PSc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iLUptB2eIQ2bUxKv1xBkJtEreHI=
+			eeL0/eNsv0og5tFYM0EZNdSTzXg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -84,7 +84,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8Vi2BF2QXJbSqlAaXhZXRP0PDww=
+			4L1E3XmAq4XmZWnaxmGnil1VctI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -93,11 +93,51 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bl2O/v+mdGmZ3aKDEFbPsompmP0=
+			Jl2eGuHdto+ZhyzxmaffMkQ8lMA=
 			</data>
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/FontAwesome.otf</key>
+		<data>
+		GyLxf9w4Bw3lDm0as6Mtpxqi2Bk=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/Info.plist</key>
+		<data>
+		5BlgRRJMsi5QaW5iTH32s7Ramz8=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeDirectory</key>
+		<data>
+		YpF6MwBDI9uUKrfGgL5knSd7S2c=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeRequirements</key>
+		<data>
+		OnX22wWFKRSOFN1+obRynMCeyXM=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeRequirements-1</key>
+		<data>
+		R119nBhZG9dgTCCm4iO9eEDUIDI=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeResources</key>
+		<data>
+		c4bMbg9grAs8vkADRmtmyELzCBU=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeSignature</key>
+		<data>
+		2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome_swift</key>
+		<data>
+		5QIOPiYOrDLuc2+S73LIM1YgqVg=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/Info.plist</key>
+		<data>
+		f2As6xP55MjkWWscfudBOoHi8l4=
+		</data>
+		<key>Frameworks/FontAwesome_swift.framework/_CodeSignature/CodeResources</key>
+		<data>
+		sPxx7EMZ5QjMizII1flF73CUuCo=
+		</data>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<data>
 		C222uRCAIsR5Zhj9EwdQIxCayec=
@@ -168,7 +208,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		PopQYVJDPK7JparBz9ftL3dy0+k=
+		RNS8r6z1RPmtDJ0aqOpYTje0uoo=
 		</data>
 		<key>Model.momd/Model.mom</key>
 		<data>
@@ -197,22 +237,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			JsDow4FSFu/Ldd5pKuouHrTDmCs=
+			hDZv7xTEnyZYPMtXPliHPzL76bU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zaGhVcFeOvlJC9uv+bwog0yECnVEjVzJap9OAbNQjEc=
+			yoAxskIN+XoL0deShe3qNXWC7ykHVdO/TybKh15207w=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			8g4OrckB5KAH0rwi1v90NwZ2PNc=
+			aeNcNb2Kn/uwPzlX691XxpOou+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			Gnh0n4Vfm6soNNqw2cz4ZNx3/RGhNvbnH9epCLzEAog=
+			B3VuKMsZ4ZMaMl8f7p/yav7aix4H+Cf8Wi+06R4ayBg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -234,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DYjbyY67AVn6u39jtSaLdelej9A=
+			IMAHftDynhhBdoOJGlFFNff7WWo=
 			</data>
 			<key>hash2</key>
 			<data>
-			31bs3POTlEDzUQCVG2kAzaIP1+8Hz/iXt578U3mcSYA=
+			bOaVs9HcCMMtTSd/27aYHXmxeFqTsUDqAESBk+N0MZU=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -247,11 +287,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			eYFa2ngRBvDVaz0Y5vXvmoy8yOA=
+			uq/BB/lRKXd04xh6Fax5yX6zWbo=
 			</data>
 			<key>hash2</key>
 			<data>
-			ptns6De2m9sKfz7HATtD9Fgb/v8nPdniAOqBmmqCkQI=
+			WeKeetGgDxPucqzFW8ypEoGH6UaKGl9caSzHDa3yDSs=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -260,11 +300,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e/u3ueFwuPYt0et+N3o5qvfpUIs=
+			KoxHsBWObHbO7sKDjuofXO3qo4E=
 			</data>
 			<key>hash2</key>
 			<data>
-			UYps1gczK1i2QcdxABaazVW7gsTCotvPuKEzeOHlsEI=
+			pkzvFeTaKt+bkHj8U4YeJA/imlJhYxOJzU9dSl21Gjk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -273,11 +313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ULM3O5rER2NKTp6Vwijgut6/Fp0=
+			qlEd0DeqLaKMn/f0CES+QEQ2PSc=
 			</data>
 			<key>hash2</key>
 			<data>
-			He+eBfo+hS4e1WR3hn9X8dUyyTXqRTPXRj0PHyV5dYs=
+			8+Lg49TT/NMjx6NQMt1njveXtekualbVe1yMrzZ6q9U=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -286,11 +326,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			iLUptB2eIQ2bUxKv1xBkJtEreHI=
+			eeL0/eNsv0og5tFYM0EZNdSTzXg=
 			</data>
 			<key>hash2</key>
 			<data>
-			4frwbHvrfR6CahdAsKeNRQpYMbmDSBOi9V7XrSQE4xY=
+			OboKA6edcjIuGKajio+z7y1cgksWVOsScfYy2Lp8tK8=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -312,11 +352,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			8Vi2BF2QXJbSqlAaXhZXRP0PDww=
+			4L1E3XmAq4XmZWnaxmGnil1VctI=
 			</data>
 			<key>hash2</key>
 			<data>
-			D+DsfJnevdBzSAv5PoNHo+pcHl77Ef5ih4kSWCdBjBw=
+			JskYCvJ225rta1v0EAReFdkBxPl5u9SiK4JaigTgIWk=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -325,14 +365,124 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bl2O/v+mdGmZ3aKDEFbPsompmP0=
+			Jl2eGuHdto+ZhyzxmaffMkQ8lMA=
 			</data>
 			<key>hash2</key>
 			<data>
-			HcfWq0qeMjA1taF3j66pkH9JJzLs+62s/Dc11xYXCnk=
+			9njiaSrYbtOw5l++BvmzGY0fbVgPAd0/FbA38BluW6U=
 			</data>
 			<key>optional</key>
 			<true/>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/FontAwesome.otf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GyLxf9w4Bw3lDm0as6Mtpxqi2Bk=
+			</data>
+			<key>hash2</key>
+			<data>
+			7NcvMZEKjuJyb9F71Fm+JvIwd58/PtX2nr+CnksS52g=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5BlgRRJMsi5QaW5iTH32s7Ramz8=
+			</data>
+			<key>hash2</key>
+			<data>
+			nk7QK5EOm4EvYgAL4QbcK4sbYTmRUmGL6aP8yy0jRek=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeDirectory</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YpF6MwBDI9uUKrfGgL5knSd7S2c=
+			</data>
+			<key>hash2</key>
+			<data>
+			1yRLiOqZzLdi6QUTvxru44xNuXd5YLtHrsaXSTL75ME=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeRequirements</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			OnX22wWFKRSOFN1+obRynMCeyXM=
+			</data>
+			<key>hash2</key>
+			<data>
+			mHkgkE6rZQ51eIwFSqCwUk5qgL/HGqMt+NI3phdD+YY=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeRequirements-1</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			R119nBhZG9dgTCCm4iO9eEDUIDI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Oj5B4oT265FOLSpYhNYQT6WtyzyEDz3lOlTdPNmiWXo=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			c4bMbg9grAs8vkADRmtmyELzCBU=
+			</data>
+			<key>hash2</key>
+			<data>
+			tufTpd1trfd04/OzYkOg/7Ux+oOP5JcsfdCz8J3Bd24=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome.swift.bundle/_CodeSignature/CodeSignature</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2jmj7l5rSw0yVb/vlWAYkK/YBwk=
+			</data>
+			<key>hash2</key>
+			<data>
+			47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/FontAwesome_swift</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			5QIOPiYOrDLuc2+S73LIM1YgqVg=
+			</data>
+			<key>hash2</key>
+			<data>
+			doBroXIKzuro5xVnZkZRMaQVhUwxyRHXWL+RYt7t4Nk=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			f2As6xP55MjkWWscfudBOoHi8l4=
+			</data>
+			<key>hash2</key>
+			<data>
+			p19g9ETtCogAc/kdr4sXemZ5cG3m+3ZOxjliUInCXyo=
+			</data>
+		</dict>
+		<key>Frameworks/FontAwesome_swift.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			sPxx7EMZ5QjMizII1flF73CUuCo=
+			</data>
+			<key>hash2</key>
+			<data>
+			eurwT81cqig8z3uXwYl2VbiCDaVz4s9Eiy/VJwGCEFg=
+			</data>
 		</dict>
 		<key>Frameworks/libswiftAVFoundation.dylib</key>
 		<dict>

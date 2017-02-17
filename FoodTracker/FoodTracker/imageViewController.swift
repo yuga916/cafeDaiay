@@ -73,7 +73,7 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
         var imgDic = cafeArray[indexPath.row] as! NSDictionary
         var AImage: UIImage!
         if imgDic["img"] as? String == nil {
-//            cell.image.image = UIImage(named: "defaultPhoto")
+            cell.image.image = UIImage(named: "defaultPhoto")
         } else {
             let url = URL(string: (imgDic["img"] as! NSString) as String)
             let fetchResult: PHFetchResult = PHAsset.fetchAssets(withALAssetURLs: [url!], options: nil)
@@ -105,7 +105,8 @@ class imageViewController: UIViewController,UICollectionViewDelegate,UICollectio
 //        
 //        
 //                return count
-        return count
+        return cafeArray.count
+//        return count
     }
     
 //    func collectionView(_ collectionView: UICollectionView,

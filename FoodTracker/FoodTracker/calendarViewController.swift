@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FontAwesome_swift
 
 extension UIColor {
     class func lightBlue() -> UIColor {
@@ -32,6 +33,8 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
     @IBOutlet weak var headerPrevBtn: UIBarButtonItem!
     @IBOutlet weak var navigationBar: UINavigationItem!
     
+    @IBOutlet weak var coffeeFont: UILabel!
+    @IBOutlet weak var timeFont: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,6 +45,16 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         // CollectionViewのレイアウトを生成.
         let layout = UICollectionViewFlowLayout()
+        
+        //コーヒーカップを出す
+        coffeeFont.font = UIFont.fontAwesome(ofSize: 40)
+//        myLabel.text = String.fontAwesomeIcon(name: .coffee) + "coffee"
+        coffeeFont.text = String.fontAwesomeIcon(name: .coffee)
+        
+        //時計を出す
+        timeFont.font = UIFont.fontAwesome(ofSize: 40)
+        //        myLabel.text = String.fontAwesomeIcon(name: .coffee) + "coffee"
+        timeFont.text = String.fontAwesomeIcon(name: .clockO)
         
     }
 
