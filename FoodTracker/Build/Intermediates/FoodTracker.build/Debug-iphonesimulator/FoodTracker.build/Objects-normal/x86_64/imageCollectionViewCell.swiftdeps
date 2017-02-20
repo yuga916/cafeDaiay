@@ -9,8 +9,8 @@ provides-dynamic-lookup:
 - "image"
 depends-top-level:
 - "UIImageView"
-- "UICollectionViewCell"
 - "imageCollectionViewCell"
+- "UICollectionViewCell"
 depends-member:
 - ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "init"]

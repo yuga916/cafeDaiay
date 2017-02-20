@@ -8,6 +8,8 @@
 
 import UIKit
 import FontAwesome_swift
+import CoreData
+import Photos
 
 extension UIColor {
     class func lightBlue() -> UIColor {
@@ -21,13 +23,23 @@ extension UIColor {
 
 class calendarViewController: UIViewController,UICollectionViewDataSource,UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
+    //MARK: Properties
+    var cafeArray: [NSDictionary] = []
+    var cafeDic: NSDictionary! = [:]
+    var myCafe = NSArray() as! [String]
+
+    
     let dateManager = DateManager()
     let daysPerWeek: Int = 7
     let cellMargin: CGFloat = 2.0
     var selectedDate = NSDate()
     var today: NSDate!
     let weekArray = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
-
+    
+    //テスト
+    @IBOutlet weak var cafeLabel: UILabel!
+    
+    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var calenderCollectionView: UICollectionView!
     @IBOutlet weak var headerNextBtn: UIBarButtonItem!
     @IBOutlet weak var headerPrevBtn: UIBarButtonItem!
@@ -56,6 +68,59 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         //        myLabel.text = String.fontAwesomeIcon(name: .coffee) + "coffee"
         timeFont.text = String.fontAwesomeIcon(name: .clockO)
         
+        //編集ボタンを出す
+         editButton.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
+        editButton.setTitle(String.fontAwesomeIcon(name: .edit), for: .normal)
+        
+        read()
+        
+        
+    }
+    
+    //既に存在するデータの読み込み処理
+    func read() {
+        //AppDelegateを使う用意をする
+        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        //エンティティを操作するためのオブジェクトを作成
+        let viewContext = appDelegate.persistentContainer.viewContext
+        
+        //どのエンティティからdataを取得してくるか設定
+        let query:NSFetchRequest<Diary> = Diary.fetchRequest()
+        
+        do{
+            //データを一括取得
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "date")
+            fetchRequest.predicate = NSPredicate(format:"date = %@", selectedDate)
+            let fetchResults:AnyObject = try viewContext.fetch(fetchRequest) as! AnyObject
+        
+            
+            print(fetchResults.count)
+            //            print(fetchResults)
+            //データの取得
+            //一旦配列を空っぽにする（初期化する）→そうしないとどんどん、TableViewに表示されてしまう。
+            myCafe = NSArray() as! [String]
+            //nilが入るかもしれないのでasに?をつける。
+            for result: AnyObject in fetchResults {
+                
+                let coffeeName:String? = result.value(forKey: "coffeeName") as? String
+                let date: Date? = result.value(forKey: "date") as? Date
+                let studyTime: NSNumber = (result.value(forKey: "studyTime") as? NSNumber)!
+                let img: String? = result.value(forKey: "img") as? String
+                let rating: NSNumber? = result.value(forKey: "rating") as? NSNumber
+                print("name:\(coffeeName) saveDate:\(date) studyTime:\(studyTime) image:\(img) rating:\(rating)")
+                cafeDic = ["coffeeName":coffeeName, "date":date, "studyTime":studyTime, "img":img, "rating":rating]
+                cafeArray.append(cafeDic)
+                print(cafeArray)
+                //                myCafe = NSArray() as! [String]
+                //                myCafe.append(coffeeName!)
+                //                print(myCafe)
+                //下画面の変更
+                cafeLabel.text = coffeeName
+            }
+        } catch {
+        }
+//        calendarView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -130,14 +195,18 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         let selectMonth = formatter.string(from: selectedDate as Date)
         
-        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
-        formatter.dateFormat = "yyyy/MM/dd"
-        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
+//        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath)
+        let selectedDateTmp = selectMonth + "/" + dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) + " 09:00:00 +0900" as! String
+        formatter.dateFormat = "yyyy/MM/dd HH:mm:ss Z"
+        
+//        formatter.dateFormat = "yyyy/MM/dd"
+//        formatter.locale = NSLocale(localeIdentifier: "ja_JP") as Locale!
 //        var tmpDate = dateManager.conversionDateFormat(indexPath: indexPath as NSIndexPath) as! NSDate
         //時差を治す。
 //        formatter.timeZone = TimeZone.current
         selectedDate = formatter.date(from: selectedDateTmp) as! NSDate
         print("Selected: \(selectedDate)")
+        read()
     }
 //    func collectionView(collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 //        
@@ -146,11 +215,33 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
 //    }
     
     
+    //Segueで画面遷移する時発動
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        //次の画面のオブジェクトを作成
+        //destinationはAny型なので変換
+        let secondVC = segue.destination as! MealViewController
+        
+        //選択されたkeyNameを次の画面のプロパティに保存
+        secondVC.scSelectedDate = selectedDate
+        print("日付\(secondVC.scSelectedDate)を次の画面へ渡す")
+    }
+    
     
     func changeHeaderTitle() -> String {
         let formatter: DateFormatter = DateFormatter()
         //let formatter = DateFormatter() //
         formatter.dateFormat = "M/yyyy"
+        //formatter.string(from: date as Date)
+        let selectMonth = formatter.string(from: selectedDate as Date)
+        return selectMonth
+    }
+    
+    //カレンダー下部の内容変更
+    func changeContent() -> String {
+        let formatter: DateFormatter = DateFormatter()
+        //let formatter = DateFormatter() //
+        formatter.dateFormat = "yyyy/MM/dd"
         //formatter.string(from: date as Date)
         let selectMonth = formatter.string(from: selectedDate as Date)
         return selectMonth

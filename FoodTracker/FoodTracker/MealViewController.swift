@@ -36,6 +36,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     var textView: UITextView!
     var num:Int = 0
     var selectedRating: Int!
+    var scSelectedDate = NSDate()
     
     
     //テスト
@@ -103,6 +104,8 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
             return true
         }
     }
+    
+    
 
         
     
@@ -238,7 +241,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
         
         //値のセット
         newRecord.setValue(nameTextField.text ?? String(), forKey: "coffeeName")
-        newRecord.setValue(Date(), forKey: "date")
+        newRecord.setValue(scSelectedDate, forKey: "date")
         newRecord.setValue(num, forKey: "studyTime")
         newRecord.setValue(strURL, forKey: "img")
         newRecord.setValue(ratingControl.rating, forKey: "rating")

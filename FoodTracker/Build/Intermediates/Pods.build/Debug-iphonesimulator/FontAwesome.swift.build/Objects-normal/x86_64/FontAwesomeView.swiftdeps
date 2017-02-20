@@ -6,26 +6,26 @@ provides-nominal:
 provides-member:
 - ["C17FontAwesome_swift15FontAwesomeView", ""]
 provides-dynamic-lookup:
+- "setupViews"
 - "prepareForInterfaceBuilder"
 - "tintColorDidChange"
 - "layoutSubviews"
 - "iconCode"
-- "setupViews"
 depends-top-level:
-- "UIView"
-- "String"
-- "NSCoder"
-- "StringLiteralType"
-- "CGRect"
-- !private "BooleanLiteralType"
-- !private "CGPoint"
-- "UILabel"
 - "TernaryPrecedence"
-- !private "CGSize"
 - !private "<"
-- !private "UIFont"
-- "AssignmentPrecedence"
+- "CGRect"
+- "UILabel"
 - "FontAwesomeView"
+- "String"
+- "UIView"
+- "AssignmentPrecedence"
+- "NSCoder"
+- !private "CGSize"
+- "StringLiteralType"
+- !private "CGPoint"
+- !private "UIFont"
+- !private "BooleanLiteralType"
 - !private "NSTextAlignment"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]

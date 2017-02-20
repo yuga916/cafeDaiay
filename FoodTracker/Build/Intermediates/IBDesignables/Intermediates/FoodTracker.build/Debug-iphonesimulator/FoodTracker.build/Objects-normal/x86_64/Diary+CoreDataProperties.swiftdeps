@@ -16,12 +16,12 @@ provides-dynamic-lookup:
 - "studyTime"
 - "rating"
 depends-top-level:
-- "Int16"
-- "NSDate"
-- !private "StringLiteralType"
-- "String"
 - "NSFetchRequest"
 - "Diary"
+- !private "StringLiteralType"
+- "NSDate"
+- "Int16"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "NSFetchRequest"]
 - ["Ps9AnyObject", "coffeeName"]

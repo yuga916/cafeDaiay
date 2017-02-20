@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "textLabel"
 depends-top-level:
-- !private "CGPoint"
-- !private "NSTextAlignment"
-- "NSCoder"
-- !private "UIFont"
 - "UICollectionViewCell"
-- !private "CGSize"
+- !private "UIFont"
+- !private "NSTextAlignment"
 - !private "StringLiteralType"
+- !private "CGSize"
 - "CalendarCell"
 - "AssignmentPrecedence"
-- "UILabel"
 - "CGRect"
+- "NSCoder"
+- "UILabel"
+- !private "CGPoint"
 depends-member:
 - !private ["Ps9AnyObject", "CGPoint"]
 - !private ["Ps9AnyObject", "CGRect"]

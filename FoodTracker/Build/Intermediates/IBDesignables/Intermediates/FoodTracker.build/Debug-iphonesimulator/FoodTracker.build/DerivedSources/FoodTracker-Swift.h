@@ -261,6 +261,7 @@ SWIFT_CLASS("_TtC11FoodTracker18MealViewController")
 @property (nonatomic, copy) NSString * _Nonnull strURL;
 @property (nonatomic, strong) UITextView * _Null_unspecified textView;
 @property (nonatomic) NSInteger num;
+@property (nonatomic, strong) NSDate * _Nonnull scSelectedDate;
 @property (nonatomic, copy) NSArray<NSString *> * _Nonnull myTitle;
 - (void)viewDidLoad;
 - (void)doneButtonAction;
@@ -303,12 +304,16 @@ SWIFT_CLASS("_TtC11FoodTracker13RatingControl")
 
 SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @interface calendarViewController : UIViewController <UIScrollViewDelegate, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource>
+@property (nonatomic, copy) NSArray<NSDictionary *> * _Nonnull cafeArray;
+@property (nonatomic, strong) NSDictionary * _Null_unspecified cafeDic;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull myCafe;
 @property (nonatomic, readonly, strong) DateManager * _Nonnull dateManager;
 @property (nonatomic, readonly) NSInteger daysPerWeek;
 @property (nonatomic, readonly) CGFloat cellMargin;
 @property (nonatomic, strong) NSDate * _Nonnull selectedDate;
 @property (nonatomic, strong) NSDate * _Null_unspecified today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified editButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderCollectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerNextBtn;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerPrevBtn;
@@ -316,6 +321,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified coffeeFont;
 @property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeFont;
 - (void)viewDidLoad;
+- (void)read;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section;
@@ -324,6 +330,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 - (CGFloat)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section;
 - (CGFloat)collectionViewWithCollectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section;
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSString * _Nonnull)changeHeaderTitle;
 - (IBAction)tappedHeaderPrevBtn:(UIButton * _Nonnull)sender;
 - (IBAction)tappedHeaderNextBtn:(UIButton * _Nonnull)sender;

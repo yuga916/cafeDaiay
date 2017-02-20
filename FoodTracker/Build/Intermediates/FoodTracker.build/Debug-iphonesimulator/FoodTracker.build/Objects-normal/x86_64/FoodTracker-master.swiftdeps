@@ -1,18 +1,18 @@
 version: "Apple Swift version 3.0.2 (swiftlang-800.0.63 clang-800.0.42.1)"
 options: "64a56a6c14ef5d48debe2bb62401c654"
-build_time: [540618579, 871396000]
+build_time: [540878169, 786949000]
 inputs:
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/DateManager.swift": [540532135, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/listViewController.swift": [540609675, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/Meal.swift": [540384637, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/imageViewController.swift": [540612652, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealViewController.swift": [540467246, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealViewController.swift": [540871804, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/imageCollectionViewCell.swift": [540599047, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/RatingControl.swift": [533933276, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/AppDelegate.swift": [540444179, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealTableViewController.swift": [540529368, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealTableViewController.swift": [540871804, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/MealTableViewCell.swift": [540530836, 0]
-  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/calendarViewController.swift": [540614827, 0]
+  "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/calendarViewController.swift": !dirty [540878136, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/FoodTracker/CalendarCell.swift": [539875734, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Diary+CoreDataProperties.swift": [540443916, 0]
   "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Diary+CoreDataClass.swift": [540443916, 0]
