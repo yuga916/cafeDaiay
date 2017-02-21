@@ -28,33 +28,6 @@
           'external-contents': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/FontAwesome.swift.build/module.modulemap"
         }
       ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "Pods-FoodTracker-umbrella.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Pods/Target Support Files/Pods-FoodTracker/Pods-FoodTracker-umbrella.h"
-        },
-        {
-          'type': 'file',
-          'name': "Pods_FoodTracker-Swift.h",
-          'external-contents': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Headers/Pods_FoodTracker-Swift.h"
-        }
-      ]
-    },
-    {
-      'type': 'directory',
-      'name': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Intermediates/IBDesignables/Products/Debug-iphonesimulator/Pods_FoodTracker.framework/Modules",
-      'contents': [
-        {
-          'type': 'file',
-          'name': "module.modulemap",
-          'external-contents': "/Users/yuga/Documents/ios20161219/09_PersistData/FoodTracker/Build/Intermediates/IBDesignables/Intermediates/Pods.build/Debug-iphonesimulator/Pods-FoodTracker.build/module.modulemap"
-        }
-      ]
     }
   ]
 }

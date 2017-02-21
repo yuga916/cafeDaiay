@@ -9,93 +9,93 @@ provides-member:
 - ["CSo7UIColor", "lightBlue"]
 - ["CSo7UIColor", "lightRed"]
 provides-dynamic-lookup:
-- "cafeArray"
-- "today"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
-- "collectionView"
 - "headerPrevBtn"
-- "tappedHeaderNextBtn"
-- "calenderCollectionView"
-- "tappedHeaderPrevBtn"
-- "editButton"
-- "didReceiveMemoryWarning"
-- "lightRed"
-- "coffeeFont"
-- "daysPerWeek"
-- "changeContent"
-- "read"
-- "cafeDic"
-- "lightBlue"
-- "weekArray"
-- "headerNextBtn"
-- "numberOfSections"
-- "cellMargin"
-- "viewDidLoad"
-- "timeFont"
-- "myCafe"
-- "changeHeaderTitle"
-- "prepare"
+- "today"
 - "selectedDate"
-- "dateManager"
-- "navigationBar"
+- "viewDidLoad"
+- "editButton"
+- "changeHeaderTitle"
+- "didReceiveMemoryWarning"
+- "changeContent"
+- "calenderCollectionView"
+- "lightBlue"
+- "lightRed"
+- "cafeArray"
+- "myCafe"
+- "coffeeFont"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "collectionView"
+- "prepare"
+- "numberOfSections"
 - "cafeLabel"
+- "cellMargin"
+- "daysPerWeek"
+- "weekArray"
+- "tappedHeaderPrevBtn"
+- "dateManager"
+- "headerNextBtn"
+- "timeFont"
+- "read"
+- "navigationBar"
+- "cafeDic"
+- "tappedHeaderNextBtn"
 depends-top-level:
-- !private "CalendarCell"
-- !private "AnyObject"
-- "Array"
-- "DateManager"
-- "UICollectionViewLayout"
-- !private "UIApplication"
-- "Int"
-- !private "AppDelegate"
-- !private "NSLocale"
-- "UIColor"
-- !private "%"
-- "UIViewController"
-- !private "Locale"
-- "NSDate"
-- "CGFloat"
-- "UINavigationItem"
-- "NSIndexPath"
-- !private "*"
-- "NSDictionary"
-- "UIButton"
-- "NSArray"
-- !private "Diary"
-- !private "UICollectionViewFlowLayout"
-- !private "NSFetchRequest"
-- !private "-"
-- "String"
-- !private "NSFetchRequestResult"
-- !private "UnicodeScalarType"
-- "StringLiteralType"
-- "Dictionary"
-- !private "+"
-- "UICollectionView"
-- "UICollectionViewDelegate"
-- "UICollectionViewDataSource"
 - "CGSize"
-- "UICollectionViewDelegateFlowLayout"
-- "IndexPath"
-- !private "print"
-- "UIBarButtonItem"
-- !private "DateFormatter"
-- "UIStoryboardSegue"
+- "StringLiteralType"
+- !private "UIFont"
 - !private "MealViewController"
-- !private "Date"
-- "UILabel"
 - !private "/"
+- !private "Diary"
+- !private "NSFetchRequest"
+- !private "AnyObject"
+- "UICollectionView"
+- "NSDate"
+- "NSDictionary"
+- "UIStoryboardSegue"
+- !private "Date"
+- "UIColor"
+- !private "Locale"
+- "UICollectionViewCell"
+- !private "+"
+- "String"
+- "CGFloat"
+- "Dictionary"
+- "UIBarButtonItem"
+- "UILabel"
+- "IndexPath"
+- !private "AppDelegate"
+- "DateManager"
+- "Int"
+- "NSIndexPath"
+- "calendarViewController"
+- "UICollectionViewDataSource"
+- "UIViewController"
+- "UICollectionViewDelegate"
+- !private "CalendarCell"
+- "UICollectionViewDelegateFlowLayout"
+- !private "UIApplication"
+- !private "print"
+- !private "-"
+- !private "UICollectionViewFlowLayout"
+- !private "NSPredicate"
+- !private "%"
+- "UINavigationItem"
+- !private "*"
+- !private "NSNumber"
+- "Array"
 - "AssignmentPrecedence"
 - !private "=="
+- "UICollectionViewLayout"
 - "CastingPrecedence"
-- !private "NSPredicate"
-- "UICollectionViewCell"
-- "calendarViewController"
-- !private "UIFont"
+- !private "NSLocale"
+- "UIButton"
+- "NSArray"
+- !private "UnicodeScalarType"
+- !private "DateFormatter"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "CGFloat"]
@@ -103,11 +103,9 @@ depends-member:
 - !private ["Ps9AnyObject", "DateFormatter"]
 - ["Ps9AnyObject", "DateManager"]
 - !private ["Ps9AnyObject", "Diary"]
-- !private ["Ps9AnyObject", "Iterator"]
 - ["Ps9AnyObject", "Key"]
 - ["Ps9AnyObject", "NSArray"]
 - ["Ps9AnyObject", "NSDate"]
-- !private ["Ps9AnyObject", "NSFetchRequest"]
 - !private ["Ps9AnyObject", "NSLocale"]
 - !private ["Ps9AnyObject", "NSPredicate"]
 - !private ["Ps9AnyObject", "String"]
@@ -127,7 +125,6 @@ depends-member:
 - ["Ps9AnyObject", "coffeeFont"]
 - ["Ps9AnyObject", "collectionView"]
 - !private ["Ps9AnyObject", "conversionDateFormat"]
-- !private ["Ps9AnyObject", "count"]
 - !private ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "date"]
 - !private ["Ps9AnyObject", "dateFormat"]
@@ -193,6 +190,7 @@ depends-member:
 - !private ["Ps9AnyObject", "title"]
 - !private ["Ps9AnyObject", "titleLabel"]
 - ["Ps9AnyObject", "today"]
+- !private ["Ps9AnyObject", "value"]
 - !private ["Ps9AnyObject", "viewContext"]
 - ["Ps9AnyObject", "viewDidLoad"]
 - ["Ps9AnyObject", "viewForZooming"]
@@ -205,8 +203,11 @@ depends-member:
 - ["Sa", "Element"]
 - !private ["Sa", "Index"]
 - !private ["Sa", "IndexDistance"]
+- !private ["Sa", "Iterator"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "_Element"]
+- !private ["Sa", "append"]
+- !private ["Sa", "count"]
 - ["Sa", "deinit"]
 - !private ["Sa", "subscript"]
 - ["Ps23BidirectionalCollection", "Element"]
@@ -216,6 +217,8 @@ depends-member:
 - !private ["Ps23BidirectionalCollection", "Iterator"]
 - !private ["Ps23BidirectionalCollection", "SubSequence"]
 - !private ["Ps23BidirectionalCollection", "_Element"]
+- !private ["Ps23BidirectionalCollection", "append"]
+- !private ["Ps23BidirectionalCollection", "count"]
 - !private ["Ps23BidirectionalCollection", "row"]
 - !private ["Ps23BidirectionalCollection", "section"]
 - !private ["Ps23BidirectionalCollection", "subscript"]
@@ -226,6 +229,8 @@ depends-member:
 - !private ["Ps22BidirectionalIndexable", "Iterator"]
 - !private ["Ps22BidirectionalIndexable", "SubSequence"]
 - !private ["Ps22BidirectionalIndexable", "_Element"]
+- !private ["Ps22BidirectionalIndexable", "append"]
+- !private ["Ps22BidirectionalIndexable", "count"]
 - !private ["Ps22BidirectionalIndexable", "row"]
 - !private ["Ps22BidirectionalIndexable", "section"]
 - !private ["Ps22BidirectionalIndexable", "subscript"]
@@ -268,10 +273,10 @@ depends-member:
 - !private ["Ps7CVarArg", "Index"]
 - !private ["Ps7CVarArg", "IndexDistance"]
 - !private ["Ps7CVarArg", "IntegerLiteralType"]
+- !private ["Ps7CVarArg", "Iterator"]
 - ["Ps7CVarArg", "Key"]
 - ["Ps7CVarArg", "NSArray"]
 - ["Ps7CVarArg", "NSDate"]
-- !private ["Ps7CVarArg", "NSFetchRequest"]
 - !private ["Ps7CVarArg", "NSLocale"]
 - !private ["Ps7CVarArg", "NSPredicate"]
 - !private ["Ps7CVarArg", "Stride"]
@@ -284,6 +289,7 @@ depends-member:
 - ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "_DisabledRangeIndex"]
 - !private ["Ps7CVarArg", "_Element"]
+- !private ["Ps7CVarArg", "append"]
 - !private ["Ps7CVarArg", "backgroundColor"]
 - ["Ps7CVarArg", "cafeArray"]
 - ["Ps7CVarArg", "cafeDic"]
@@ -295,6 +301,7 @@ depends-member:
 - ["Ps7CVarArg", "coffeeFont"]
 - ["Ps7CVarArg", "collectionView"]
 - !private ["Ps7CVarArg", "conversionDateFormat"]
+- !private ["Ps7CVarArg", "count"]
 - !private ["Ps7CVarArg", "dataSource"]
 - !private ["Ps7CVarArg", "date"]
 - !private ["Ps7CVarArg", "dateFormat"]
@@ -377,6 +384,8 @@ depends-member:
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "SubSequence"]
 - !private ["Ps10Collection", "_Element"]
+- !private ["Ps10Collection", "append"]
+- !private ["Ps10Collection", "count"]
 - !private ["Ps10Collection", "row"]
 - !private ["Ps10Collection", "section"]
 - !private ["Ps10Collection", "subscript"]
@@ -395,10 +404,10 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Element"]
 - !private ["Ps28CustomDebugStringConvertible", "Index"]
 - !private ["Ps28CustomDebugStringConvertible", "IndexDistance"]
+- !private ["Ps28CustomDebugStringConvertible", "Iterator"]
 - ["Ps28CustomDebugStringConvertible", "Key"]
 - ["Ps28CustomDebugStringConvertible", "NSArray"]
 - ["Ps28CustomDebugStringConvertible", "NSDate"]
-- !private ["Ps28CustomDebugStringConvertible", "NSFetchRequest"]
 - !private ["Ps28CustomDebugStringConvertible", "NSLocale"]
 - !private ["Ps28CustomDebugStringConvertible", "NSPredicate"]
 - !private ["Ps28CustomDebugStringConvertible", "String"]
@@ -409,6 +418,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "_Element"]
+- !private ["Ps28CustomDebugStringConvertible", "append"]
 - !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - ["Ps28CustomDebugStringConvertible", "cafeArray"]
 - ["Ps28CustomDebugStringConvertible", "cafeDic"]
@@ -420,6 +430,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "coffeeFont"]
 - ["Ps28CustomDebugStringConvertible", "collectionView"]
 - !private ["Ps28CustomDebugStringConvertible", "conversionDateFormat"]
+- !private ["Ps28CustomDebugStringConvertible", "count"]
 - !private ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "date"]
 - !private ["Ps28CustomDebugStringConvertible", "dateFormat"]
@@ -508,6 +519,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "Index"]
 - !private ["Ps17CustomReflectable", "IndexDistance"]
 - !private ["Ps17CustomReflectable", "IntegerLiteralType"]
+- !private ["Ps17CustomReflectable", "Iterator"]
 - ["Ps17CustomReflectable", "Key"]
 - !private ["Ps17CustomReflectable", "Stride"]
 - !private ["Ps17CustomReflectable", "SubSequence"]
@@ -515,6 +527,8 @@ depends-member:
 - !private ["Ps17CustomReflectable", "_DisabledRangeIndex"]
 - !private ["Ps17CustomReflectable", "_Element"]
 - !private ["Ps17CustomReflectable", "_getBuiltinLogicValue"]
+- !private ["Ps17CustomReflectable", "append"]
+- !private ["Ps17CustomReflectable", "count"]
 - !private ["Ps17CustomReflectable", "fontAwesomeIcon"]
 - ["Ps17CustomReflectable", "init"]
 - !private ["Ps17CustomReflectable", "row"]
@@ -531,10 +545,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Index"]
 - !private ["Ps23CustomStringConvertible", "IndexDistance"]
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
+- !private ["Ps23CustomStringConvertible", "Iterator"]
 - ["Ps23CustomStringConvertible", "Key"]
 - ["Ps23CustomStringConvertible", "NSArray"]
 - ["Ps23CustomStringConvertible", "NSDate"]
-- !private ["Ps23CustomStringConvertible", "NSFetchRequest"]
 - !private ["Ps23CustomStringConvertible", "NSLocale"]
 - !private ["Ps23CustomStringConvertible", "NSPredicate"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
@@ -548,6 +562,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_DisabledRangeIndex"]
 - !private ["Ps23CustomStringConvertible", "_Element"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
+- !private ["Ps23CustomStringConvertible", "append"]
 - !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - ["Ps23CustomStringConvertible", "cafeArray"]
 - ["Ps23CustomStringConvertible", "cafeDic"]
@@ -559,6 +574,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "coffeeFont"]
 - ["Ps23CustomStringConvertible", "collectionView"]
 - !private ["Ps23CustomStringConvertible", "conversionDateFormat"]
+- !private ["Ps23CustomStringConvertible", "count"]
 - !private ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "date"]
 - !private ["Ps23CustomStringConvertible", "dateFormat"]
@@ -668,7 +684,6 @@ depends-member:
 - ["Ps9Equatable", "Key"]
 - ["Ps9Equatable", "NSArray"]
 - ["Ps9Equatable", "NSDate"]
-- !private ["Ps9Equatable", "NSFetchRequest"]
 - !private ["Ps9Equatable", "NSLocale"]
 - !private ["Ps9Equatable", "NSPredicate"]
 - !private ["Ps9Equatable", "Stride"]
@@ -773,8 +788,11 @@ depends-member:
 - ["Ps25ExpressibleByArrayLiteral", "Element"]
 - !private ["Ps25ExpressibleByArrayLiteral", "Index"]
 - !private ["Ps25ExpressibleByArrayLiteral", "IndexDistance"]
+- !private ["Ps25ExpressibleByArrayLiteral", "Iterator"]
 - !private ["Ps25ExpressibleByArrayLiteral", "SubSequence"]
 - !private ["Ps25ExpressibleByArrayLiteral", "_Element"]
+- !private ["Ps25ExpressibleByArrayLiteral", "append"]
+- !private ["Ps25ExpressibleByArrayLiteral", "count"]
 - ["Ps25ExpressibleByArrayLiteral", "init"]
 - !private ["Ps25ExpressibleByArrayLiteral", "normal"]
 - !private ["Ps25ExpressibleByArrayLiteral", "row"]
@@ -816,7 +834,6 @@ depends-member:
 - ["Ps8Hashable", "Key"]
 - ["Ps8Hashable", "NSArray"]
 - ["Ps8Hashable", "NSDate"]
-- !private ["Ps8Hashable", "NSFetchRequest"]
 - !private ["Ps8Hashable", "NSLocale"]
 - !private ["Ps8Hashable", "NSPredicate"]
 - !private ["Ps8Hashable", "Stride"]
@@ -926,6 +943,8 @@ depends-member:
 - !private ["Ps9Indexable", "Iterator"]
 - !private ["Ps9Indexable", "SubSequence"]
 - !private ["Ps9Indexable", "_Element"]
+- !private ["Ps9Indexable", "append"]
+- !private ["Ps9Indexable", "count"]
 - !private ["Ps9Indexable", "row"]
 - !private ["Ps9Indexable", "section"]
 - !private ["Ps9Indexable", "subscript"]
@@ -936,6 +955,8 @@ depends-member:
 - !private ["Ps13IndexableBase", "Iterator"]
 - !private ["Ps13IndexableBase", "SubSequence"]
 - !private ["Ps13IndexableBase", "_Element"]
+- !private ["Ps13IndexableBase", "append"]
+- !private ["Ps13IndexableBase", "count"]
 - !private ["Ps13IndexableBase", "row"]
 - !private ["Ps13IndexableBase", "section"]
 - !private ["Ps13IndexableBase", "subscript"]
@@ -968,16 +989,22 @@ depends-member:
 - ["Ps17MutableCollection", "Element"]
 - !private ["Ps17MutableCollection", "Index"]
 - !private ["Ps17MutableCollection", "IndexDistance"]
+- !private ["Ps17MutableCollection", "Iterator"]
 - !private ["Ps17MutableCollection", "SubSequence"]
 - !private ["Ps17MutableCollection", "_Element"]
+- !private ["Ps17MutableCollection", "append"]
+- !private ["Ps17MutableCollection", "count"]
 - !private ["Ps17MutableCollection", "row"]
 - !private ["Ps17MutableCollection", "section"]
 - !private ["Ps17MutableCollection", "subscript"]
 - ["Ps16MutableIndexable", "Element"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "IndexDistance"]
+- !private ["Ps16MutableIndexable", "Iterator"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
 - !private ["Ps16MutableIndexable", "_Element"]
+- !private ["Ps16MutableIndexable", "append"]
+- !private ["Ps16MutableIndexable", "count"]
 - !private ["Ps16MutableIndexable", "row"]
 - !private ["Ps16MutableIndexable", "section"]
 - !private ["Ps16MutableIndexable", "subscript"]
@@ -992,7 +1019,6 @@ depends-member:
 - ["PSo8NSCoding", "Key"]
 - ["PSo8NSCoding", "NSArray"]
 - ["PSo8NSCoding", "NSDate"]
-- !private ["PSo8NSCoding", "NSFetchRequest"]
 - !private ["PSo8NSCoding", "NSLocale"]
 - !private ["PSo8NSCoding", "NSPredicate"]
 - !private ["PSo8NSCoding", "String"]
@@ -1100,7 +1126,6 @@ depends-member:
 - !private ["PSo26NSExtensionRequestHandling", "Diary"]
 - ["PSo26NSExtensionRequestHandling", "NSArray"]
 - ["PSo26NSExtensionRequestHandling", "NSDate"]
-- !private ["PSo26NSExtensionRequestHandling", "NSFetchRequest"]
 - !private ["PSo26NSExtensionRequestHandling", "NSLocale"]
 - !private ["PSo26NSExtensionRequestHandling", "NSPredicate"]
 - !private ["PSo26NSExtensionRequestHandling", "String"]
@@ -1160,11 +1185,9 @@ depends-member:
 - ["PSo17NSFastEnumeration", "Value"]
 - ["PSo17NSFastEnumeration", "init"]
 - ["CSo14NSFetchRequest", "deinit"]
-- !private ["CSo14NSFetchRequest", "init"]
 - !private ["CSo14NSFetchRequest", "predicate"]
 - ["PSo20NSFetchRequestResult", "Key"]
 - ["PSo20NSFetchRequestResult", "Value"]
-- ["PSo20NSFetchRequestResult", "deinit"]
 - !private ["PSo20NSFetchRequestResult", "fetchRequest"]
 - ["CSo11NSIndexPath", "deinit"]
 - ["CSo8NSLocale", "deinit"]
@@ -1177,6 +1200,7 @@ depends-member:
 - ["PSo16NSMutableCopying", "Value"]
 - !private ["PSo16NSMutableCopying", "fontAwesomeIcon"]
 - ["PSo16NSMutableCopying", "init"]
+- ["CSo8NSNumber", "deinit"]
 - !private ["CSo8NSObject", "AnyObject"]
 - !private ["CSo8NSObject", "AppDelegate"]
 - ["CSo8NSObject", "CGFloat"]
@@ -1195,9 +1219,9 @@ depends-member:
 - ["CSo8NSObject", "NSDate"]
 - ["CSo8NSObject", "NSDictionary"]
 - !private ["CSo8NSObject", "NSFetchRequest"]
-- !private ["CSo8NSObject", "NSFetchRequestResult"]
 - ["CSo8NSObject", "NSIndexPath"]
 - !private ["CSo8NSObject", "NSLocale"]
+- !private ["CSo8NSObject", "NSNumber"]
 - !private ["CSo8NSObject", "NSPredicate"]
 - ["CSo8NSObject", "String"]
 - !private ["CSo8NSObject", "UIApplication"]
@@ -1302,7 +1326,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Key"]
 - ["PSo16NSObjectProtocol", "NSArray"]
 - ["PSo16NSObjectProtocol", "NSDate"]
-- !private ["PSo16NSObjectProtocol", "NSFetchRequest"]
 - !private ["PSo16NSObjectProtocol", "NSLocale"]
 - !private ["PSo16NSObjectProtocol", "NSPredicate"]
 - !private ["PSo16NSObjectProtocol", "String"]
@@ -1417,6 +1440,8 @@ depends-member:
 - !private ["Ps22RandomAccessCollection", "Iterator"]
 - !private ["Ps22RandomAccessCollection", "SubSequence"]
 - !private ["Ps22RandomAccessCollection", "_Element"]
+- !private ["Ps22RandomAccessCollection", "append"]
+- !private ["Ps22RandomAccessCollection", "count"]
 - !private ["Ps22RandomAccessCollection", "row"]
 - !private ["Ps22RandomAccessCollection", "section"]
 - !private ["Ps22RandomAccessCollection", "subscript"]
@@ -1427,6 +1452,8 @@ depends-member:
 - !private ["Ps21RandomAccessIndexable", "Iterator"]
 - !private ["Ps21RandomAccessIndexable", "SubSequence"]
 - !private ["Ps21RandomAccessIndexable", "_Element"]
+- !private ["Ps21RandomAccessIndexable", "append"]
+- !private ["Ps21RandomAccessIndexable", "count"]
 - !private ["Ps21RandomAccessIndexable", "row"]
 - !private ["Ps21RandomAccessIndexable", "section"]
 - !private ["Ps21RandomAccessIndexable", "subscript"]
@@ -1439,14 +1466,20 @@ depends-member:
 - ["Ps26RangeReplaceableCollection", "Element"]
 - !private ["Ps26RangeReplaceableCollection", "Index"]
 - !private ["Ps26RangeReplaceableCollection", "IndexDistance"]
+- !private ["Ps26RangeReplaceableCollection", "Iterator"]
 - !private ["Ps26RangeReplaceableCollection", "SubSequence"]
 - !private ["Ps26RangeReplaceableCollection", "_Element"]
+- !private ["Ps26RangeReplaceableCollection", "append"]
+- !private ["Ps26RangeReplaceableCollection", "count"]
 - !private ["Ps26RangeReplaceableCollection", "subscript"]
 - ["Ps25RangeReplaceableIndexable", "Element"]
 - !private ["Ps25RangeReplaceableIndexable", "Index"]
 - !private ["Ps25RangeReplaceableIndexable", "IndexDistance"]
+- !private ["Ps25RangeReplaceableIndexable", "Iterator"]
 - !private ["Ps25RangeReplaceableIndexable", "SubSequence"]
 - !private ["Ps25RangeReplaceableIndexable", "_Element"]
+- !private ["Ps25RangeReplaceableIndexable", "append"]
+- !private ["Ps25RangeReplaceableIndexable", "count"]
 - !private ["Ps25RangeReplaceableIndexable", "subscript"]
 - !private ["Ps16RawRepresentable", "clockO"]
 - !private ["Ps16RawRepresentable", "coffee"]
@@ -1463,6 +1496,8 @@ depends-member:
 - !private ["Ps8Sequence", "SubSequence"]
 - ["Ps8Sequence", "Value"]
 - !private ["Ps8Sequence", "_Element"]
+- !private ["Ps8Sequence", "append"]
+- !private ["Ps8Sequence", "count"]
 - ["Ps8Sequence", "init"]
 - !private ["Ps8Sequence", "row"]
 - !private ["Ps8Sequence", "section"]
@@ -1521,7 +1556,6 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "Diary"]
 - ["PSo21UIAppearanceContainer", "NSArray"]
 - ["PSo21UIAppearanceContainer", "NSDate"]
-- !private ["PSo21UIAppearanceContainer", "NSFetchRequest"]
 - !private ["PSo21UIAppearanceContainer", "NSLocale"]
 - !private ["PSo21UIAppearanceContainer", "NSPredicate"]
 - !private ["PSo21UIAppearanceContainer", "String"]
@@ -1612,7 +1646,6 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "Diary"]
 - ["PSo26UICollectionViewDataSource", "NSArray"]
 - ["PSo26UICollectionViewDataSource", "NSDate"]
-- !private ["PSo26UICollectionViewDataSource", "NSFetchRequest"]
 - !private ["PSo26UICollectionViewDataSource", "NSLocale"]
 - !private ["PSo26UICollectionViewDataSource", "NSPredicate"]
 - !private ["PSo26UICollectionViewDataSource", "String"]
@@ -1620,6 +1653,9 @@ depends-member:
 - !private ["PSo26UICollectionViewDataSource", "UICollectionViewFlowLayout"]
 - !private ["PSo26UICollectionViewDataSource", "UIColor"]
 - !private ["PSo26UICollectionViewDataSource", "UIFont"]
+- !private ["PSo26UICollectionViewDataSource", "cafeArray"]
+- !private ["PSo26UICollectionViewDataSource", "cafeDic"]
+- !private ["PSo26UICollectionViewDataSource", "cafeLabel"]
 - !private ["PSo26UICollectionViewDataSource", "calenderCollectionView"]
 - !private ["PSo26UICollectionViewDataSource", "cellMargin"]
 - !private ["PSo26UICollectionViewDataSource", "changeHeaderTitle"]
@@ -1661,7 +1697,6 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "Diary"]
 - ["PSo24UICollectionViewDelegate", "NSArray"]
 - ["PSo24UICollectionViewDelegate", "NSDate"]
-- !private ["PSo24UICollectionViewDelegate", "NSFetchRequest"]
 - !private ["PSo24UICollectionViewDelegate", "NSLocale"]
 - !private ["PSo24UICollectionViewDelegate", "NSPredicate"]
 - !private ["PSo24UICollectionViewDelegate", "String"]
@@ -1669,6 +1704,9 @@ depends-member:
 - !private ["PSo24UICollectionViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo24UICollectionViewDelegate", "UIColor"]
 - !private ["PSo24UICollectionViewDelegate", "UIFont"]
+- !private ["PSo24UICollectionViewDelegate", "cafeArray"]
+- !private ["PSo24UICollectionViewDelegate", "cafeDic"]
+- !private ["PSo24UICollectionViewDelegate", "cafeLabel"]
 - !private ["PSo24UICollectionViewDelegate", "calenderCollectionView"]
 - !private ["PSo24UICollectionViewDelegate", "cellMargin"]
 - !private ["PSo24UICollectionViewDelegate", "changeHeaderTitle"]
@@ -1710,7 +1748,6 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "Diary"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "NSArray"]
 - ["PSo34UICollectionViewDelegateFlowLayout", "NSDate"]
-- !private ["PSo34UICollectionViewDelegateFlowLayout", "NSFetchRequest"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSLocale"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "NSPredicate"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "String"]
@@ -1718,6 +1755,9 @@ depends-member:
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UICollectionViewFlowLayout"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIColor"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "UIFont"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeArray"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeDic"]
+- !private ["PSo34UICollectionViewDelegateFlowLayout", "cafeLabel"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "calenderCollectionView"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "cellMargin"]
 - !private ["PSo34UICollectionViewDelegateFlowLayout", "changeHeaderTitle"]
@@ -1769,7 +1809,6 @@ depends-member:
 - !private ["PSo18UIContentContainer", "Diary"]
 - ["PSo18UIContentContainer", "NSArray"]
 - ["PSo18UIContentContainer", "NSDate"]
-- !private ["PSo18UIContentContainer", "NSFetchRequest"]
 - !private ["PSo18UIContentContainer", "NSLocale"]
 - !private ["PSo18UIContentContainer", "NSPredicate"]
 - !private ["PSo18UIContentContainer", "String"]
@@ -1863,7 +1902,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "Diary"]
 - ["PSo18UIFocusEnvironment", "NSArray"]
 - ["PSo18UIFocusEnvironment", "NSDate"]
-- !private ["PSo18UIFocusEnvironment", "NSFetchRequest"]
 - !private ["PSo18UIFocusEnvironment", "NSLocale"]
 - !private ["PSo18UIFocusEnvironment", "NSPredicate"]
 - !private ["PSo18UIFocusEnvironment", "String"]
@@ -1969,9 +2007,9 @@ depends-member:
 - ["CSo11UIResponder", "NSDate"]
 - ["CSo11UIResponder", "NSDictionary"]
 - !private ["CSo11UIResponder", "NSFetchRequest"]
-- !private ["CSo11UIResponder", "NSFetchRequestResult"]
 - ["CSo11UIResponder", "NSIndexPath"]
 - !private ["CSo11UIResponder", "NSLocale"]
+- !private ["CSo11UIResponder", "NSNumber"]
 - !private ["CSo11UIResponder", "NSPredicate"]
 - ["CSo11UIResponder", "String"]
 - !private ["CSo11UIResponder", "UIApplication"]
@@ -2054,7 +2092,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "Diary"]
 - ["PSo30UIResponderStandardEditActions", "NSArray"]
 - ["PSo30UIResponderStandardEditActions", "NSDate"]
-- !private ["PSo30UIResponderStandardEditActions", "NSFetchRequest"]
 - !private ["PSo30UIResponderStandardEditActions", "NSLocale"]
 - !private ["PSo30UIResponderStandardEditActions", "NSPredicate"]
 - !private ["PSo30UIResponderStandardEditActions", "String"]
@@ -2137,7 +2174,6 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "Diary"]
 - ["PSo20UIScrollViewDelegate", "NSArray"]
 - ["PSo20UIScrollViewDelegate", "NSDate"]
-- !private ["PSo20UIScrollViewDelegate", "NSFetchRequest"]
 - !private ["PSo20UIScrollViewDelegate", "NSLocale"]
 - !private ["PSo20UIScrollViewDelegate", "NSPredicate"]
 - !private ["PSo20UIScrollViewDelegate", "String"]
@@ -2145,6 +2181,9 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "UICollectionViewFlowLayout"]
 - !private ["PSo20UIScrollViewDelegate", "UIColor"]
 - !private ["PSo20UIScrollViewDelegate", "UIFont"]
+- !private ["PSo20UIScrollViewDelegate", "cafeArray"]
+- !private ["PSo20UIScrollViewDelegate", "cafeDic"]
+- !private ["PSo20UIScrollViewDelegate", "cafeLabel"]
 - !private ["PSo20UIScrollViewDelegate", "calenderCollectionView"]
 - !private ["PSo20UIScrollViewDelegate", "cellMargin"]
 - !private ["PSo20UIScrollViewDelegate", "changeHeaderTitle"]
@@ -2186,7 +2225,6 @@ depends-member:
 - !private ["PSo16UIStateRestoring", "Diary"]
 - ["PSo16UIStateRestoring", "NSArray"]
 - ["PSo16UIStateRestoring", "NSDate"]
-- !private ["PSo16UIStateRestoring", "NSFetchRequest"]
 - !private ["PSo16UIStateRestoring", "NSLocale"]
 - !private ["PSo16UIStateRestoring", "NSPredicate"]
 - !private ["PSo16UIStateRestoring", "String"]
@@ -2252,7 +2290,6 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "Diary"]
 - ["PSo18UITraitEnvironment", "NSArray"]
 - ["PSo18UITraitEnvironment", "NSDate"]
-- !private ["PSo18UITraitEnvironment", "NSFetchRequest"]
 - !private ["PSo18UITraitEnvironment", "NSLocale"]
 - !private ["PSo18UITraitEnvironment", "NSPredicate"]
 - !private ["PSo18UITraitEnvironment", "String"]
@@ -2349,9 +2386,9 @@ depends-member:
 - ["CSo16UIViewController", "NSDate"]
 - ["CSo16UIViewController", "NSDictionary"]
 - !private ["CSo16UIViewController", "NSFetchRequest"]
-- !private ["CSo16UIViewController", "NSFetchRequestResult"]
 - ["CSo16UIViewController", "NSIndexPath"]
 - !private ["CSo16UIViewController", "NSLocale"]
+- !private ["CSo16UIViewController", "NSNumber"]
 - !private ["CSo16UIViewController", "NSPredicate"]
 - ["CSo16UIViewController", "String"]
 - !private ["CSo16UIViewController", "UIApplication"]
@@ -2424,8 +2461,11 @@ depends-member:
 - ["Ps14_ArrayProtocol", "Element"]
 - !private ["Ps14_ArrayProtocol", "Index"]
 - !private ["Ps14_ArrayProtocol", "IndexDistance"]
+- !private ["Ps14_ArrayProtocol", "Iterator"]
 - !private ["Ps14_ArrayProtocol", "SubSequence"]
 - !private ["Ps14_ArrayProtocol", "_Element"]
+- !private ["Ps14_ArrayProtocol", "append"]
+- !private ["Ps14_ArrayProtocol", "count"]
 - !private ["Ps14_ArrayProtocol", "subscript"]
 - !private ["Ps15_CVarArgAligned", "init"]
 - !private ["Ps22_CVarArgPassedAsDouble", "init"]
@@ -2444,8 +2484,11 @@ depends-member:
 - ["Ps24_DestructorSafeContainer", "Element"]
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "IndexDistance"]
+- !private ["Ps24_DestructorSafeContainer", "Iterator"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "_Element"]
+- !private ["Ps24_DestructorSafeContainer", "append"]
+- !private ["Ps24_DestructorSafeContainer", "count"]
 - !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - !private ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "fontAwesomeIcon"]
@@ -2476,7 +2519,6 @@ depends-member:
 - ["Ps9_Hashable", "Key"]
 - ["Ps9_Hashable", "NSArray"]
 - ["Ps9_Hashable", "NSDate"]
-- !private ["Ps9_Hashable", "NSFetchRequest"]
 - !private ["Ps9_Hashable", "NSLocale"]
 - !private ["Ps9_Hashable", "NSPredicate"]
 - !private ["Ps9_Hashable", "Stride"]
@@ -2588,11 +2630,14 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Index"]
 - !private ["Ps21_ObjectiveCBridgeable", "IndexDistance"]
 - !private ["Ps21_ObjectiveCBridgeable", "IntegerLiteralType"]
+- !private ["Ps21_ObjectiveCBridgeable", "Iterator"]
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "SubSequence"]
 - !private ["Ps21_ObjectiveCBridgeable", "_DisabledRangeIndex"]
 - !private ["Ps21_ObjectiveCBridgeable", "_Element"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
+- !private ["Ps21_ObjectiveCBridgeable", "append"]
+- !private ["Ps21_ObjectiveCBridgeable", "count"]
 - !private ["Ps21_ObjectiveCBridgeable", "fontAwesomeIcon"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "row"]
@@ -2624,9 +2669,9 @@ depends-member:
 - ["C11FoodTracker22calendarViewController", "NSDate"]
 - ["C11FoodTracker22calendarViewController", "NSDictionary"]
 - !private ["C11FoodTracker22calendarViewController", "NSFetchRequest"]
-- !private ["C11FoodTracker22calendarViewController", "NSFetchRequestResult"]
 - ["C11FoodTracker22calendarViewController", "NSIndexPath"]
 - !private ["C11FoodTracker22calendarViewController", "NSLocale"]
+- !private ["C11FoodTracker22calendarViewController", "NSNumber"]
 - !private ["C11FoodTracker22calendarViewController", "NSPredicate"]
 - ["C11FoodTracker22calendarViewController", "String"]
 - !private ["C11FoodTracker22calendarViewController", "UIApplication"]
@@ -2768,6 +2813,7 @@ depends-nominal:
 - !private "CSo15NSManagedObject"
 - "CSo22NSManagedObjectContext"
 - "PSo16NSMutableCopying"
+- "CSo8NSNumber"
 - "CSo8NSObject"
 - "PSo16NSObjectProtocol"
 - !private "CSo21NSPersistentContainer"
@@ -2859,7 +2905,7 @@ depends-nominal:
 - !private "Ps11_Strideable"
 - "C11FoodTracker22calendarViewController"
 depends-dynamic-lookup:
-- !private "count"
+- !private "value"
 depends-external:
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/yuga/Downloads/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"

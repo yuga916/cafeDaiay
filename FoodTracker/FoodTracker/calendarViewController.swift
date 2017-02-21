@@ -90,9 +90,9 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
         
         do{
             //データを一括取得
-            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "date")
-            fetchRequest.predicate = NSPredicate(format:"date = %@", selectedDate)
-            let fetchResults:AnyObject = try viewContext.fetch(fetchRequest) as! AnyObject
+//            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "date")
+            query.predicate = NSPredicate(format:"date = %@", selectedDate)
+            let fetchResults = try viewContext.fetch(query)
         
             
             print(fetchResults.count)

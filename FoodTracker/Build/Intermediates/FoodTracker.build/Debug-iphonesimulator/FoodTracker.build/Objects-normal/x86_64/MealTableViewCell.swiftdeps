@@ -8,17 +8,17 @@ provides-member:
 provides-dynamic-lookup:
 - "setSelected"
 - "dateView"
-- "ratingControl"
-- "awakeFromNib"
 - "photoImageView"
 - "nameLabel"
+- "ratingControl"
+- "awakeFromNib"
 depends-top-level:
-- "MealTableViewCell"
+- "UITableViewCell"
+- "UIImageView"
 - "UILabel"
 - "Bool"
+- "MealTableViewCell"
 - "RatingControl"
-- "UIImageView"
-- "UITableViewCell"
 depends-member:
 - ["Ps9AnyObject", "awakeFromNib"]
 - ["Ps9AnyObject", "dateView"]

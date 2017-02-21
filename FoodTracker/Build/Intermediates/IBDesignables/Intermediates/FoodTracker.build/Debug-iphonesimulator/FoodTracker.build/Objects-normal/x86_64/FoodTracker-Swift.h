@@ -313,6 +313,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 @property (nonatomic, strong) NSDate * _Nonnull selectedDate;
 @property (nonatomic, strong) NSDate * _Null_unspecified today;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull weekArray;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cafeLabel;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified editButton;
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified calenderCollectionView;
 @property (nonatomic, weak) IBOutlet UIBarButtonItem * _Null_unspecified headerNextBtn;
@@ -332,6 +333,7 @@ SWIFT_CLASS("_TtC11FoodTracker22calendarViewController")
 - (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (NSString * _Nonnull)changeHeaderTitle;
+- (NSString * _Nonnull)changeContent;
 - (IBAction)tappedHeaderPrevBtn:(UIButton * _Nonnull)sender;
 - (IBAction)tappedHeaderNextBtn:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
