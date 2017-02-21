@@ -116,7 +116,7 @@ class calendarViewController: UIViewController,UICollectionViewDataSource,UIColl
                 //                myCafe.append(coffeeName!)
                 //                print(myCafe)
                 //下画面の変更
-                cafeLabel.text = coffeeName
+                cafeLabel.text = "\(coffeeName!)"
             }
         } catch {
         }

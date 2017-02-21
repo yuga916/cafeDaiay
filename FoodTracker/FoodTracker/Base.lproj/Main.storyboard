@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -108,6 +109,58 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fwL-lk-eas"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eeu-y9-tj4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KCl-fM-2rD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DtP-o5-b6p">
+                                <rect key="frame" x="181" y="323" width="12.5" height="20.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="カフェ名orドリンク名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJs-wE-0or">
+                                <rect key="frame" x="33" y="318" width="308" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="勉強時間" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VlX-Gw-sRa">
+                                <rect key="frame" x="142" y="318" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="RjW-kD-NmP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="i04-ue-XXX">
+                                <rect key="frame" x="8" y="140" width="344" height="372"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="6D5-mj-rcJ">
+                                        <rect key="frame" x="12" y="0.0" width="320" height="320"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="6D5-mj-rcJ" secondAttribute="height" multiplier="1:1" id="Jgt-Js-cfp"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iAg-uF-qXI" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="46" y="328" width="252" height="44"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6D5-mj-rcJ" firstAttribute="leading" secondItem="i04-ue-XXX" secondAttribute="leading" constant="12" id="dlO-nX-LRu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <navigationItem key="navigationItem" id="lPO-Rb-aqa">
                         <nil key="title"/>
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="vGh-iY-UPb">
@@ -203,8 +256,8 @@
                                 <rect key="frame" x="61" y="385" width="252" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタバ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nI-sj-bVm">
-                                <rect key="frame" x="270" y="539" width="52" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="スタバ" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nI-sj-bVm">
+                                <rect key="frame" x="270" y="539" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -441,11 +494,115 @@
             </objects>
             <point key="canvasLocation" x="7436" y="-851.42428785607206"/>
         </scene>
+        <!--Meal View Controller-->
+        <scene sceneID="eNT-z6-Lhf">
+            <objects>
+                <viewController id="dqD-Yx-Fa8" customClass="MealViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tHS-Zd-XhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ima-dS-dht"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3fn-C3-P82">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="H" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HB6-V9-ssc">
+                                <rect key="frame" x="137" y="106.5" width="12.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="カフェ名orドリンク名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aYc-U0-RvS">
+                                <rect key="frame" x="39" y="102" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dqD-Yx-Fa8" id="OdA-tm-Ksi"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="勉強時間" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mEm-Kv-lMm">
+                                <rect key="frame" x="39" y="97" width="91" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="91" id="VMa-kD-bBb"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dqD-Yx-Fa8" id="FcA-OY-01u"/>
+                                </connections>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nCm-Qq-ge7">
+                                <rect key="frame" x="16" y="141" width="343" height="371"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="320" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="9vo-wZ-JJ2">
+                                        <rect key="frame" x="12" y="0.0" width="319" height="319"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="9vo-wZ-JJ2" secondAttribute="height" multiplier="1:1" id="wXj-Pa-4gK"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="14P-1c-XjY" appends="YES" id="IKh-r4-MWY"/>
+                                        </connections>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="nG5-W4-I53" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
+                                        <rect key="frame" x="45.5" y="327" width="252" height="44"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9vo-wZ-JJ2" firstAttribute="leading" secondItem="nCm-Qq-ge7" secondAttribute="leading" constant="12" id="rF4-F1-CtQ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mEm-Kv-lMm" firstAttribute="leading" secondItem="3fn-C3-P82" secondAttribute="leadingMargin" constant="23" id="0nu-NK-wid"/>
+                            <constraint firstItem="Ima-dS-dht" firstAttribute="top" secondItem="nCm-Qq-ge7" secondAttribute="bottom" constant="106" id="AIu-M9-9Ew"/>
+                            <constraint firstItem="nCm-Qq-ge7" firstAttribute="leading" secondItem="3fn-C3-P82" secondAttribute="leadingMargin" id="OeT-O6-5du"/>
+                            <constraint firstItem="mEm-Kv-lMm" firstAttribute="top" secondItem="aYc-U0-RvS" secondAttribute="bottom" constant="14" id="SF6-K5-ukX"/>
+                            <constraint firstItem="HB6-V9-ssc" firstAttribute="leading" secondItem="mEm-Kv-lMm" secondAttribute="trailing" constant="7" id="YGF-Mo-dbK"/>
+                            <constraint firstItem="mEm-Kv-lMm" firstAttribute="leading" secondItem="aYc-U0-RvS" secondAttribute="leading" id="kSS-hZ-EUo"/>
+                            <constraint firstItem="mEm-Kv-lMm" firstAttribute="bottom" secondItem="HB6-V9-ssc" secondAttribute="bottom" id="m90-Sz-msk"/>
+                            <constraint firstItem="nCm-Qq-ge7" firstAttribute="top" secondItem="mEm-Kv-lMm" secondAttribute="bottom" constant="14" id="rSE-zC-1s5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nCm-Qq-ge7" secondAttribute="trailing" id="xQK-LQ-hvp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WgK-Ag-HL1">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="odg-kk-gSE">
+                            <connections>
+                                <action selector="cancel:" destination="dqD-Yx-Fa8" id="8Az-cI-TWJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="zkA-SK-CHd">
+                            <connections>
+                                <action selector="tapSave:" destination="dqD-Yx-Fa8" id="Ppl-pt-QX0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="aYc-U0-RvS" id="bRN-gO-xID"/>
+                        <outlet property="photoImageView" destination="9vo-wZ-JJ2" id="u9c-ws-fgY"/>
+                        <outlet property="ratingControl" destination="nG5-W4-I53" id="l80-bZ-hKU"/>
+                        <outlet property="saveButton" destination="zkA-SK-CHd" id="jD5-wX-O5K"/>
+                        <outlet property="studyTime" destination="mEm-Kv-lMm" id="BdP-8r-bfz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bXi-2P-jBf" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="14P-1c-XjY">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="dqD-Yx-Fa8" id="vnE-as-XSM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="7718" y="135"/>
+        </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bye-1r-UsD"/>
+        <segue reference="Vcr-KI-Skv"/>
     </inferredMetricsTieBreakers>
 </document>
